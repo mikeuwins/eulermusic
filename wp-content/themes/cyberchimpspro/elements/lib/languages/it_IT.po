@@ -1,0 +1,513 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CyberChimps Pro Elements\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
+"PO-Revision-Date: 2013-03-19 14:07-0000\n"
+"Last-Translator: \n"
+"Language-Team: Italian, Italy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../boxes.php ../../init.php ../../setup/features.php
+msgid "Boxes"
+msgstr "Riquadri"
+
+#: ../../boxes.php
+msgid "Boxes Categories"
+msgstr "Scatole Categorie"
+
+#: ../../boxes.php
+msgid "Boxes Catergory"
+msgstr "Scatole catergory"
+
+#: ../../boxes.php
+msgid "Search Boxes"
+msgstr "Ricerca Scatole"
+
+#: ../../boxes.php
+msgid "All Boxes"
+msgstr "Tutte le scatole"
+
+#: ../../boxes.php
+msgid "Boxes Category"
+msgstr "Scatole Categoria"
+
+#: ../../boxes.php
+msgid "Boxes Category:"
+msgstr "Scatole Categoria:"
+
+#: ../../boxes.php
+msgid "Edit Boxes Category"
+msgstr "Modifica Scatole Categoria"
+
+#: ../../boxes.php
+msgid "Update Boxes Category"
+msgstr "Aggiornamento Scatole Categoria"
+
+#: ../../boxes.php
+msgid "Add New Boxes Category"
+msgstr "Aggiungi nuovo Categoria Scatole"
+
+#: ../../boxes.php
+msgid "New Boxes Category Name"
+msgstr "Nuovo Scatole Categoria Nome"
+
+#: ../../boxes.php
+msgid "Boxes Element"
+msgstr "Scatole Elemento"
+
+#: ../../boxes.php
+msgid "Box Image"
+msgstr "Box Immagine"
+
+#: ../../boxes.php
+msgid "Box URL"
+msgstr "Casella URL"
+
+#: ../../boxes.php
+msgid "Box Text"
+msgstr "Casella di testo"
+
+#: ../../boxes.php
+msgid "iFeature Pro 5 Slider"
+msgstr "iFeature Pro 5 Slider"
+
+#: ../../boxes.php
+msgid ""
+"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
+"device."
+msgstr ""
+"Il nuovo Touch Screen iFeature Slider Pro ora risponde a qualsiasi "
+"dispositivo cellulare touch."
+
+#: ../../boxes.php
+msgid "Responsive Design"
+msgstr "Progettazione Responsive"
+
+#: ../../boxes.php
+msgid ""
+"With iFeature Pro 5 and touch friendly responsive design you can now control "
+"your website on any device."
+msgstr ""
+"Con iFeature progettazione Pro 5 e il tatto amichevole reattivo è ora "
+"possibile controllare il vostro sito web su qualsiasi dispositivo."
+
+#: ../../boxes.php
+msgid "Excellent Support"
+msgstr "L'eccellente assistenza"
+
+#: ../../boxes.php
+msgid ""
+"Need help? Read the instructions and please visit our dedicated Pro Support "
+"Forum."
+msgstr ""
+"Hai bisogno di aiuto? Leggere le istruzioni e si prega di visitare il nostro "
+"Forum dedicato Pro Support."
+
+#: ../../breadcrumbs.php
+msgid "Home"
+msgstr "Casa"
+
+#: ../../breadcrumbs.php
+msgid "Archive for category "
+msgstr "Archivio per la categoria "
+
+#: ../../breadcrumbs.php
+msgid "Search results for "
+msgstr "risultati della ricerca di"
+
+#: ../../breadcrumbs.php
+msgid "Posts tagged "
+msgstr "Articoli marcati con taggati "
+
+#: ../../breadcrumbs.php
+msgid "Articles posted by "
+msgstr "Articoli pubblicati da "
+
+#: ../../breadcrumbs.php
+msgid "Error 404"
+msgstr "Errore 404"
+
+#: ../../init.php ../../breadcrumbs.php
+msgid "Page"
+msgstr "Pagina"
+
+#: ../../init.php ../../carousel.php
+msgid "Carousel"
+msgstr "Carosello"
+
+#: ../../carousel.php
+msgid "Posts"
+msgstr "Articoli"
+
+#: ../../carousel.php
+msgid "Carousel Categories"
+msgstr "Carousel Categorie"
+
+#: ../../carousel.php
+msgid "Carousel Catergory"
+msgstr "Carosello Catergory"
+
+#: ../../carousel.php
+msgid "Search Carousel"
+msgstr "Ricerca carosello"
+
+#: ../../carousel.php
+msgid "All Carousels"
+msgstr "Tutte le Giostre"
+
+#: ../../carousel.php
+msgid "Carousel Category"
+msgstr "Carousel Categoria"
+
+#: ../../carousel.php
+msgid "Carousel Category:"
+msgstr "Carousel Categoria:"
+
+#: ../../carousel.php
+msgid "Edit Carousel Category"
+msgstr "Modifica Carousel Categoria"
+
+#: ../../carousel.php
+msgid "Update Carousel Category"
+msgstr "Aggiornamento Carousel Categoria"
+
+#: ../../carousel.php
+msgid "Add New Carousel Category"
+msgstr "Aggiungi nuovo Categoria Carousel"
+
+#: ../../carousel.php
+msgid "New Carousel Category Name"
+msgstr "New Carousel Categoria Nome"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel Options"
+msgstr "Distaccato Carousel Opzioni"
+
+#: ../../carousel.php
+msgid "Featured Post Image"
+msgstr "Immagine Immagine primo piano"
+
+#: ../../carousel.php
+msgid "Featured Post URL"
+msgstr "Messaggio URL primo piano"
+
+#: ../../slider.php ../../carousel.php
+msgid "Reorder Name"
+msgstr "Riordinare Nome"
+
+#: ../../init.php
+msgid "Callout Section"
+msgstr "Callout Sezione"
+
+#: ../../init.php
+msgid "HTML Box"
+msgstr "Box HTML"
+
+#: ../../setup/features.php ../../init.php
+msgid "iFeature Slider"
+msgstr "iFeature Slider"
+
+#: ../../init.php
+msgid "Magazine"
+msgstr "Canali news"
+
+#: ../../portfolio.php ../../init.php
+msgid "Portfolio"
+msgstr "Portafoglio"
+
+#: ../../setup/features.php ../../init.php
+msgid "Post Page"
+msgstr "Invia Pagina"
+
+#: ../../init.php
+msgid "Recent Posts"
+msgstr "Post recenti"
+
+#: ../../init.php
+msgid "Twitter Bar"
+msgstr "Twitter Bar"
+
+#: ../../init.php
+msgid "Widgets"
+msgstr "Widget"
+
+#: ../../setup/features.php ../../init.php
+msgid "Breadcrumbs"
+msgstr "Pangrattato"
+
+#: ../../portfolio.php
+msgid "Images"
+msgstr "Immagini"
+
+#: ../../portfolio.php
+msgid "Portfolio Categories"
+msgstr "Portfolio Categorie"
+
+#: ../../portfolio.php
+msgid "Portfolio Catergory"
+msgstr "Portfolio Catergory"
+
+#: ../../portfolio.php
+msgid "Search Portfolio"
+msgstr "Cerca Portfolio"
+
+#: ../../portfolio.php
+msgid "All Portfolios"
+msgstr "Tutti i Comparti"
+
+#: ../../portfolio.php
+msgid "Portfolio Category"
+msgstr "Portfolio Categoria"
+
+#: ../../portfolio.php
+msgid "Portfolio Category:"
+msgstr "Portfolio Categoria:"
+
+#: ../../portfolio.php
+msgid "Edit Portfolio Category"
+msgstr "Modifica categoria Portfolio"
+
+#: ../../portfolio.php
+msgid "Update Portfolio Category"
+msgstr "Aggiornamento Categoria Portfolio"
+
+#: ../../portfolio.php
+msgid "Add New Portfolio Category"
+msgstr "Aggiungi nuova categoria Portfolio"
+
+#: ../../portfolio.php
+msgid "New Portfolio Category Name"
+msgstr "Nuovo portafoglio Nome Categoria"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "Portfolio Elemento"
+
+#: ../../portfolio.php
+msgid "Portfolio Image"
+msgstr "Portfolio immagini"
+
+#: ../../slider.php ../../portfolio.php
+msgid "Caption"
+msgstr "Didascalia"
+
+#: ../../portfolio.php
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../../portfolio.php
+msgid "Custom Portfolio URL"
+msgstr "Portfolio URL personalizzato"
+
+#: ../../portfolio.php
+msgid "URL"
+msgstr "URL:"
+
+#: ../../slider.php
+msgid "Slides"
+msgstr "Diapositive"
+
+#: ../../slider.php
+msgid "Slide Categories"
+msgstr "Slitta Categorie"
+
+#: ../../slider.php
+msgid "Slide Catergory"
+msgstr "Diapositiva catergory"
+
+#: ../../slider.php
+msgid "Search Slides"
+msgstr "Ricerca diapositive"
+
+#: ../../slider.php
+msgid "All Slides"
+msgstr "Tutte le diapositive"
+
+#: ../../slider.php
+msgid "Slide Category"
+msgstr "Diapositiva Categoria"
+
+#: ../../slider.php
+msgid "Slide Category:"
+msgstr "Diapositiva Categoria:"
+
+#: ../../slider.php
+msgid "Edit Slide Category"
+msgstr "Modifica categoria diapositiva"
+
+#: ../../slider.php
+msgid "Update Slide Category"
+msgstr "Aggiornamento Categoria diapositiva"
+
+#: ../../slider.php
+msgid "Add New Slide Category"
+msgstr "Aggiungi categoria Nuova diapositiva"
+
+#: ../../slider.php
+msgid "New Slide Category Name"
+msgstr "Nuova diapositiva Nome Categoria"
+
+#: ../../slider.php
+msgid "Custom Feature Slides"
+msgstr "Diapositive delle funzioni personalizzate"
+
+#: ../../slider.php
+msgid "Custom Slide Options"
+msgstr "Opzioni di diapositive personalizzate"
+
+#: ../../slider.php
+msgid "Slider Image"
+msgstr "Image Slider"
+
+#: ../../slider.php
+msgid "Slider Caption"
+msgstr "Slider Didascalia"
+
+#: ../../slider.php
+msgid "Custom Slide Link"
+msgstr "Presentazione link personalizzato"
+
+#: ../../slider.php
+msgid "Title"
+msgstr "Titolo"
+
+#: ../../slider.php
+msgid "Need Help?"
+msgstr "Hai bisogno di aiuto?"
+
+#: ../../twitter-bar.php
+msgid "No tweets to display"
+msgstr "No tweets da visualizzare"
+
+#: ../../twitter-bar.php
+msgid "Invalid Response"
+msgstr "Risposta non valida"
+
+#: ../../widgets.php
+msgid "Box Left"
+msgstr "Box Sinistra"
+
+#: ../../widgets.php
+msgid "This is the left widget of the three-box section"
+msgstr "Questo è il widget di sinistra dei tre riquadro di sezione"
+
+#: ../../widgets.php
+msgid "Box Middle"
+msgstr "Box Oriente"
+
+#: ../../widgets.php
+msgid "This is the middle widget of the three-box section"
+msgstr "Questo è il widget di metà del tre-riquadro di sezione"
+
+#: ../../widgets.php
+msgid "Box Right"
+msgstr "Riquadro a destra"
+
+#: ../../widgets.php
+msgid "This is the right widget of the three-box section"
+msgstr "Questo è il widget di destra della tre riquadro di sezione"
+
+#: ../../widgets.php
+msgid "This is the box left widgetized area."
+msgstr "Questa è la casella a sinistra zona widgetized."
+
+#: ../../widgets.php
+msgid "This is the box middle widgetized area."
+msgstr "Questa è la zona centrale box widgetized."
+
+#: ../../widgets.php
+msgid "This is the box right widgetized area."
+msgstr "Questo è il diritto della casella widgetized."
+
+#: ../../setup/features.php
+msgid "Import/Export"
+msgstr "Importa/esporta"
+
+#: ../../setup/features.php
+msgid "Custom CSS"
+msgstr "CSS personalizzato"
+
+#: ../../setup/features.php
+msgid "Contact Element"
+msgstr "Elemento di contatto"
+
+#: ../../setup/features.php
+msgid "Banner Options"
+msgstr "Banner Opzioni"
+
+#: ../../setup/features.php
+msgid "Import / Export"
+msgstr "Importa/esporta"
+
+#: ../../setup/features.php
+msgid "Details"
+msgstr "Dettagli"
+
+#: ../../setup/features.php
+msgid "Banner Image"
+msgstr "Immagine banner"
+
+#: ../../setup/features.php
+msgid "Enter URL or upload file"
+msgstr "Inserisci l'URL o file di caricamento"
+
+#: ../../setup/features.php
+msgid "Banner URL"
+msgstr "URL banner"
+
+#: ../../setup/features.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps Link"
+
+#: ../../setup/features.php
+msgid "Footer Scripts"
+msgstr "Script di piè di pagina"
+
+#: ../../setup/features.php
+msgid "You do not need to add script tags"
+msgstr "Non è necessario aggiungere il tag script"
+
+#: ../../setup/features.php
+msgid "Export Settings"
+msgstr "Esporta impostazioni"
+
+#: ../../setup/features.php
+msgid "Import Settings"
+msgstr "Importa impostazioni:"
+
+#: ../../setup/features.php
+msgid "Banner"
+msgstr "Banners"
+
+#: ../../setup/features.php
+msgid "Description + Icons"
+msgstr "Descrizione + Icone"
+
+#: ../../setup/features.php
+msgid "Logo + Contact"
+msgstr "Logo + Contatto"
+
+#: ../../setup/features.php
+msgid "Logo + Description"
+msgstr "Logo + Descrizione"
+
+#: ../../setup/features.php
+msgid "Logo + Icons"
+msgstr "Logo + Icone"
+
+#: ../../setup/features.php
+msgid "Logo + Login"
+msgstr "Logo + Login"
+
+#: ../../setup/features.php
+msgid "Logo + Search"
+msgstr "Logo + Ricerca"
+
+#: ../../setup/features.php
+msgid "Logo"
+msgstr "Ripeti"

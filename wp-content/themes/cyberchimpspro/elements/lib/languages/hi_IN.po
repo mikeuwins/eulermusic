@@ -1,0 +1,511 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CyberChimps Pro Elements\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
+"PO-Revision-Date: 2013-03-19 14:07-0000\n"
+"Last-Translator: \n"
+"Language-Team: Hindi, India\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../../boxes.php ../../init.php ../../setup/features.php
+msgid "Boxes"
+msgstr "बक्से"
+
+#: ../../boxes.php
+msgid "Boxes Categories"
+msgstr "बक्से श्रेणियाँ"
+
+#: ../../boxes.php
+msgid "Boxes Catergory"
+msgstr "बक्से catergory"
+
+#: ../../boxes.php
+msgid "Search Boxes"
+msgstr "खोज बॉक्स"
+
+#: ../../boxes.php
+msgid "All Boxes"
+msgstr "सभी बक्से"
+
+#: ../../boxes.php
+msgid "Boxes Category"
+msgstr "बक्से श्रेणी"
+
+#: ../../boxes.php
+msgid "Boxes Category:"
+msgstr "बक्से श्रेणी:"
+
+#: ../../boxes.php
+msgid "Edit Boxes Category"
+msgstr "संपादित करें बक्से श्रेणी"
+
+#: ../../boxes.php
+msgid "Update Boxes Category"
+msgstr "अद्यतन बक्से श्रेणी"
+
+#: ../../boxes.php
+msgid "Add New Boxes Category"
+msgstr "नए बक्से श्रेणी जोड़ें"
+
+#: ../../boxes.php
+msgid "New Boxes Category Name"
+msgstr "नए बक्से श्रेणी नाम"
+
+#: ../../boxes.php
+msgid "Boxes Element"
+msgstr "बक्से तत्व"
+
+#: ../../boxes.php
+msgid "Box Image"
+msgstr "बॉक्स छवि"
+
+#: ../../boxes.php
+msgid "Box URL"
+msgstr "बॉक्स यूआरएल"
+
+#: ../../boxes.php
+msgid "Box Text"
+msgstr "पाठ बॉक्स"
+
+#: ../../boxes.php
+msgid "iFeature Pro 5 Slider"
+msgstr "iFeature प्रो 5 स्लाइडर"
+
+#: ../../boxes.php
+msgid ""
+"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
+"device."
+msgstr ""
+"नई टच मित्रतापूर्ण iFeature प्रो स्लाइडर अब किसी भी मोबाइल स्पर्श डिवाइस के लिए जवाब "
+"है."
+
+#: ../../boxes.php
+msgid "Responsive Design"
+msgstr "उत्तरदायी डिजाइन"
+
+#: ../../boxes.php
+msgid ""
+"With iFeature Pro 5 and touch friendly responsive design you can now control "
+"your website on any device."
+msgstr ""
+"IFeature Pro 5 और स्पर्श अनुकूल उत्तरदायी डिजाइन के साथ अब आप किसी भी डिवाइस पर "
+"अपनी वेबसाइट पर नियंत्रण कर सकते हैं."
+
+#: ../../boxes.php
+msgid "Excellent Support"
+msgstr "उत्कृष्ट समर्थन"
+
+#: ../../boxes.php
+msgid ""
+"Need help? Read the instructions and please visit our dedicated Pro Support "
+"Forum."
+msgstr "मदद की ज़रूरत है? निर्देश पढ़ें और कृपया हमारे समर्पित प्रो समर्थन फोरम पर जाएँ."
+
+#: ../../breadcrumbs.php
+msgid "Home"
+msgstr "गृह"
+
+#: ../../breadcrumbs.php
+msgid "Archive for category "
+msgstr "श्रेणी के लिए पुरालेख "
+
+#: ../../breadcrumbs.php
+msgid "Search results for "
+msgstr "के लिए खोज परिणाम "
+
+#: ../../breadcrumbs.php
+msgid "Posts tagged "
+msgstr "डाक टैग की गईं "
+
+#: ../../breadcrumbs.php
+msgid "Articles posted by "
+msgstr "लेख द्वारा पोस्ट "
+
+#: ../../breadcrumbs.php
+msgid "Error 404"
+msgstr "404 त्रुटि"
+
+#: ../../init.php ../../breadcrumbs.php
+msgid "Page"
+msgstr "पृष्ठ"
+
+#: ../../init.php ../../carousel.php
+msgid "Carousel"
+msgstr "हिंडोला"
+
+#: ../../carousel.php
+msgid "Posts"
+msgstr "पोस्ट"
+
+#: ../../carousel.php
+msgid "Carousel Categories"
+msgstr "हिंडोला श्रेणियाँ"
+
+#: ../../carousel.php
+msgid "Carousel Catergory"
+msgstr "हिंडोला catergory"
+
+#: ../../carousel.php
+msgid "Search Carousel"
+msgstr "खोज हिंडोला"
+
+#: ../../carousel.php
+msgid "All Carousels"
+msgstr "सभी Carousels"
+
+#: ../../carousel.php
+msgid "Carousel Category"
+msgstr "हिंडोला श्रेणी"
+
+#: ../../carousel.php
+msgid "Carousel Category:"
+msgstr "हिंडोला श्रेणी:"
+
+#: ../../carousel.php
+msgid "Edit Carousel Category"
+msgstr "हिंडोला श्रेणी संपादित करें"
+
+#: ../../carousel.php
+msgid "Update Carousel Category"
+msgstr "अद्यतन हिंडोला श्रेणी"
+
+#: ../../carousel.php
+msgid "Add New Carousel Category"
+msgstr "नई हिंडोला श्रेणी जोड़ें"
+
+#: ../../carousel.php
+msgid "New Carousel Category Name"
+msgstr "नई हिंडोला श्रेणी नाम"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel Options"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट विकल्प हिंडोला"
+
+#: ../../carousel.php
+msgid "Featured Post Image"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट छवि"
+
+#: ../../carousel.php
+msgid "Featured Post URL"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट URL"
+
+#: ../../slider.php ../../carousel.php
+msgid "Reorder Name"
+msgstr "नाम पुनः क्रमित करें"
+
+#: ../../init.php
+msgid "Callout Section"
+msgstr "धारा कॉलआउट"
+
+#: ../../init.php
+msgid "HTML Box"
+msgstr "HTML बॉक्स"
+
+#: ../../setup/features.php ../../init.php
+msgid "iFeature Slider"
+msgstr "iFeature स्लाइडर"
+
+#: ../../init.php
+msgid "Magazine"
+msgstr "पत्रिका"
+
+#: ../../portfolio.php ../../init.php
+msgid "Portfolio"
+msgstr "ग. पोर्टफोलियो"
+
+#: ../../setup/features.php ../../init.php
+msgid "Post Page"
+msgstr "पोस्ट पेज"
+
+#: ../../init.php
+msgid "Recent Posts"
+msgstr "हाल के पोस्ट"
+
+#: ../../init.php
+msgid "Twitter Bar"
+msgstr "चहचहाना बार"
+
+#: ../../init.php
+msgid "Widgets"
+msgstr "विजेट्स"
+
+#: ../../setup/features.php ../../init.php
+msgid "Breadcrumbs"
+msgstr "Breadcrumbs"
+
+#: ../../portfolio.php
+msgid "Images"
+msgstr "छवियाँ"
+
+#: ../../portfolio.php
+msgid "Portfolio Categories"
+msgstr "पोर्टफोलियो श्रेणियाँ"
+
+#: ../../portfolio.php
+msgid "Portfolio Catergory"
+msgstr "Not Ranked पोर्टफोलियो catergory"
+
+#: ../../portfolio.php
+msgid "Search Portfolio"
+msgstr "खोज पोर्टफोलियो"
+
+#: ../../portfolio.php
+msgid "All Portfolios"
+msgstr "सभी पोर्टफोलियो"
+
+#: ../../portfolio.php
+msgid "Portfolio Category"
+msgstr "पोर्टफोलियो श्रेणी"
+
+#: ../../portfolio.php
+msgid "Portfolio Category:"
+msgstr "पोर्टफोलियो श्रेणी:"
+
+#: ../../portfolio.php
+msgid "Edit Portfolio Category"
+msgstr "पोर्टफोलियो श्रेणी संपादित करें"
+
+#: ../../portfolio.php
+msgid "Update Portfolio Category"
+msgstr "अद्यतन पोर्टफोलियो श्रेणी"
+
+#: ../../portfolio.php
+msgid "Add New Portfolio Category"
+msgstr "नया पोर्टफोलियो श्रेणी जोड़ें"
+
+#: ../../portfolio.php
+msgid "New Portfolio Category Name"
+msgstr "नया पोर्टफोलियो श्रेणी का नाम"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "पोर्टफोलियो तत्व"
+
+#: ../../portfolio.php
+msgid "Portfolio Image"
+msgstr "पोर्टफोलियो छवि"
+
+#: ../../slider.php ../../portfolio.php
+msgid "Caption"
+msgstr "शीर्षक"
+
+#: ../../portfolio.php
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../../portfolio.php
+msgid "Custom Portfolio URL"
+msgstr "कस्टम विभाग URL"
+
+#: ../../portfolio.php
+msgid "URL"
+msgstr "यूआरएल"
+
+#: ../../slider.php
+msgid "Slides"
+msgstr "स्लाइड"
+
+#: ../../slider.php
+msgid "Slide Categories"
+msgstr "स्लाइड श्रेणियाँ"
+
+#: ../../slider.php
+msgid "Slide Catergory"
+msgstr "स्लाइड catergory"
+
+#: ../../slider.php
+msgid "Search Slides"
+msgstr "खोज स्लाइड्स"
+
+#: ../../slider.php
+msgid "All Slides"
+msgstr "सभी स्लाइडों"
+
+#: ../../slider.php
+msgid "Slide Category"
+msgstr "स्लाइड श्रेणी"
+
+#: ../../slider.php
+msgid "Slide Category:"
+msgstr "स्लाइड श्रेणी:"
+
+#: ../../slider.php
+msgid "Edit Slide Category"
+msgstr "स्लाइड श्रेणी संपादित करें"
+
+#: ../../slider.php
+msgid "Update Slide Category"
+msgstr "अद्यतन स्लाइड श्रेणी"
+
+#: ../../slider.php
+msgid "Add New Slide Category"
+msgstr "नई स्लाइड श्रेणी जोड़ें"
+
+#: ../../slider.php
+msgid "New Slide Category Name"
+msgstr "नई स्लाइड श्रेणी का नाम"
+
+#: ../../slider.php
+msgid "Custom Feature Slides"
+msgstr "कस्टम फ़ीचर स्लाइड्स"
+
+#: ../../slider.php
+msgid "Custom Slide Options"
+msgstr "कस्टम स्लाइड विकल्प"
+
+#: ../../slider.php
+msgid "Slider Image"
+msgstr "स्लाइडर छवि"
+
+#: ../../slider.php
+msgid "Slider Caption"
+msgstr "स्लाइडर कैप्शन"
+
+#: ../../slider.php
+msgid "Custom Slide Link"
+msgstr "कस्टम स्लाइड लिंक"
+
+#: ../../slider.php
+msgid "Title"
+msgstr "फैल"
+
+#: ../../slider.php
+msgid "Need Help?"
+msgstr "मदद चाहिए?"
+
+#: ../../twitter-bar.php
+msgid "No tweets to display"
+msgstr "प्रदर्शन के लिए कोई tweets"
+
+#: ../../twitter-bar.php
+msgid "Invalid Response"
+msgstr "अमान्य प्रतिसाद"
+
+#: ../../widgets.php
+msgid "Box Left"
+msgstr "बॉक्स छोड़ दिया"
+
+#: ../../widgets.php
+msgid "This is the left widget of the three-box section"
+msgstr "यह खंड तीन बॉक्स के बाईं विजेट है"
+
+#: ../../widgets.php
+msgid "Box Middle"
+msgstr "बॉक्स मध्य"
+
+#: ../../widgets.php
+msgid "This is the middle widget of the three-box section"
+msgstr "यह खंड तीन बॉक्स के बीच विजेट है"
+
+#: ../../widgets.php
+msgid "Box Right"
+msgstr "बॉक्स सही"
+
+#: ../../widgets.php
+msgid "This is the right widget of the three-box section"
+msgstr "यह खंड तीन बॉक्स सही विजेट है"
+
+#: ../../widgets.php
+msgid "This is the box left widgetized area."
+msgstr "यह बॉक्स widgetized क्षेत्र छोड़ दिया है."
+
+#: ../../widgets.php
+msgid "This is the box middle widgetized area."
+msgstr "यह बॉक्स बीच widgetized क्षेत्र है."
+
+#: ../../widgets.php
+msgid "This is the box right widgetized area."
+msgstr "यह बॉक्स सही widgetized क्षेत्र है."
+
+#: ../../setup/features.php
+msgid "Import/Export"
+msgstr "आयात / निर्यात"
+
+#: ../../setup/features.php
+msgid "Custom CSS"
+msgstr "कस्टम सीएसएस"
+
+#: ../../setup/features.php
+msgid "Contact Element"
+msgstr "तत्व संपर्क"
+
+#: ../../setup/features.php
+msgid "Banner Options"
+msgstr "बैनर विकल्प"
+
+#: ../../setup/features.php
+msgid "Import / Export"
+msgstr "आयात / निर्यात"
+
+#: ../../setup/features.php
+msgid "Details"
+msgstr "विवरण"
+
+#: ../../setup/features.php
+msgid "Banner Image"
+msgstr "बैनर छवि"
+
+#: ../../setup/features.php
+msgid "Enter URL or upload file"
+msgstr "URL दर्ज करें या फाइल अपलोड करें"
+
+#: ../../setup/features.php
+msgid "Banner URL"
+msgstr "बैनर यूआरएल"
+
+#: ../../setup/features.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps लिंक"
+
+#: ../../setup/features.php
+msgid "Footer Scripts"
+msgstr "पाद लेख लिपियों"
+
+#: ../../setup/features.php
+msgid "You do not need to add script tags"
+msgstr "आप स्क्रिप्ट टैग जोड़ने के लिए की ज़रूरत नहीं"
+
+#: ../../setup/features.php
+msgid "Export Settings"
+msgstr "निर्यात सेटिंग्स"
+
+#: ../../setup/features.php
+msgid "Import Settings"
+msgstr "आयात सेटिंग्स"
+
+#: ../../setup/features.php
+msgid "Banner"
+msgstr "बैनर"
+
+#: ../../setup/features.php
+msgid "Description + Icons"
+msgstr "विवरण + प्रतीक"
+
+#: ../../setup/features.php
+msgid "Logo + Contact"
+msgstr "+ लोगो संपर्क"
+
+#: ../../setup/features.php
+msgid "Logo + Description"
+msgstr "+ लोगो विवरण"
+
+#: ../../setup/features.php
+msgid "Logo + Icons"
+msgstr "लोगो + प्रतीक"
+
+#: ../../setup/features.php
+msgid "Logo + Login"
+msgstr "लोगो + लॉगइन"
+
+#: ../../setup/features.php
+msgid "Logo + Search"
+msgstr "लोगो + खोज"
+
+#: ../../setup/features.php
+msgid "Logo"
+msgstr "फैल"

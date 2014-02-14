@@ -1,0 +1,513 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CyberChimps Pro Elements\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
+"PO-Revision-Date: 2013-03-19 14:07-0000\n"
+"Last-Translator: \n"
+"Language-Team: Norwegian Bokmål, Norway\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../boxes.php ../../init.php ../../setup/features.php
+msgid "Boxes"
+msgstr "Ruter"
+
+#: ../../boxes.php
+msgid "Boxes Categories"
+msgstr "Bokser Kategorier"
+
+#: ../../boxes.php
+msgid "Boxes Catergory"
+msgstr "Bokser catergory"
+
+#: ../../boxes.php
+msgid "Search Boxes"
+msgstr "Søkeboksene"
+
+#: ../../boxes.php
+msgid "All Boxes"
+msgstr "Alle Bokser"
+
+#: ../../boxes.php
+msgid "Boxes Category"
+msgstr "Bokser Kategori"
+
+#: ../../boxes.php
+msgid "Boxes Category:"
+msgstr "Bokser Kategori:"
+
+#: ../../boxes.php
+msgid "Edit Boxes Category"
+msgstr "Redigeringsboksene Kategori"
+
+#: ../../boxes.php
+msgid "Update Boxes Category"
+msgstr "Update Bokser Kategori"
+
+#: ../../boxes.php
+msgid "Add New Boxes Category"
+msgstr "Legg til ny Bokser Kategori"
+
+#: ../../boxes.php
+msgid "New Boxes Category Name"
+msgstr "Nye bokser Kategorinavn"
+
+#: ../../boxes.php
+msgid "Boxes Element"
+msgstr "Bokser Element"
+
+#: ../../boxes.php
+msgid "Box Image"
+msgstr "Box Bilde"
+
+#: ../../boxes.php
+msgid "Box URL"
+msgstr "Boksen URL-adresse"
+
+#: ../../boxes.php
+msgid "Box Text"
+msgstr "Box Tekst"
+
+#: ../../boxes.php
+msgid "iFeature Pro 5 Slider"
+msgstr "iFeature Pro 5 glidebryteren"
+
+#: ../../boxes.php
+msgid ""
+"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
+"device."
+msgstr ""
+"The New Touch Friendly iFeature Pro Slider reagerer nå til enhver mobil "
+"touch-enheten."
+
+#: ../../boxes.php
+msgid "Responsive Design"
+msgstr "Forståelsesfull Design"
+
+#: ../../boxes.php
+msgid ""
+"With iFeature Pro 5 and touch friendly responsive design you can now control "
+"your website on any device."
+msgstr ""
+"Med iFeature Pro 5 og trykk vennlig responsive design kan du nå kontrollere "
+"ditt nettsted på enhver enhet."
+
+#: ../../boxes.php
+msgid "Excellent Support"
+msgstr "Utmerket støtte"
+
+#: ../../boxes.php
+msgid ""
+"Need help? Read the instructions and please visit our dedicated Pro Support "
+"Forum."
+msgstr ""
+"Trenger du hjelp? Les instruksjonene og besøk vår dedikerte Pro Support "
+"Forum."
+
+#: ../../breadcrumbs.php
+msgid "Home"
+msgstr "Hjem"
+
+#: ../../breadcrumbs.php
+msgid "Archive for category "
+msgstr "Arkiv for kategorien "
+
+#: ../../breadcrumbs.php
+msgid "Search results for "
+msgstr "søkeresultater for"
+
+#: ../../breadcrumbs.php
+msgid "Posts tagged "
+msgstr "Innlegg merket "
+
+#: ../../breadcrumbs.php
+msgid "Articles posted by "
+msgstr "Artikler skrevet av "
+
+#: ../../breadcrumbs.php
+msgid "Error 404"
+msgstr "Feil 404"
+
+#: ../../init.php ../../breadcrumbs.php
+msgid "Page"
+msgstr "Side"
+
+#: ../../init.php ../../carousel.php
+msgid "Carousel"
+msgstr "Karusell"
+
+#: ../../carousel.php
+msgid "Posts"
+msgstr "Innlegg"
+
+#: ../../carousel.php
+msgid "Carousel Categories"
+msgstr "Carousel Kategorier"
+
+#: ../../carousel.php
+msgid "Carousel Catergory"
+msgstr "Karusell catergory"
+
+#: ../../carousel.php
+msgid "Search Carousel"
+msgstr "Søk Carousel"
+
+#: ../../carousel.php
+msgid "All Carousels"
+msgstr "Alle Karuseller"
+
+#: ../../carousel.php
+msgid "Carousel Category"
+msgstr "Karusell Kategori"
+
+#: ../../carousel.php
+msgid "Carousel Category:"
+msgstr "Karusellkategori"
+
+#: ../../carousel.php
+msgid "Edit Carousel Category"
+msgstr "Rediger karusellkategori"
+
+#: ../../carousel.php
+msgid "Update Carousel Category"
+msgstr "Oppdater karusellkategori"
+
+#: ../../carousel.php
+msgid "Add New Carousel Category"
+msgstr "Legg til ny karusellkategori"
+
+#: ../../carousel.php
+msgid "New Carousel Category Name"
+msgstr "Gi nytt navn til karusellkategori"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel Options"
+msgstr "Fremhevet side karusellkategori"
+
+#: ../../carousel.php
+msgid "Featured Post Image"
+msgstr "Fremhevet sidebilde"
+
+#: ../../carousel.php
+msgid "Featured Post URL"
+msgstr "Populært innlegg URL"
+
+#: ../../slider.php ../../carousel.php
+msgid "Reorder Name"
+msgstr "Omorganisere Navn"
+
+#: ../../init.php
+msgid "Callout Section"
+msgstr "Bildeforklaring Seksjon"
+
+#: ../../init.php
+msgid "HTML Box"
+msgstr "HTML-boksen"
+
+#: ../../setup/features.php ../../init.php
+msgid "iFeature Slider"
+msgstr "iFeature glidebryteren"
+
+#: ../../init.php
+msgid "Magazine"
+msgstr "Magazine"
+
+#: ../../portfolio.php ../../init.php
+msgid "Portfolio"
+msgstr "Portefølje"
+
+#: ../../setup/features.php ../../init.php
+msgid "Post Page"
+msgstr "Innlegg Side"
+
+#: ../../init.php
+msgid "Recent Posts"
+msgstr "Nylige innlegg"
+
+#: ../../init.php
+msgid "Twitter Bar"
+msgstr "Twitter Bar"
+
+#: ../../init.php
+msgid "Widgets"
+msgstr "Widgeter"
+
+#: ../../setup/features.php ../../init.php
+msgid "Breadcrumbs"
+msgstr "Brødsmuler"
+
+#: ../../portfolio.php
+msgid "Images"
+msgstr "Bilder"
+
+#: ../../portfolio.php
+msgid "Portfolio Categories"
+msgstr "Porteføljekategorier"
+
+#: ../../portfolio.php
+msgid "Portfolio Catergory"
+msgstr "Porteføljekategori"
+
+#: ../../portfolio.php
+msgid "Search Portfolio"
+msgstr "Søk i porteføljen"
+
+#: ../../portfolio.php
+msgid "All Portfolios"
+msgstr "Alle porteføljer"
+
+#: ../../portfolio.php
+msgid "Portfolio Category"
+msgstr "Portefølje Kategori"
+
+#: ../../portfolio.php
+msgid "Portfolio Category:"
+msgstr "Porteføljekategori"
+
+#: ../../portfolio.php
+msgid "Edit Portfolio Category"
+msgstr "Rediger porteføljekategori"
+
+#: ../../portfolio.php
+msgid "Update Portfolio Category"
+msgstr "Oppdater porteføljekategori"
+
+#: ../../portfolio.php
+msgid "Add New Portfolio Category"
+msgstr "Legg til ny porteføljekategori"
+
+#: ../../portfolio.php
+msgid "New Portfolio Category Name"
+msgstr "Gi nytt navn til porteføljekategori"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "Porteføljeelement"
+
+#: ../../portfolio.php
+msgid "Portfolio Image"
+msgstr "Porteføljebilde"
+
+#: ../../slider.php ../../portfolio.php
+msgid "Caption"
+msgstr "Tittel"
+
+#: ../../portfolio.php
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../../portfolio.php
+msgid "Custom Portfolio URL"
+msgstr "Egendefinert portefølje-URL"
+
+#: ../../portfolio.php
+msgid "URL"
+msgstr "Nettverk"
+
+#: ../../slider.php
+msgid "Slides"
+msgstr "Lysbilder"
+
+#: ../../slider.php
+msgid "Slide Categories"
+msgstr "Lysbildekategorier"
+
+#: ../../slider.php
+msgid "Slide Catergory"
+msgstr "Skyv Catergory"
+
+#: ../../slider.php
+msgid "Search Slides"
+msgstr "Søk i lysbilder"
+
+#: ../../slider.php
+msgid "All Slides"
+msgstr "Alle lysbilder"
+
+#: ../../slider.php
+msgid "Slide Category"
+msgstr "Lysbildekategori"
+
+#: ../../slider.php
+msgid "Slide Category:"
+msgstr "Lysbildekategori"
+
+#: ../../slider.php
+msgid "Edit Slide Category"
+msgstr "Rediger lysbildekategori"
+
+#: ../../slider.php
+msgid "Update Slide Category"
+msgstr "Oppdater lysbildekategori"
+
+#: ../../slider.php
+msgid "Add New Slide Category"
+msgstr "Legg til ny lysbildekategori"
+
+#: ../../slider.php
+msgid "New Slide Category Name"
+msgstr "Gi nytt navn til lysbildekategori"
+
+#: ../../slider.php
+msgid "Custom Feature Slides"
+msgstr "Egendefinerte fremhevede lysbilder"
+
+#: ../../slider.php
+msgid "Custom Slide Options"
+msgstr "Egendefinert lysbildealternativer"
+
+#: ../../slider.php
+msgid "Slider Image"
+msgstr "Slider Bilde"
+
+#: ../../slider.php
+msgid "Slider Caption"
+msgstr "Slider Bildetekst"
+
+#: ../../slider.php
+msgid "Custom Slide Link"
+msgstr "Egendefinerte lysbilde Link"
+
+#: ../../slider.php
+msgid "Title"
+msgstr "Navn"
+
+#: ../../slider.php
+msgid "Need Help?"
+msgstr "Trenger du hjelp?"
+
+#: ../../twitter-bar.php
+msgid "No tweets to display"
+msgstr "Ingen tweets å vise"
+
+#: ../../twitter-bar.php
+msgid "Invalid Response"
+msgstr "Ugyldig Response"
+
+#: ../../widgets.php
+msgid "Box Left"
+msgstr "Box Venstre"
+
+#: ../../widgets.php
+msgid "This is the left widget of the three-box section"
+msgstr "Dette er den venstre widget av de tre-bokskonstruksjon"
+
+#: ../../widgets.php
+msgid "Box Middle"
+msgstr "Boks Midtstilt"
+
+#: ../../widgets.php
+msgid "This is the middle widget of the three-box section"
+msgstr "Dette er midt widget av de tre-bokskonstruksjon"
+
+#: ../../widgets.php
+msgid "Box Right"
+msgstr "Boks Høyre"
+
+#: ../../widgets.php
+msgid "This is the right widget of the three-box section"
+msgstr "Dette er den rette widget av de tre-bokskonstruksjon"
+
+#: ../../widgets.php
+msgid "This is the box left widgetized area."
+msgstr "Dette er esken igjen Widgetized område."
+
+#: ../../widgets.php
+msgid "This is the box middle widgetized area."
+msgstr "Dette er boksen midterste Widgetized område."
+
+#: ../../widgets.php
+msgid "This is the box right widgetized area."
+msgstr "Dette er boksen rett widgetized område."
+
+#: ../../setup/features.php
+msgid "Import/Export"
+msgstr "Importer/Eksporter"
+
+#: ../../setup/features.php
+msgid "Custom CSS"
+msgstr "Egen CSS"
+
+#: ../../setup/features.php
+msgid "Contact Element"
+msgstr "Kontaktelement"
+
+#: ../../setup/features.php
+msgid "Banner Options"
+msgstr "Fanealternativer"
+
+#: ../../setup/features.php
+msgid "Import / Export"
+msgstr "Importer / Eksporter"
+
+#: ../../setup/features.php
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../../setup/features.php
+msgid "Banner Image"
+msgstr "Fanebilde"
+
+#: ../../setup/features.php
+msgid "Enter URL or upload file"
+msgstr "Inn URL eller laste opp filen"
+
+#: ../../setup/features.php
+msgid "Banner URL"
+msgstr "Fane URL"
+
+#: ../../setup/features.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimpsbokmerke"
+
+#: ../../setup/features.php
+msgid "Footer Scripts"
+msgstr "Bunntekst-skript"
+
+#: ../../setup/features.php
+msgid "You do not need to add script tags"
+msgstr "Du trenger ikke å legge til script-koder"
+
+#: ../../setup/features.php
+msgid "Export Settings"
+msgstr "Eksportinnstillinger"
+
+#: ../../setup/features.php
+msgid "Import Settings"
+msgstr "Importinnstillinger"
+
+#: ../../setup/features.php
+msgid "Banner"
+msgstr "Fane"
+
+#: ../../setup/features.php
+msgid "Description + Icons"
+msgstr "Beskrivelse + Ikoner"
+
+#: ../../setup/features.php
+msgid "Logo + Contact"
+msgstr "Logo + Kontakt"
+
+#: ../../setup/features.php
+msgid "Logo + Description"
+msgstr "Logo + Beskrivelse"
+
+#: ../../setup/features.php
+msgid "Logo + Icons"
+msgstr "Logo + Ikoner"
+
+#: ../../setup/features.php
+msgid "Logo + Login"
+msgstr "Logo + logikk"
+
+#: ../../setup/features.php
+msgid "Logo + Search"
+msgstr "Logo + Søk"
+
+#: ../../setup/features.php
+msgid "Logo"
+msgstr "heltall"

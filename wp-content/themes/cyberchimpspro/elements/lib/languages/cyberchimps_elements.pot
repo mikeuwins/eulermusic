@@ -1,0 +1,520 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CyberChimps Pro Elements\n"
+"POT-Creation-Date: 2013-03-13 17:04-0000\n"
+"PO-Revision-Date: 2013-03-19 14:55-0000\n"
+"Last-Translator: \n"
+"Language-Team: CyberChimps\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx;esc_attr__;"
+"esc_attr_e;esc_attr_x;esc_html__;esc_html_e;esc_html_x;_n_noop;_nx_noop;"
+"translate_nooped_plural\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+#: ../../boxes.php:27 ../../boxes.php:28 ../../init.php:59 ../../init.php:81
+#: ../../setup/features.php:186
+msgid "Boxes"
+msgstr ""
+
+#: ../../boxes.php:42
+msgctxt "taxonomy general name"
+msgid "Boxes Categories"
+msgstr ""
+
+#: ../../boxes.php:43
+msgctxt "taxonomy singular name"
+msgid "Boxes Catergory"
+msgstr ""
+
+#: ../../boxes.php:44
+msgid "Search Boxes"
+msgstr ""
+
+#: ../../boxes.php:45
+msgid "All Boxes"
+msgstr ""
+
+#: ../../boxes.php:46 ../../boxes.php:52
+msgid "Boxes Category"
+msgstr ""
+
+#: ../../boxes.php:47
+msgid "Boxes Category:"
+msgstr ""
+
+#: ../../boxes.php:48
+msgid "Edit Boxes Category"
+msgstr ""
+
+#: ../../boxes.php:49
+msgid "Update Boxes Category"
+msgstr ""
+
+#: ../../boxes.php:50
+msgid "Add New Boxes Category"
+msgstr ""
+
+#: ../../boxes.php:51
+msgid "New Boxes Category Name"
+msgstr ""
+
+#: ../../boxes.php:66 ../../boxes.php:68
+msgid "Boxes Element"
+msgstr ""
+
+#: ../../boxes.php:69
+msgid "Box Image"
+msgstr ""
+
+#: ../../boxes.php:70
+msgid "Box URL"
+msgstr ""
+
+#: ../../boxes.php:71
+msgid "Box Text"
+msgstr ""
+
+#: ../../boxes.php:152
+msgid "iFeature Pro 5 Slider"
+msgstr ""
+
+#: ../../boxes.php:153
+msgid ""
+"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
+"device."
+msgstr ""
+
+#: ../../boxes.php:160
+msgid "Responsive Design"
+msgstr ""
+
+#: ../../boxes.php:161
+msgid ""
+"With iFeature Pro 5 and touch friendly responsive design you can now control "
+"your website on any device."
+msgstr ""
+
+#: ../../boxes.php:168
+msgid "Excellent Support"
+msgstr ""
+
+#: ../../boxes.php:169
+msgid ""
+"Need help? Read the instructions and please visit our dedicated Pro Support "
+"Forum."
+msgstr ""
+
+#: ../../breadcrumbs.php:89
+msgid "Home"
+msgstr ""
+
+#: ../../breadcrumbs.php:98
+msgid "Archive for category "
+msgstr ""
+
+#: ../../breadcrumbs.php:151
+msgid "Search results for "
+msgstr ""
+
+#: ../../breadcrumbs.php:154
+msgid "Posts tagged "
+msgstr ""
+
+#: ../../breadcrumbs.php:159
+msgid "Articles posted by "
+msgstr ""
+
+#: ../../breadcrumbs.php:162
+msgid "Error 404"
+msgstr ""
+
+#: ../../breadcrumbs.php:167 ../../init.php:90
+msgid "Page"
+msgstr ""
+
+#: ../../carousel.php:53 ../../init.php:61 ../../init.php:84
+msgid "Carousel"
+msgstr ""
+
+#: ../../carousel.php:54
+msgid "Posts"
+msgstr ""
+
+#: ../../carousel.php:67
+msgctxt "taxonomy general name"
+msgid "Carousel Categories"
+msgstr ""
+
+#: ../../carousel.php:68
+msgctxt "taxonomy singular name"
+msgid "Carousel Catergory"
+msgstr ""
+
+#: ../../carousel.php:69
+msgid "Search Carousel"
+msgstr ""
+
+#: ../../carousel.php:70
+msgid "All Carousels"
+msgstr ""
+
+#: ../../carousel.php:71 ../../carousel.php:77
+msgid "Carousel Category"
+msgstr ""
+
+#: ../../carousel.php:72
+msgid "Carousel Category:"
+msgstr ""
+
+#: ../../carousel.php:73
+msgid "Edit Carousel Category"
+msgstr ""
+
+#: ../../carousel.php:74
+msgid "Update Carousel Category"
+msgstr ""
+
+#: ../../carousel.php:75
+msgid "Add New Carousel Category"
+msgstr ""
+
+#: ../../carousel.php:76
+msgid "New Carousel Category Name"
+msgstr ""
+
+#: ../../carousel.php:92
+msgid "Featured Post Carousel Options"
+msgstr ""
+
+#: ../../carousel.php:93
+msgid "Featured Post Image"
+msgstr ""
+
+#: ../../carousel.php:94
+msgid "Featured Post URL"
+msgstr ""
+
+#: ../../carousel.php:95 ../../slider.php:96
+msgid "Reorder Name"
+msgstr ""
+
+#: ../../init.php:60 ../../init.php:83
+msgid "Callout Section"
+msgstr ""
+
+#: ../../init.php:63 ../../init.php:86
+msgid "HTML Box"
+msgstr ""
+
+#: ../../init.php:64 ../../init.php:87 ../../setup/features.php:185
+msgid "iFeature Slider"
+msgstr ""
+
+#: ../../init.php:65 ../../init.php:88
+msgid "Magazine"
+msgstr ""
+
+#: ../../init.php:66 ../../init.php:89 ../../portfolio.php:50
+msgid "Portfolio"
+msgstr ""
+
+#: ../../init.php:67 ../../setup/features.php:187
+msgid "Post Page"
+msgstr ""
+
+#: ../../init.php:70 ../../init.php:93
+msgid "Recent Posts"
+msgstr ""
+
+#: ../../init.php:71 ../../init.php:94
+msgid "Twitter Bar"
+msgstr ""
+
+#: ../../init.php:72 ../../init.php:95
+msgid "Widgets"
+msgstr ""
+
+#: ../../init.php:82 ../../setup/features.php:94 ../../setup/features.php:101
+msgid "Breadcrumbs"
+msgstr ""
+
+#: ../../portfolio.php:51
+msgid "Images"
+msgstr ""
+
+#: ../../portfolio.php:64
+msgctxt "taxonomy general name"
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../../portfolio.php:65
+msgctxt "taxonomy singular name"
+msgid "Portfolio Catergory"
+msgstr ""
+
+#: ../../portfolio.php:66
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../../portfolio.php:67
+msgid "All Portfolios"
+msgstr ""
+
+#: ../../portfolio.php:68 ../../portfolio.php:74
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../../portfolio.php:69
+msgid "Portfolio Category:"
+msgstr ""
+
+#: ../../portfolio.php:70
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: ../../portfolio.php:71
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: ../../portfolio.php:72
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: ../../portfolio.php:73
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: ../../portfolio.php:88
+msgid "Portfolio Element"
+msgstr ""
+
+#: ../../portfolio.php:89
+msgid "Portfolio Image"
+msgstr ""
+
+#: ../../portfolio.php:90 ../../slider.php:94
+msgid "Caption"
+msgstr ""
+
+#: ../../portfolio.php:91
+msgid "Lightbox"
+msgstr ""
+
+#: ../../portfolio.php:92
+msgid "Custom Portfolio URL"
+msgstr ""
+
+#: ../../portfolio.php:93
+msgid "URL"
+msgstr ""
+
+#: ../../slider.php:51 ../../slider.php:52
+msgid "Slides"
+msgstr ""
+
+#: ../../slider.php:65
+msgctxt "taxonomy general name"
+msgid "Slide Categories"
+msgstr ""
+
+#: ../../slider.php:66
+msgctxt "taxonomy singular name"
+msgid "Slide Catergory"
+msgstr ""
+
+#: ../../slider.php:67
+msgid "Search Slides"
+msgstr ""
+
+#: ../../slider.php:68
+msgid "All Slides"
+msgstr ""
+
+#: ../../slider.php:69 ../../slider.php:75
+msgid "Slide Category"
+msgstr ""
+
+#: ../../slider.php:70
+msgid "Slide Category:"
+msgstr ""
+
+#: ../../slider.php:71
+msgid "Edit Slide Category"
+msgstr ""
+
+#: ../../slider.php:72
+msgid "Update Slide Category"
+msgstr ""
+
+#: ../../slider.php:73
+msgid "Add New Slide Category"
+msgstr ""
+
+#: ../../slider.php:74
+msgid "New Slide Category Name"
+msgstr ""
+
+#: ../../slider.php:87
+msgid "Custom Feature Slides"
+msgstr ""
+
+#: ../../slider.php:89
+msgid "Custom Slide Options"
+msgstr ""
+
+#: ../../slider.php:90
+msgid "Slider Image"
+msgstr ""
+
+#: ../../slider.php:91
+msgid "Slider Caption"
+msgstr ""
+
+#: ../../slider.php:92
+msgid "Custom Slide Link"
+msgstr ""
+
+#: ../../slider.php:93
+msgid "Title"
+msgstr ""
+
+#: ../../slider.php:95
+msgid "Need Help?"
+msgstr ""
+
+#: ../../twitter-bar.php:83
+msgid "No tweets to display"
+msgstr ""
+
+#: ../../twitter-bar.php:160
+msgid "Invalid Response"
+msgstr ""
+
+#: ../../widgets.php:45 ../../widgets.php:80
+msgid "Box Left"
+msgstr ""
+
+#: ../../widgets.php:47
+msgid "This is the left widget of the three-box section"
+msgstr ""
+
+#: ../../widgets.php:54 ../../widgets.php:86
+msgid "Box Middle"
+msgstr ""
+
+#: ../../widgets.php:56
+msgid "This is the middle widget of the three-box section"
+msgstr ""
+
+#: ../../widgets.php:63 ../../widgets.php:92
+msgid "Box Right"
+msgstr ""
+
+#: ../../widgets.php:65
+msgid "This is the right widget of the three-box section"
+msgstr ""
+
+#: ../../widgets.php:81
+msgid "This is the box left widgetized area."
+msgstr ""
+
+#: ../../widgets.php:87
+msgid "This is the box middle widgetized area."
+msgstr ""
+
+#: ../../widgets.php:93
+msgid "This is the box right widgetized area."
+msgstr ""
+
+#: ../../setup/features.php:22
+msgid "Import/Export"
+msgstr ""
+
+#: ../../setup/features.php:34 ../../setup/features.php:62
+msgid "Custom CSS"
+msgstr ""
+
+#: ../../setup/features.php:39
+msgid "Contact Element"
+msgstr ""
+
+#: ../../setup/features.php:44
+msgid "Banner Options"
+msgstr ""
+
+#: ../../setup/features.php:49
+msgid "Import / Export"
+msgstr ""
+
+#: ../../setup/features.php:70
+msgid "Details"
+msgstr ""
+
+#: ../../setup/features.php:78
+msgid "Banner Image"
+msgstr ""
+
+#: ../../setup/features.php:79
+msgid "Enter URL or upload file"
+msgstr ""
+
+#: ../../setup/features.php:86
+msgid "Banner URL"
+msgstr ""
+
+#: ../../setup/features.php:108
+msgid "Cyberchimps Link"
+msgstr ""
+
+#: ../../setup/features.php:116
+msgid "Footer Scripts"
+msgstr ""
+
+#: ../../setup/features.php:119
+msgid "You do not need to add script tags"
+msgstr ""
+
+#: ../../setup/features.php:125
+msgid "Export Settings"
+msgstr ""
+
+#: ../../setup/features.php:132
+msgid "Import Settings"
+msgstr ""
+
+#: ../../setup/features.php:147
+msgid "Banner"
+msgstr ""
+
+#: ../../setup/features.php:148
+msgid "Description + Icons"
+msgstr ""
+
+#: ../../setup/features.php:149
+msgid "Logo + Contact"
+msgstr ""
+
+#: ../../setup/features.php:150
+msgid "Logo + Description"
+msgstr ""
+
+#: ../../setup/features.php:151
+msgid "Logo + Icons"
+msgstr ""
+
+#: ../../setup/features.php:152
+msgid "Logo + Login"
+msgstr ""
+
+#: ../../setup/features.php:153
+msgid "Logo + Search"
+msgstr ""
+
+#: ../../setup/features.php:154
+msgid "Logo"
+msgstr ""

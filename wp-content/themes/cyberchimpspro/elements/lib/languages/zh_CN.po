@@ -1,0 +1,508 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CyberChimps Pro Elements\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
+"PO-Revision-Date: 2013-03-19 14:07-0000\n"
+"Last-Translator: \n"
+"Language-Team: Chinese, China\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../boxes.php ../../init.php ../../setup/features.php
+msgid "Boxes"
+msgstr "盒"
+
+#: ../../boxes.php
+msgid "Boxes Categories"
+msgstr "盒分类"
+
+#: ../../boxes.php
+msgid "Boxes Catergory"
+msgstr "盒Catergory"
+
+#: ../../boxes.php
+msgid "Search Boxes"
+msgstr "搜索框"
+
+#: ../../boxes.php
+msgid "All Boxes"
+msgstr "所有框"
+
+#: ../../boxes.php
+msgid "Boxes Category"
+msgstr "盒类"
+
+#: ../../boxes.php
+msgid "Boxes Category:"
+msgstr "盒分类："
+
+#: ../../boxes.php
+msgid "Edit Boxes Category"
+msgstr "编辑框类"
+
+#: ../../boxes.php
+msgid "Update Boxes Category"
+msgstr "更新盒分类"
+
+#: ../../boxes.php
+msgid "Add New Boxes Category"
+msgstr "新增盒类别"
+
+#: ../../boxes.php
+msgid "New Boxes Category Name"
+msgstr "新的箱子类别名称"
+
+#: ../../boxes.php
+msgid "Boxes Element"
+msgstr "盒元素"
+
+#: ../../boxes.php
+msgid "Box Image"
+msgstr "盒装图片"
+
+#: ../../boxes.php
+msgid "Box URL"
+msgstr "盒URL"
+
+#: ../../boxes.php
+msgid "Box Text"
+msgstr "框文本"
+
+#: ../../boxes.php
+msgid "iFeature Pro 5 Slider"
+msgstr "iFeature的Pro 5的滑块"
+
+#: ../../boxes.php
+msgid ""
+"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
+"device."
+msgstr "新的触摸友好的iFeature的专业滑块响应任何移动触摸设备。"
+
+#: ../../boxes.php
+msgid "Responsive Design"
+msgstr "响应设计"
+
+#: ../../boxes.php
+msgid ""
+"With iFeature Pro 5 and touch friendly responsive design you can now control "
+"your website on any device."
+msgstr ""
+"iFeature的Pro 5和触摸友好的响应设计，现在你可以控制你的网站在任何设备上。"
+
+#: ../../boxes.php
+msgid "Excellent Support"
+msgstr "出色的支持"
+
+#: ../../boxes.php
+msgid ""
+"Need help? Read the instructions and please visit our dedicated Pro Support "
+"Forum."
+msgstr "需要帮助吗？阅读说明，请访问我们的专门Pro支持论坛。"
+
+#: ../../breadcrumbs.php
+msgid "Home"
+msgstr "家"
+
+#: ../../breadcrumbs.php
+msgid "Archive for category "
+msgstr "类别的存档"
+
+#: ../../breadcrumbs.php
+msgid "Search results for "
+msgstr "搜索结果："
+
+#: ../../breadcrumbs.php
+msgid "Posts tagged "
+msgstr "标记的职位"
+
+#: ../../breadcrumbs.php
+msgid "Articles posted by "
+msgstr "所发表的文章"
+
+#: ../../breadcrumbs.php
+msgid "Error 404"
+msgstr "错误404"
+
+#: ../../init.php ../../breadcrumbs.php
+msgid "Page"
+msgstr "页"
+
+#: ../../init.php ../../carousel.php
+msgid "Carousel"
+msgstr "转盘"
+
+#: ../../carousel.php
+msgid "Posts"
+msgstr "文章"
+
+#: ../../carousel.php
+msgid "Carousel Categories"
+msgstr "旋转木马分类"
+
+#: ../../carousel.php
+msgid "Carousel Catergory"
+msgstr "旋转木马Catergory"
+
+#: ../../carousel.php
+msgid "Search Carousel"
+msgstr "搜索转盘"
+
+#: ../../carousel.php
+msgid "All Carousels"
+msgstr "所有的旋转木马"
+
+#: ../../carousel.php
+msgid "Carousel Category"
+msgstr "旋转木马类别"
+
+#: ../../carousel.php
+msgid "Carousel Category:"
+msgstr "旋转木马类别："
+
+#: ../../carousel.php
+msgid "Edit Carousel Category"
+msgstr "编辑转盘分类"
+
+#: ../../carousel.php
+msgid "Update Carousel Category"
+msgstr "更新转盘分类"
+
+#: ../../carousel.php
+msgid "Add New Carousel Category"
+msgstr "添加新的旋转木马类别"
+
+#: ../../carousel.php
+msgid "New Carousel Category Name"
+msgstr "新的旋转木马类别名称"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel Options"
+msgstr "精选后转盘选项"
+
+#: ../../carousel.php
+msgid "Featured Post Image"
+msgstr "精选后的图像"
+
+#: ../../carousel.php
+msgid "Featured Post URL"
+msgstr "精选后URL"
+
+#: ../../slider.php ../../carousel.php
+msgid "Reorder Name"
+msgstr "重新排列名称"
+
+#: ../../init.php
+msgid "Callout Section"
+msgstr "标注节"
+
+#: ../../init.php
+msgid "HTML Box"
+msgstr "HTML箱"
+
+#: ../../setup/features.php ../../init.php
+msgid "iFeature Slider"
+msgstr "iFeature的滑块"
+
+#: ../../init.php
+msgid "Magazine"
+msgstr "杂志"
+
+#: ../../portfolio.php ../../init.php
+msgid "Portfolio"
+msgstr "作品集"
+
+#: ../../setup/features.php ../../init.php
+msgid "Post Page"
+msgstr "发表页"
+
+#: ../../init.php
+msgid "Recent Posts"
+msgstr "最近文章"
+
+#: ../../init.php
+msgid "Twitter Bar"
+msgstr "Twitter的酒吧"
+
+#: ../../init.php
+msgid "Widgets"
+msgstr "小工具"
+
+#: ../../setup/features.php ../../init.php
+msgid "Breadcrumbs"
+msgstr "面包屑"
+
+#: ../../portfolio.php
+msgid "Images"
+msgstr "图像"
+
+#: ../../portfolio.php
+msgid "Portfolio Categories"
+msgstr "投资组合分类"
+
+#: ../../portfolio.php
+msgid "Portfolio Catergory"
+msgstr "投资组合Catergory"
+
+#: ../../portfolio.php
+msgid "Search Portfolio"
+msgstr "搜索作品集"
+
+#: ../../portfolio.php
+msgid "All Portfolios"
+msgstr "所有投资组合"
+
+#: ../../portfolio.php
+msgid "Portfolio Category"
+msgstr "投资组合类别"
+
+#: ../../portfolio.php
+msgid "Portfolio Category:"
+msgstr "投资组合类别："
+
+#: ../../portfolio.php
+msgid "Edit Portfolio Category"
+msgstr "编辑组合分类"
+
+#: ../../portfolio.php
+msgid "Update Portfolio Category"
+msgstr "更新投资组合类别"
+
+#: ../../portfolio.php
+msgid "Add New Portfolio Category"
+msgstr "添加新的组合分类"
+
+#: ../../portfolio.php
+msgid "New Portfolio Category Name"
+msgstr "新的组合分类名称"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "组合元素"
+
+#: ../../portfolio.php
+msgid "Portfolio Image"
+msgstr "投资组合图片"
+
+#: ../../slider.php ../../portfolio.php
+msgid "Caption"
+msgstr "标题"
+
+#: ../../portfolio.php
+msgid "Lightbox"
+msgstr "lightbox: { /* ... */ },"
+
+#: ../../portfolio.php
+msgid "Custom Portfolio URL"
+msgstr "自定义组合URL"
+
+#: ../../portfolio.php
+msgid "URL"
+msgstr "网址"
+
+#: ../../slider.php
+msgid "Slides"
+msgstr "幻灯片"
+
+#: ../../slider.php
+msgid "Slide Categories"
+msgstr "幻灯片分类"
+
+#: ../../slider.php
+msgid "Slide Catergory"
+msgstr "幻灯片Catergory"
+
+#: ../../slider.php
+msgid "Search Slides"
+msgstr "搜寻幻灯片"
+
+#: ../../slider.php
+msgid "All Slides"
+msgstr "所有幻灯片"
+
+#: ../../slider.php
+msgid "Slide Category"
+msgstr "幻灯片分类"
+
+#: ../../slider.php
+msgid "Slide Category:"
+msgstr "幻灯片分类："
+
+#: ../../slider.php
+msgid "Edit Slide Category"
+msgstr "编辑幻灯片分类"
+
+#: ../../slider.php
+msgid "Update Slide Category"
+msgstr "更新幻灯片分类"
+
+#: ../../slider.php
+msgid "Add New Slide Category"
+msgstr "添加新幻灯片分类"
+
+#: ../../slider.php
+msgid "New Slide Category Name"
+msgstr "新幻灯片类别名称"
+
+#: ../../slider.php
+msgid "Custom Feature Slides"
+msgstr "自定义功能幻灯片"
+
+#: ../../slider.php
+msgid "Custom Slide Options"
+msgstr "自定义幻灯片选项"
+
+#: ../../slider.php
+msgid "Slider Image"
+msgstr "滑块图片"
+
+#: ../../slider.php
+msgid "Slider Caption"
+msgstr "滑块标题"
+
+#: ../../slider.php
+msgid "Custom Slide Link"
+msgstr "自定义幻灯片链接"
+
+#: ../../slider.php
+msgid "Title"
+msgstr "标题"
+
+#: ../../slider.php
+msgid "Need Help?"
+msgstr "寻求帮助？"
+
+#: ../../twitter-bar.php
+msgid "No tweets to display"
+msgstr "没有要显示的鸣叫"
+
+#: ../../twitter-bar.php
+msgid "Invalid Response"
+msgstr "无效的响应"
+
+#: ../../widgets.php
+msgid "Box Left"
+msgstr "空框"
+
+#: ../../widgets.php
+msgid "This is the left widget of the three-box section"
+msgstr "这是左边的窗口小部件的三箱部"
+
+#: ../../widgets.php
+msgid "Box Middle"
+msgstr "盒中东"
+
+#: ../../widgets.php
+msgid "This is the middle widget of the three-box section"
+msgstr "这中间的窗口小部件的三箱边"
+
+#: ../../widgets.php
+msgid "Box Right"
+msgstr "框右移"
+
+#: ../../widgets.php
+msgid "This is the right widget of the three-box section"
+msgstr "这是正确的窗口小部件的三箱部"
+
+#: ../../widgets.php
+msgid "This is the box left widgetized area."
+msgstr "这是一个部件区域的空框。"
+
+#: ../../widgets.php
+msgid "This is the box middle widgetized area."
+msgstr "这是盒子中间的一个部件区域。"
+
+#: ../../widgets.php
+msgid "This is the box right widgetized area."
+msgstr "这是框右侧的一个部件区域。"
+
+#: ../../setup/features.php
+msgid "Import/Export"
+msgstr "导入/导出"
+
+#: ../../setup/features.php
+msgid "Custom CSS"
+msgstr "自定义CSS"
+
+#: ../../setup/features.php
+msgid "Contact Element"
+msgstr "联系元"
+
+#: ../../setup/features.php
+msgid "Banner Options"
+msgstr "横幅选项"
+
+#: ../../setup/features.php
+msgid "Import / Export"
+msgstr "导入/导出"
+
+#: ../../setup/features.php
+msgid "Details"
+msgstr "详情"
+
+#: ../../setup/features.php
+msgid "Banner Image"
+msgstr "横幅图片"
+
+#: ../../setup/features.php
+msgid "Enter URL or upload file"
+msgstr "输入URL或上传文件"
+
+#: ../../setup/features.php
+msgid "Banner URL"
+msgstr "横幅URL"
+
+#: ../../setup/features.php
+msgid "Cyberchimps Link"
+msgstr "Cyber​​chimps的链接"
+
+#: ../../setup/features.php
+msgid "Footer Scripts"
+msgstr "页脚脚本"
+
+#: ../../setup/features.php
+msgid "You do not need to add script tags"
+msgstr "您不需要添加脚本标记"
+
+#: ../../setup/features.php
+msgid "Export Settings"
+msgstr "导出设置"
+
+#: ../../setup/features.php
+msgid "Import Settings"
+msgstr "导入设置"
+
+#: ../../setup/features.php
+msgid "Banner"
+msgstr "横幅"
+
+#: ../../setup/features.php
+msgid "Description + Icons"
+msgstr "说明+图标"
+
+#: ../../setup/features.php
+msgid "Logo + Contact"
+msgstr "徽标+联系我们"
+
+#: ../../setup/features.php
+msgid "Logo + Description"
+msgstr "徽标+说明"
+
+#: ../../setup/features.php
+msgid "Logo + Icons"
+msgstr "徽标+图标"
+
+#: ../../setup/features.php
+msgid "Logo + Login"
+msgstr "徽标+登录"
+
+#: ../../setup/features.php
+msgid "Logo + Search"
+msgstr "徽标+搜索"
+
+#: ../../setup/features.php
+msgid "Logo"
+msgstr "商標"
