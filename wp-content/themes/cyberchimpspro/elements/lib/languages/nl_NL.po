@@ -1,100 +1,141 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: CyberChimps Pro Elements\n"
+"Project-Id-Version: Elements Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
-"PO-Revision-Date: 2013-03-19 14:07-0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2014-02-11 12:26+0530\n"
+"Last-Translator: Surya <surya@cyberchimps.com>\n"
 "Language-Team: Dutch, Netherlands\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../../boxes.php ../../init.php ../../setup/features.php
+#: ../../setup/features.php ../../init.php ../../boxes.php
 msgid "Boxes"
-msgstr "Dozen"
+msgstr "Vakken"
 
 #: ../../boxes.php
-msgid "Boxes Categories"
-msgstr "Dozen Categorieën"
+msgid "Add new Box"
+msgstr "Nieuwe vakken categorie toevoegen"
 
 #: ../../boxes.php
-msgid "Boxes Catergory"
-msgstr "Dozen catergory"
+msgid "Edit Box"
+msgstr "Invoervak"
+
+#: ../../boxes.php
+msgid "New Box"
+msgstr "Nieuwe vak"
+
+#: ../../boxes.php
+msgid "View Box"
+msgstr "Vak weergave"
 
 #: ../../boxes.php
 msgid "Search Boxes"
 msgstr "Zoekvakken"
 
 #: ../../boxes.php
+msgid "No Boxes found"
+msgstr "Geen vakken gevonden"
+
+#: ../../boxes.php
+msgid "No Boxes found in trash"
+msgstr "Geen vakken gevonden in Prullenbak"
+
+#: ../../boxes.php
+msgctxt "taxonomy general name"
+msgid "Boxes Categories"
+msgstr "Vakken Categorieën"
+
+#: ../../boxes.php
+msgctxt "taxonomy singular name"
+msgid "Boxes Catergory"
+msgstr "Vakken Catergory"
+
+#: ../../boxes.php
 msgid "All Boxes"
-msgstr "Alle Dozen"
+msgstr "Alle vakken"
 
 #: ../../boxes.php
 msgid "Boxes Category"
-msgstr "Dozen Categorie"
+msgstr "Vakken categorie"
 
 #: ../../boxes.php
 msgid "Boxes Category:"
-msgstr "Dozen Categorie:"
+msgstr "Vakken categorie:"
 
 #: ../../boxes.php
 msgid "Edit Boxes Category"
-msgstr "Bewerken Dozen Categorie"
+msgstr "Vakken rubriek bewerken"
 
 #: ../../boxes.php
 msgid "Update Boxes Category"
-msgstr "Update Dozen Categorie"
+msgstr "Vakken categorie bijwerken"
 
 #: ../../boxes.php
 msgid "Add New Boxes Category"
-msgstr "Toevoegen nieuwe Dozen Categorie"
+msgstr "Nieuwe vakken categorie toevoegen"
 
 #: ../../boxes.php
 msgid "New Boxes Category Name"
-msgstr "Nieuwe Dozen Categorienaam"
-
-#: ../../boxes.php
-msgid "Boxes Element"
-msgstr "Dozen Element"
+msgstr "De naam van de categorie van de vakken van het nieuwe"
 
 #: ../../boxes.php
 msgid "Box Image"
-msgstr "Box Afbeelding"
+msgstr "Box afbeelding"
 
 #: ../../boxes.php
 msgid "Box URL"
 msgstr "Vak URL"
 
 #: ../../boxes.php
-msgid "Box Text"
-msgstr "Box Tekst"
+msgid "Link the whole box"
+msgstr "Koppelen van de gehele doos"
 
 #: ../../boxes.php
-msgid "iFeature Pro 5 Slider"
-msgstr "iFeature Pro 5-schuifregelaar"
+msgid "Box Text"
+msgstr "Vak tekst"
+
+#: ../../boxes.php
+msgid "Boxes Element"
+msgstr "Vakken Element"
+
+#: ../../boxes.php ../../carousel.php ../../portfolio.php ../../slider.php
+msgid "You need to create a Category"
+msgstr "U moet een categorie maken"
+
+#: ../../boxes.php
+msgid "Number of boxes per row"
+msgstr "Aantal dozen per rij"
+
+#: ../../boxes.php
+msgid "Boxes Options"
+msgstr "Banner opties"
+
+#: ../../boxes.php
+msgid "%1$s Slider"
+msgstr "%1$ s schuifregelaar"
 
 #: ../../boxes.php
 msgid ""
-"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
-"device."
+"The New Touch Friendly %1$s Slider now responds to any mobile touch device."
 msgstr ""
-"De nieuwe Touch Friendly iFeature Pro Slider reageert nu op elk mobiel touch "
-"apparaat."
+"De nieuwe Touch vriendelijke %1$ s schuifregelaar beantwoordt nu aan elke "
+"mobiele Aanraking apparaat."
 
 #: ../../boxes.php
 msgid "Responsive Design"
-msgstr "Responsieve Design"
+msgstr "Responsieve ontwerp"
 
 #: ../../boxes.php
 msgid ""
-"With iFeature Pro 5 and touch friendly responsive design you can now control "
-"your website on any device."
+"With %1$s and touch friendly responsive design you can now control your "
+"website on any device."
 msgstr ""
-"Met iFeature Pro 5 en touch vriendelijke responsieve ontwerp kunt u nu de "
-"controle van uw website op elk apparaat."
+"Met %1$ s en touch vriendelijke responsieve ontwerp kunt u nu uw website op "
+"elk apparaat."
 
 #: ../../boxes.php
 msgid "Excellent Support"
@@ -105,12 +146,11 @@ msgid ""
 "Need help? Read the instructions and please visit our dedicated Pro Support "
 "Forum."
 msgstr ""
-"Heb je hulp nodig? Lees de instructies en kunt u terecht op onze speciale "
-"Pro Technische Dienst."
+"Hulp nodig? Lees de instructies en bezoek onze toegewijde Pro Support Forum."
 
 #: ../../breadcrumbs.php
 msgid "Home"
-msgstr "Start"
+msgstr "Huis"
 
 #: ../../breadcrumbs.php
 msgid "Archive for category "
@@ -118,11 +158,11 @@ msgstr "Archief voor categorie "
 
 #: ../../breadcrumbs.php
 msgid "Search results for "
-msgstr "zoekresultaten voor"
+msgstr "Zoekresultaten voor "
 
 #: ../../breadcrumbs.php
 msgid "Posts tagged "
-msgstr "Posts tagged "
+msgstr "Geëtiketteerdee posten "
 
 #: ../../breadcrumbs.php
 msgid "Articles posted by "
@@ -130,99 +170,221 @@ msgstr "Artikelen Gepost door "
 
 #: ../../breadcrumbs.php
 msgid "Error 404"
-msgstr "Fout 404 "
+msgstr "Fout 404"
 
-#: ../../init.php ../../breadcrumbs.php
+#: ../../breadcrumbs.php ../../init.php
 msgid "Page"
 msgstr "Pagina"
 
-#: ../../init.php ../../carousel.php
+#: ../../callout.php
+msgid "Callout Title"
+msgstr "Producttitel"
+
+#: ../../callout.php
+msgid "%1$s's Call Out Element"
+msgstr "%1$ s's oproep Element"
+
+#: ../../callout.php
+msgid "Callout Text"
+msgstr "Callout sectie"
+
+#: ../../callout.php
+msgid ""
+"Use %1$s's Call Out section on any page where you want to deliver an "
+"important message to your customer or client."
+msgstr ""
+"Gebruik %1$ s's Call Out sectie op elke pagina waar u wilt dat om een "
+"belangrijke boodschap aan uw klant of client."
+
+#: ../../callout.php
+msgid "Callout Button"
+msgstr "Callout sectie"
+
+#: ../../callout.php
+msgid "Callout Button Text"
+msgstr "Callout sectie"
+
+#: ../../callout.php
+msgid "Click Here"
+msgstr "Klik hier"
+
+#: ../../callout.php
+msgid "Callout Button URL"
+msgstr "Callout sectie"
+
+#: ../../callout.php
+msgid "Custom Callout Options"
+msgstr "Aangepaste dia-opties"
+
+#: ../../callout.php
+msgid "Custom Button Image"
+msgstr "Aangepaste knopvlak"
+
+#: ../../callout.php
+msgid "Custom Background Color"
+msgstr "Aangepaste achtergrondkleur"
+
+#: ../../callout.php
+msgid "Custom Title Color"
+msgstr "Aangepaste titelkleur"
+
+#: ../../callout.php
+msgid "Custom Text Color"
+msgstr "Aangepaste tekstkleur"
+
+#: ../../callout.php
+msgid "Custom Button Color"
+msgstr "Aangepaste knopkleur"
+
+#: ../../callout.php
+msgid "Custom Button Text Color"
+msgstr "Aangepaste knop Tekstkleur"
+
+#: ../../callout.php
+msgid "Callout Options"
+msgstr "Callout sectie"
+
+#: ../../carousel.php ../../init.php
 msgid "Carousel"
 msgstr "Carrousel"
 
 #: ../../carousel.php
-msgid "Posts"
-msgstr "berichten"
+msgid "Carousel item"
+msgstr "Carrousel"
 
 #: ../../carousel.php
+msgid "Add new Carousel item"
+msgstr "Nieuwe carrousel categorie toevoegen"
+
+#: ../../carousel.php
+msgid "Edit Carousel item"
+msgstr "Carrousel rubriek bewerken"
+
+#: ../../carousel.php
+msgid "New Carousel item"
+msgstr "Nieuw carrousel categorienaam"
+
+#: ../../carousel.php
+msgid "View Carousel item"
+msgstr "Nieuw carrousel categorienaam"
+
+#: ../../carousel.php
+msgid "Search Carousel items"
+msgstr "Zoek carrousel"
+
+#: ../../carousel.php
+msgid "No Carousel items found"
+msgstr "Carrousel categorie"
+
+#: ../../carousel.php
+msgid "No Carousel items found in trash"
+msgstr "Geen carrousel objecten gevonden in de Prullenbak"
+
+#: ../../carousel.php
+msgctxt "taxonomy general name"
 msgid "Carousel Categories"
-msgstr "Carousel Categorieën"
+msgstr "Carrousel Categorieën"
 
 #: ../../carousel.php
+msgctxt "taxonomy singular name"
 msgid "Carousel Catergory"
 msgstr "Carrousel Catergory"
 
 #: ../../carousel.php
 msgid "Search Carousel"
-msgstr "Zoeken Carousel"
+msgstr "Zoek carrousel"
 
 #: ../../carousel.php
 msgid "All Carousels"
-msgstr "Alle Carrousels"
+msgstr "Alle carrousels"
 
 #: ../../carousel.php
 msgid "Carousel Category"
-msgstr "Carrousel Categorie"
+msgstr "Carrousel categorie"
 
 #: ../../carousel.php
 msgid "Carousel Category:"
-msgstr "Carrousel Categorie:"
+msgstr "Carrousel categorie:"
 
 #: ../../carousel.php
 msgid "Edit Carousel Category"
-msgstr "Bewerken Carousel Categorie"
+msgstr "Carrousel rubriek bewerken"
 
 #: ../../carousel.php
 msgid "Update Carousel Category"
-msgstr "Update Carousel Categorie"
+msgstr "Carrousel categorie bijwerken"
 
 #: ../../carousel.php
 msgid "Add New Carousel Category"
-msgstr "Toevoegen nieuwe Carousel Categorie"
+msgstr "Nieuwe carrousel categorie toevoegen"
 
 #: ../../carousel.php
 msgid "New Carousel Category Name"
-msgstr "Nieuwe Carousel Categorienaam"
-
-#: ../../carousel.php
-msgid "Featured Post Carousel Options"
-msgstr "Verschenen posten Carousel Opties"
+msgstr "Nieuw carrousel categorienaam"
 
 #: ../../carousel.php
 msgid "Featured Post Image"
-msgstr "Verschenen posten Afbeelding"
+msgstr "Featured Post afbeelding"
 
 #: ../../carousel.php
 msgid "Featured Post URL"
-msgstr "Verschenen posten URL"
+msgstr "Featured Post URL"
 
-#: ../../slider.php ../../carousel.php
+#: ../../carousel.php ../../portfolio.php
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../../carousel.php
 msgid "Reorder Name"
-msgstr "Opnieuw ordenen Naam"
+msgstr "Volgorde naam"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel"
+msgstr "Featured Post carrousel opties"
+
+#: ../../carousel.php
+msgid "Carousel Options"
+msgstr "Featured Post carrousel opties"
+
+#: ../../htmlbox.php
+msgid "Custom HTML"
+msgstr "Aangepaste CSS"
+
+#: ../../htmlbox.php
+msgid "Enter your custom html here"
+msgstr "Voer hier uw aangepaste html"
+
+#: ../../htmlbox.php
+msgid "HTML Box Options"
+msgstr "HTML-vak"
 
 #: ../../init.php
 msgid "Callout Section"
-msgstr "Toelichting Sectie"
+msgstr "Callout sectie"
 
 #: ../../init.php
 msgid "HTML Box"
 msgstr "HTML-vak"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "iFeature Slider"
 msgstr "iFeature Slider"
 
 #: ../../init.php
 msgid "Magazine"
-msgstr "Nieuwskanalen"
+msgstr "Tijdschrift"
 
-#: ../../portfolio.php ../../init.php
+#: ../../init.php ../../portfolio.php
 msgid "Portfolio"
 msgstr "Portefeuille"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Post Page"
-msgstr "Bericht Pagina"
+msgstr "Post pagina"
+
+#: ../../init.php ../../product.php
+msgid "Product"
+msgstr "Product"
 
 #: ../../init.php
 msgid "Recent Posts"
@@ -236,69 +398,147 @@ msgstr "Twitter Bar"
 msgid "Widgets"
 msgstr "Widgets"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Breadcrumbs"
 msgstr "Paneermeel"
 
-#: ../../portfolio.php
+#: ../../magazine.php
+msgid "Edit"
+msgstr "Invoervak"
+
+#: ../../magazine.php
+msgid "Magazine Options"
+msgstr "Banner opties"
+
+#: ../../magazine.php
+msgid "Sidebar"
+msgstr "Zijbalk"
+
+#: ../../magazine.php
+msgid "Meta Data"
+msgstr "Meta-gegevens"
+
+#: ../../magazine.php
+msgid "Featured Image"
+msgstr "Featured Post afbeelding"
+
+#: ../../magazine.php
+msgid "Category"
+msgstr "Vakken categorie"
+
+#: ../../magazine.php
+msgid "Featured Excerpt Length"
+msgstr "Featured Post URL"
+
+#: ../../magazine.php
+msgid "Number of Columns"
+msgstr "Aantal Tweets"
+
+#: ../../magazine.php
+msgid "Number of Rows"
+msgstr "Aantal Tweets"
+
+#: ../../magazine.php
+msgid "Wide Posts Below Magazine"
+msgstr "Brede berichten hieronder Magazine"
+
+#: ../../magazine.php
+msgid "Wide Post Excerpt Length"
+msgstr "Brede Post fragment lengte"
+
+#: ../../magazine.php
+msgid "Number of Wide Posts"
+msgstr "Featured Post URL"
+
+#: ../../magazine.php ../../recent-posts.php
+msgid "All"
+msgstr "Alle"
+
+#: ../../magazine.php
+msgid "magazine Options"
+msgstr "Banner opties"
+
+#: ../../portfolio.php ../../recent-posts.php
 msgid "Images"
 msgstr "Afbeeldingen"
 
 #: ../../portfolio.php
-msgid "Portfolio Categories"
-msgstr "Portfolio Rubrieken"
+msgid "Add new Image"
+msgstr "Afbeelding van de schuifregelaar"
 
 #: ../../portfolio.php
+msgid "Edit Image"
+msgstr "Afbeelding"
+
+#: ../../portfolio.php
+msgid "New Image"
+msgstr "Afbeelding"
+
+#: ../../portfolio.php
+msgid "View Image"
+msgstr "Afbeelding van de schuifregelaar"
+
+#: ../../portfolio.php
+msgid "Search Images"
+msgstr "Zoekvakken"
+
+#: ../../portfolio.php
+msgid "No Images found"
+msgstr "Er zijn geen afbeeldingen gevonden"
+
+#: ../../portfolio.php
+msgid "No Images found in trash"
+msgstr "Er zijn geen afbeeldingen gevonden in de Prullenbak"
+
+#: ../../portfolio.php
+msgctxt "taxonomy general name"
+msgid "Portfolio Categories"
+msgstr "Portefeuille Categorieën"
+
+#: ../../portfolio.php
+msgctxt "taxonomy singular name"
 msgid "Portfolio Catergory"
 msgstr "Portefeuille Catergory"
 
 #: ../../portfolio.php
 msgid "Search Portfolio"
-msgstr "Zoeken Portfolio"
+msgstr "Zoek Portfolio"
 
 #: ../../portfolio.php
 msgid "All Portfolios"
-msgstr "Alle portfolio's"
+msgstr "Alle portefeuilles"
 
 #: ../../portfolio.php
 msgid "Portfolio Category"
-msgstr "Portefeuille Categorie"
+msgstr "Portefeuille categorie"
 
 #: ../../portfolio.php
 msgid "Portfolio Category:"
-msgstr "Portefeuille Categorie:"
+msgstr "Portefeuille categorie:"
 
 #: ../../portfolio.php
 msgid "Edit Portfolio Category"
-msgstr "Portfolio bewerken Categorie"
+msgstr "Portfolio rubriek bewerken"
 
 #: ../../portfolio.php
 msgid "Update Portfolio Category"
-msgstr "Werk Portfolio Categorie"
+msgstr "Portfolio categorie bijwerken"
 
 #: ../../portfolio.php
 msgid "Add New Portfolio Category"
-msgstr "Toevoegen nieuwe Portfolio Categorie"
+msgstr "Nieuwe portefeuille categorie toevoegen"
 
 #: ../../portfolio.php
 msgid "New Portfolio Category Name"
-msgstr "Nieuw Portfolio Categorienaam"
-
-#: ../../portfolio.php
-msgid "Portfolio Element"
-msgstr "Portefeuille Element"
+msgstr "De naam van de categorie van de portefeuille van het nieuwe"
 
 #: ../../portfolio.php
 msgid "Portfolio Image"
-msgstr "Portfolio Afbeelding"
+msgstr "Afbeelding van de portefeuille"
 
-#: ../../slider.php ../../portfolio.php
+#: ../../portfolio.php ../../slider.php
 msgid "Caption"
-msgstr "Titel"
-
-#: ../../portfolio.php
-msgid "Lightbox"
-msgstr "Lightbox"
+msgstr "Bijschrift"
 
 #: ../../portfolio.php
 msgid "Custom Portfolio URL"
@@ -306,103 +546,411 @@ msgstr "Aangepaste Portfolio URL"
 
 #: ../../portfolio.php
 msgid "URL"
-msgstr "URL:"
+msgstr "URL"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "Portefeuille Element"
+
+#: ../../portfolio.php
+msgid "Images per row"
+msgstr "Afbeeldingen"
+
+#: ../../portfolio.php
+msgid "Two"
+msgstr "Twee"
+
+#: ../../portfolio.php
+msgid "Three"
+msgstr "Drie"
+
+#: ../../portfolio.php
+msgid "Four"
+msgstr "Vier"
+
+#: ../../portfolio.php
+msgid "Portfolio Title"
+msgstr "Portefeuille Element"
+
+#: ../../portfolio.php ../../recent-posts.php ../../slider.php
+msgid "Title"
+msgstr "Titel"
+
+#: ../../portfolio.php
+msgid "Portfolio Options"
+msgstr "Portefeuille Categorieën"
+
+#: ../../product.php
+msgid "Product Layout"
+msgstr "Product lay-out"
+
+#: ../../product.php
+msgid "Text Left"
+msgstr "Tekst links"
+
+#: ../../product.php
+msgid "Text Right"
+msgstr "Tekst rechts"
+
+#: ../../product.php
+msgid "Product Title"
+msgstr "Producttitel"
+
+#: ../../product.php
+msgid "Product Text"
+msgstr "Product tekst"
+
+#: ../../product.php
+msgid "Media Type"
+msgstr "Mediatype"
+
+#: ../../product.php
+msgid "Image"
+msgstr "Afbeelding"
+
+#: ../../product.php
+msgid "Video"
+msgstr "Video"
+
+#: ../../product.php
+msgid "Product Image URL"
+msgstr "De URL van de afbeelding van het product"
+
+#: ../../product.php
+msgid "Product Video Embed"
+msgstr "Product Video insluiten"
+
+#: ../../product.php
+msgid "Product Button Type"
+msgstr "De tekst van de koppeling van het product"
+
+#: ../../product.php
+msgid "No button"
+msgstr "Geen knop"
+
+#: ../../product.php
+msgid "Button"
+msgstr "Knop"
+
+#: ../../product.php
+msgid "Button Image"
+msgstr "Box afbeelding"
+
+#: ../../product.php
+msgid "Product Button URL"
+msgstr "Product-URL"
+
+#: ../../product.php
+msgid "Product Button Text"
+msgstr "De tekst van de koppeling van het product"
+
+#: ../../product.php
+msgid "Buy Now"
+msgstr "Koop nu"
+
+#: ../../product.php
+msgid "Product Image"
+msgstr "De URL van de afbeelding van het product"
+
+#: ../../product.php
+msgid "Product URL"
+msgstr "Product-URL"
+
+#: ../../product.php
+msgid "Product Link Text"
+msgstr "De tekst van de koppeling van het product"
+
+#: ../../product.php
+msgid "Product Button Image"
+msgstr "De URL van de afbeelding van het product"
+
+#: ../../product.php
+msgid "Product Button Image URL"
+msgstr "De URL van de afbeelding van het product"
+
+#: ../../product.php
+msgid "Product Options"
+msgstr "Product Link"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Title"
+msgstr "Recente berichten"
+
+#: ../../recent-posts.php
+msgid "Post Category"
+msgstr "Vakken categorie"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Options"
+msgstr "Recente berichten"
 
 #: ../../slider.php
 msgid "Slides"
 msgstr "Dia 's"
 
 #: ../../slider.php
-msgid "Slide Categories"
-msgstr "Schuif Categorieën"
+msgid "Add new Slide"
+msgstr "Nieuwe dia categorie toevoegen"
 
 #: ../../slider.php
-msgid "Slide Catergory"
-msgstr "Schuif catergory"
+msgid "Edit Slide"
+msgstr "Dia rubriek bewerken"
+
+#: ../../slider.php
+msgid "New Slide"
+msgstr "Dia 's"
+
+#: ../../slider.php
+msgid "View Slide"
+msgstr "iFeature Slider"
 
 #: ../../slider.php
 msgid "Search Slides"
-msgstr "Zoeken Slides"
+msgstr "Zoek dia 's"
+
+#: ../../slider.php
+msgid "No Slides found"
+msgstr "Geen dia's gevonden"
+
+#: ../../slider.php
+msgid "No Slides found in trash"
+msgstr "Geen dia's gevonden in Prullenbak"
+
+#: ../../slider.php
+msgctxt "taxonomy general name"
+msgid "Slide Categories"
+msgstr "Dia Categorieën"
+
+#: ../../slider.php
+msgctxt "taxonomy singular name"
+msgid "Slide Catergory"
+msgstr "Dia Catergory"
 
 #: ../../slider.php
 msgid "All Slides"
-msgstr "Alle dia's"
+msgstr "Alle dia 's"
 
 #: ../../slider.php
 msgid "Slide Category"
-msgstr "Schuif Categorie"
+msgstr "Dia categorie"
 
 #: ../../slider.php
 msgid "Slide Category:"
-msgstr "Dia Categorie:"
+msgstr "Dia categorie:"
 
 #: ../../slider.php
 msgid "Edit Slide Category"
-msgstr "Dia bewerken Categorie"
+msgstr "Dia rubriek bewerken"
 
 #: ../../slider.php
 msgid "Update Slide Category"
-msgstr "Werk Schuif Categorie"
+msgstr "Bijwerken van dia categorie"
 
 #: ../../slider.php
 msgid "Add New Slide Category"
-msgstr "Voeg Nieuwe dia Categorie"
+msgstr "Nieuwe dia categorie toevoegen"
 
 #: ../../slider.php
 msgid "New Slide Category Name"
-msgstr "Nieuwe dia Categorienaam"
-
-#: ../../slider.php
-msgid "Custom Feature Slides"
-msgstr "Aangepaste Feature Slides"
-
-#: ../../slider.php
-msgid "Custom Slide Options"
-msgstr "Aangepaste dia-opties"
+msgstr "De naam van de categorie van de dia van het nieuwe"
 
 #: ../../slider.php
 msgid "Slider Image"
-msgstr "Slider Afbeelding"
+msgstr "Afbeelding van de schuifregelaar"
 
 #: ../../slider.php
 msgid "Slider Caption"
-msgstr "Slider Bijschrift"
+msgstr "Schuifregelaar bijschrift"
 
 #: ../../slider.php
 msgid "Custom Slide Link"
-msgstr "Aangepaste Schuif Link"
+msgstr "Aangepaste dia Link"
 
 #: ../../slider.php
-msgid "Title"
-msgstr "Naam"
+msgid "Reorder"
+msgstr "Volgorde naam"
 
 #: ../../slider.php
-msgid "Need Help?"
-msgstr "Hulp nodig?"
+msgid "Custom Feature Slides"
+msgstr "Aangepaste functie dia 's"
+
+#: ../../slider.php
+msgid "Slider Size"
+msgstr "Afbeelding van de schuifregelaar"
+
+#: ../../slider.php
+msgid "Full"
+msgstr "Volledige"
+
+#: ../../slider.php
+msgid "Half"
+msgstr "De helft"
+
+#: ../../slider.php
+msgid "Slider Type"
+msgstr "Afbeelding van de schuifregelaar"
+
+#: ../../slider.php
+msgid "Custom"
+msgstr "Aangepaste CSS"
+
+#: ../../slider.php
+msgid "Posts"
+msgstr "Berichten"
+
+#: ../../slider.php
+msgid "Post Categories"
+msgstr "Vakken Categorieën"
+
+#: ../../slider.php
+msgid "Custom Categories"
+msgstr "Carrousel Categorieën"
+
+#: ../../slider.php
+msgid "Number of Featured Posts"
+msgstr "Featured Post URL"
+
+#: ../../slider.php
+msgid "Slider Height"
+msgstr "Afbeelding van de schuifregelaar"
+
+#: ../../slider.php
+msgid "Slider Speed"
+msgstr "Afbeelding van de schuifregelaar"
+
+#: ../../slider.php
+msgid "Slider Arrows"
+msgstr "Dia 's"
+
+#: ../../slider.php
+msgid "iFeature Slider Options"
+msgstr "iFeature Slider"
+
+#: ../../twitter-bar.php
+msgid "Error retrieving tweets"
+msgstr "Fout bij het ophalen tweets"
+
+#: ../../twitter-bar.php
+msgid "%1$s followers"
+msgstr "%1$ s volgelingen"
 
 #: ../../twitter-bar.php
 msgid "No tweets to display"
 msgstr "Geen tweets om weer te geven"
 
 #: ../../twitter-bar.php
-msgid "Invalid Response"
-msgstr "Ongeldige Response"
+msgid "Twitter API Options"
+msgstr "Twitter API opties"
+
+#: ../../twitter-bar.php
+msgid "Edit Twitter API"
+msgstr "Twitter API bewerken"
+
+#: ../../twitter-bar.php
+msgid "Create your Twitter App here"
+msgstr "Maak uw Twitter App hier"
+
+#: ../../twitter-bar.php
+msgid "Complete all parts of the form and create your application"
+msgstr "Vul alle gedeelten van het formulier in en uw toepassing maken"
+
+#: ../../twitter-bar.php
+msgid "On the next page click on the button Create my access token"
+msgstr "Op de volgende pagina klik op de knop maken mijn toegangstoken"
+
+#: ../../twitter-bar.php
+msgid "Now take the details and fill out the form below"
+msgstr "Nu nemen van de details en vul het formulier hieronder"
+
+#: ../../twitter-bar.php
+msgid "Save your options"
+msgstr "Uw opties voor opslaan"
+
+#: ../../twitter-bar.php
+msgid "Create a Twitter App"
+msgstr "Maak een Twitter App"
+
+#: ../../twitter-bar.php
+msgid "Consumer Key"
+msgstr "Consument sleutel"
+
+#: ../../twitter-bar.php
+msgid "Consumer Secret"
+msgstr "Consument geheim"
+
+#: ../../twitter-bar.php
+msgid "Access Token"
+msgstr "Toegangstoken"
+
+#: ../../twitter-bar.php
+msgid "Access Token Secret"
+msgstr "Toegang Token geheim"
+
+#: ../../twitter-bar.php
+msgid "Twitter Handle"
+msgstr "Twitter handvat"
+
+#: ../../twitter-bar.php
+msgid "Number Of Tweets"
+msgstr "Aantal Tweets"
+
+#: ../../twitter-bar.php
+msgid ""
+"Including replies, if replies are set to off then the number shown could be "
+"less"
+msgstr ""
+"Met inbegrip van antwoorden, als antwoorden zijn ingesteld op off dan het "
+"cijfer dat zou minder"
+
+#: ../../twitter-bar.php
+msgid "Use your Twitter Image"
+msgstr "Gebruik uw Twitter Image"
+
+#: ../../twitter-bar.php
+msgid "Show the number of followers"
+msgstr "Toon het aantal volgelingen"
+
+#: ../../twitter-bar.php
+msgid "Include Replies"
+msgstr "Zijn antwoorden"
+
+#: ../../twitter-bar.php
+msgid "Include Retweets"
+msgstr "Omvatten Retweets"
+
+#: ../../twitter-bar.php
+msgid "Show a different Twitter account"
+msgstr "Toon een andere Twitter-account"
+
+#: ../../twitter-bar.php
+msgid "Leaving this off will show the default account in your theme options"
+msgstr ""
+"Verlaten van dit uit zal laten zien van de standaardaccount in uw thema-"
+"opties"
+
+#: ../../twitter-bar.php
+msgid "Twitter Options"
+msgstr "Twitter API opties"
+
+#: ../../twitter-bar.php
+msgid "Error"
+msgstr "Fout 404"
 
 #: ../../widgets.php
 msgid "Box Left"
-msgstr "Box Links"
+msgstr "Vak links"
 
 #: ../../widgets.php
 msgid "This is the left widget of the three-box section"
-msgstr "Dit is de linker widget van de drie kokervormige"
+msgstr "Dit is de linker widget van de drie-vak sectie"
 
 #: ../../widgets.php
 msgid "Box Middle"
-msgstr "Box Midden-"
+msgstr "Vak midden"
 
 #: ../../widgets.php
 msgid "This is the middle widget of the three-box section"
-msgstr "Dit is het midden van de drie widget kokervormige"
+msgstr "Dit is de middelste widget van de drie-vak sectie"
 
 #: ../../widgets.php
 msgid "Box Right"
@@ -410,23 +958,23 @@ msgstr "Vak rechts"
 
 #: ../../widgets.php
 msgid "This is the right widget of the three-box section"
-msgstr "Dit is de juiste widget van de drie kokervormige"
+msgstr "Dit is de juiste widget van de drie-vak sectie"
 
 #: ../../widgets.php
 msgid "This is the box left widgetized area."
-msgstr "Dit is de box verliet widgetized gebied."
+msgstr "Dit is het vak links widgetized gebied."
 
 #: ../../widgets.php
 msgid "This is the box middle widgetized area."
-msgstr "Dit is de doos midden widgetized gebied."
+msgstr "Dit is het vak midden widgetized gebied."
 
 #: ../../widgets.php
 msgid "This is the box right widgetized area."
-msgstr "Dit is de doos juiste widgetized gebied."
+msgstr "Dit is het juiste widgetized gebied vak."
 
 #: ../../setup/features.php
 msgid "Import/Export"
-msgstr "Importeren/Exporteren"
+msgstr "Importeren/exporteren"
 
 #: ../../setup/features.php
 msgid "Custom CSS"
@@ -438,11 +986,11 @@ msgstr "Neem contact op met Element"
 
 #: ../../setup/features.php
 msgid "Banner Options"
-msgstr "Banner Opties"
+msgstr "Banner opties"
 
 #: ../../setup/features.php
 msgid "Import / Export"
-msgstr "Importeren/Exporteren"
+msgstr "Import / Export"
 
 #: ../../setup/features.php
 msgid "Details"
@@ -450,11 +998,11 @@ msgstr "Details"
 
 #: ../../setup/features.php
 msgid "Banner Image"
-msgstr "Banner Afbeelding"
+msgstr "Afbeelding banner"
 
 #: ../../setup/features.php
 msgid "Enter URL or upload file"
-msgstr "URL invoeren of upload bestand"
+msgstr "Voer de URL of bestand uploaden"
 
 #: ../../setup/features.php
 msgid "Banner URL"
@@ -466,19 +1014,23 @@ msgstr "Cyberchimps Link"
 
 #: ../../setup/features.php
 msgid "Footer Scripts"
-msgstr "Scripts voettekst"
+msgstr "Voettekst Scripts"
 
 #: ../../setup/features.php
-msgid "You do not need to add script tags"
-msgstr "U hoeft niet te voegen script-tags"
+msgid "Please add script tags"
+msgstr "Voeg script-tags"
 
 #: ../../setup/features.php
 msgid "Export Settings"
-msgstr "Export-instellingen"
+msgstr "Instellingen exporteren"
 
 #: ../../setup/features.php
 msgid "Import Settings"
-msgstr "Instellingen importeren"
+msgstr "Importinstellingen"
+
+#: ../../setup/features.php
+msgid "Searchbar text"
+msgstr "Searchbar tekst"
 
 #: ../../setup/features.php
 msgid "Banner"
@@ -486,7 +1038,7 @@ msgstr "Banner"
 
 #: ../../setup/features.php
 msgid "Description + Icons"
-msgstr "Beschrijving + Pictogrammen"
+msgstr "Beschrijving + pictogrammen"
 
 #: ../../setup/features.php
 msgid "Logo + Contact"
@@ -494,20 +1046,24 @@ msgstr "Logo + Contact"
 
 #: ../../setup/features.php
 msgid "Logo + Description"
-msgstr "Logo + Beschrijving"
+msgstr "Logo + beschrijving"
 
 #: ../../setup/features.php
 msgid "Logo + Icons"
-msgstr "Logo + Pictogrammen"
+msgstr "Logo + pictogrammen"
 
 #: ../../setup/features.php
 msgid "Logo + Login"
-msgstr "Logo + Inloggen"
+msgstr "Logo + Login"
 
 #: ../../setup/features.php
 msgid "Logo + Search"
-msgstr "Logo + Zoeken"
+msgstr "Logo + zoeken"
 
 #: ../../setup/features.php
 msgid "Logo"
 msgstr "Logo"
+
+#: ../../setup/features.php
+msgid "Footer Menu"
+msgstr "Voettekst Menu"

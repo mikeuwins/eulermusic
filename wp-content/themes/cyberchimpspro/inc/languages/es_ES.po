@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: Cyberchimps Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-19 15:11:28 UTC\n"
-"PO-Revision-Date: 2013-03-20 09:01-0000\n"
-"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"PO-Revision-Date: 2013-07-26 10:27-0000\n"
+"Last-Translator: CyberChimps <support@cyberchimps.com>\n"
 "Language-Team: Spanish, Spain\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../../404.php
@@ -46,8 +46,8 @@ msgstr "Archivos Mensuales: %s"
 msgid "Yearly Archives: %s"
 msgstr "Archivo Anual: %s"
 
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php ../../archive.php
+#: ../../archive.php ../../footer.php ../../sidebar-left.php
+#: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
 msgstr "Archivos"
 
@@ -80,31 +80,31 @@ msgstr "Enlace permanente a %s"
 msgid "Continue reading"
 msgstr "Continuar leyendo &raquo;"
 
-#: ../../image.php ../../content.php
+#: ../../content.php ../../image.php
 msgid "Pages:"
 msgstr "Páginas"
 
-#: ../../image.php ../../content.php
+#: ../../content.php ../../image.php
 msgid "Edit"
 msgstr "editar"
 
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Pages"
 msgstr "Páginas"
 
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Categories"
 msgstr "Categoras"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
+#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../footer.php
 msgid "WordPress"
 msgstr "WordPress"
 
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
-#: ../../footer.php
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr ""
@@ -218,18 +218,14 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr "Resultados de la búsqueda para: %s"
 
-#: ../../searchform.php
-msgid "Search &hellip;"
-msgstr "Búsqueda &hellip;"
-
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
 msgstr "Suscribirse"
 
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
 msgstr "Entradas (RSS)"
 
-#: ../../sidebar.php ../../sidebar-right.php ../../sidebar-left.php
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"
 msgstr "Comentarios"

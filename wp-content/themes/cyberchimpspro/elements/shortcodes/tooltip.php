@@ -11,7 +11,7 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
@@ -21,14 +21,15 @@ function cyberchimps_shortcodes_tooltip( $atts, $content = null ) {
 	extract( shortcode_atts( array(
 		'name'		=> 'cyberchimps_tooltip',
 		'position'	=> 'top',
-		'title'		=> 'tooltip title'
+		'title'		=> 'tooltip title',
+		'href'		=> '#'
 	), $atts ) );
 
-    // Markup for Tooltip
-    $html = '<a id="' . $name . '" data-placement="' . $position . '" data-toggle="tooltip" href="#" data-original-title="' .
-			$title . '">' . $content . '</a>';
+	// Markup for Tooltip
+	$html = '<a id="' . $name . '" data-placement="' . $position . '" data-toggle="tooltip" href="#" data-original-title="' .
+		$title . '">' . $content . '</a>';
 	?>
-	
+
 	<!-- Trigger the tooltip -->
 	<script>
 		jQuery(function () {
@@ -39,5 +40,6 @@ function cyberchimps_shortcodes_tooltip( $atts, $content = null ) {
 	<?php
 	return $html;
 }
+
 add_shortcode( 'cc_tooltip', 'cyberchimps_shortcodes_tooltip' );
 ?>

@@ -9,7 +9,7 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
@@ -20,7 +20,9 @@
 	<header class="entry-header">
 		
 		<?php cyberchimps_post_format_icon(); ?>
-		<h2 class="entry-title">
+
+        <?php echo ( 'post' == get_post_type() && !is_single() || is_search() ) ? '<h2 class="entry-title">' : '<h1 class="entry-title">'; ?>
+
 			<?php
 			if ( 'page' == get_post_type() ) : 
 				
@@ -29,7 +31,7 @@
 				 
 				if( is_search() ):
 				?>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimpspro' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 						<?php ( get_the_title() )? the_title() : the_permalink(); ?>
 					</a>
 				<?php	
@@ -40,20 +42,22 @@
 				if( 'post' == get_post_type() && is_single() ) :
 				
 					// get the post title toggle option
-					$post_title = cyberchimps_option( 'single_post_title' );
+					$post_title = cyberchimps_get_option( 'single_post_title' );
 					if( $post_title == "1" ) : ?>
-						<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php ( get_the_title() )? the_title() : the_permalink(); ?></a>
+						<?php ( get_the_title() )? the_title() : the_permalink(); ?>
 			<?php	endif;
 				else : ?>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php ( get_the_title() )? the_title() : the_permalink(); ?></a>
+					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimpspro' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php ( get_the_title() )? the_title() : the_permalink(); ?></a>
 			<?php
 				endif;
 			endif; ?>
-		</h2>
+
+        <?php echo ( 'post' == get_post_type() && !is_single() || is_search() ) ? '</h2>' : '</h1>'; ?>
 	
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
 				<?php cyberchimps_posted_on(); ?>
+				<?php cyberchimps_posted_by(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -62,8 +66,8 @@
   
 		<div class="entry-content">
     	<?php cyberchimps_featured_image(); ?>
-			<?php the_content( __( 'Continue reading', 'cyberchimps' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cyberchimps' ), 'after' => '</div>' ) ); ?>
+			<?php the_content( __( 'Continue reading', 'cyberchimpspro' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cyberchimpspro' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
 		
   <?php elseif( is_search() ): ?>	
@@ -85,8 +89,8 @@
     <?php else: ?>
     	<div class="entry-content">
     		<?php cyberchimps_featured_image(); ?>
-				<?php the_content( __( 'Continue reading', 'cyberchimps' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cyberchimps' ), 'after' => '</div>' ) ); ?>
+				<?php the_content( __( 'Continue reading', 'cyberchimpspro' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
+				<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cyberchimpspro' ), 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->
     <?php endif; ?>
 
@@ -105,8 +109,8 @@
     <?php else: ?>
     	<div class="entry-content">
     		<?php cyberchimps_featured_image(); ?>
-				<?php the_content( __( 'Continue reading', 'cyberchimps' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cyberchimps' ), 'after' => '</div>' ) ); ?>
+				<?php the_content( __( 'Continue reading', 'cyberchimpspro' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
+				<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cyberchimpspro' ), 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->
     <?php endif; ?>
 		
@@ -123,7 +127,7 @@
     
 		<?php cyberchimps_post_comments() ?>
 		
-		<?php edit_post_link( __( 'Edit', 'cyberchimps' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'cyberchimpspro' ), '<span class="edit-link">', '</span>' ); ?>
 		
 	</footer><!-- #entry-meta -->
 	

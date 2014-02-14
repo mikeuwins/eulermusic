@@ -1,32 +1,58 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: CyberChimps Pro Elements\n"
+"Project-Id-Version: Elements Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
-"PO-Revision-Date: 2013-03-19 14:07-0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2014-02-11 12:25+0530\n"
+"Last-Translator: Surya <surya@cyberchimps.com>\n"
 "Language-Team: Hindi, India\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
-#: ../../boxes.php ../../init.php ../../setup/features.php
+#: ../../setup/features.php ../../init.php ../../boxes.php
 msgid "Boxes"
 msgstr "बक्से"
 
 #: ../../boxes.php
+msgid "Add new Box"
+msgstr "नई श्रेणी के बक्सों में जोड़ें"
+
+#: ../../boxes.php
+msgid "Edit Box"
+msgstr "बॉक्स को संपादित करें"
+
+#: ../../boxes.php
+msgid "New Box"
+msgstr "नई बॉक्स"
+
+#: ../../boxes.php
+msgid "View Box"
+msgstr "दृश्य बॉक्स"
+
+#: ../../boxes.php
+msgid "Search Boxes"
+msgstr "खोज बक्से"
+
+#: ../../boxes.php
+msgid "No Boxes found"
+msgstr "कोई बक्से पाया"
+
+#: ../../boxes.php
+msgid "No Boxes found in trash"
+msgstr "कोई बक्से में कचरा पाए"
+
+#: ../../boxes.php
+msgctxt "taxonomy general name"
 msgid "Boxes Categories"
 msgstr "बक्से श्रेणियाँ"
 
 #: ../../boxes.php
+msgctxt "taxonomy singular name"
 msgid "Boxes Catergory"
-msgstr "बक्से catergory"
-
-#: ../../boxes.php
-msgid "Search Boxes"
-msgstr "खोज बॉक्स"
+msgstr "बक्से Catergory"
 
 #: ../../boxes.php
 msgid "All Boxes"
@@ -42,23 +68,19 @@ msgstr "बक्से श्रेणी:"
 
 #: ../../boxes.php
 msgid "Edit Boxes Category"
-msgstr "संपादित करें बक्से श्रेणी"
+msgstr "बक्से श्रेणी संपादित करें"
 
 #: ../../boxes.php
 msgid "Update Boxes Category"
-msgstr "अद्यतन बक्से श्रेणी"
+msgstr "बक्से श्रेणी अद्यतन करें"
 
 #: ../../boxes.php
 msgid "Add New Boxes Category"
-msgstr "नए बक्से श्रेणी जोड़ें"
+msgstr "नई श्रेणी के बक्सों में जोड़ें"
 
 #: ../../boxes.php
 msgid "New Boxes Category Name"
-msgstr "नए बक्से श्रेणी नाम"
-
-#: ../../boxes.php
-msgid "Boxes Element"
-msgstr "बक्से तत्व"
+msgstr "नई बक्से श्रेणी नाम"
 
 #: ../../boxes.php
 msgid "Box Image"
@@ -66,23 +88,41 @@ msgstr "बॉक्स छवि"
 
 #: ../../boxes.php
 msgid "Box URL"
-msgstr "बॉक्स यूआरएल"
+msgstr "बॉक्स URL"
+
+#: ../../boxes.php
+msgid "Link the whole box"
+msgstr "पूरा बॉक् स लिंक करें"
 
 #: ../../boxes.php
 msgid "Box Text"
-msgstr "पाठ बॉक्स"
+msgstr "बॉक्स पाठ"
 
 #: ../../boxes.php
-msgid "iFeature Pro 5 Slider"
-msgstr "iFeature प्रो 5 स्लाइडर"
+msgid "Boxes Element"
+msgstr "बक्से तत्व"
+
+#: ../../boxes.php ../../carousel.php ../../portfolio.php ../../slider.php
+msgid "You need to create a Category"
+msgstr "आप एक श्रेणी बनाने के लिए की आवश्यकता"
+
+#: ../../boxes.php
+msgid "Number of boxes per row"
+msgstr "प्रति पंक्ति बक्से की संख्या"
+
+#: ../../boxes.php
+msgid "Boxes Options"
+msgstr "बैनर विकल्प"
+
+#: ../../boxes.php
+msgid "%1$s Slider"
+msgstr "%1$ s स्लाइडर"
 
 #: ../../boxes.php
 msgid ""
-"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
-"device."
+"The New Touch Friendly %1$s Slider now responds to any mobile touch device."
 msgstr ""
-"नई टच मित्रतापूर्ण iFeature प्रो स्लाइडर अब किसी भी मोबाइल स्पर्श डिवाइस के लिए जवाब "
-"है."
+"नई टच अनुकूल %1$ s स्लाइडर अब किसी भी मोबाइल टच डिवाइस के लिए प्रतिक्रिया करता है।"
 
 #: ../../boxes.php
 msgid "Responsive Design"
@@ -90,25 +130,25 @@ msgstr "उत्तरदायी डिजाइन"
 
 #: ../../boxes.php
 msgid ""
-"With iFeature Pro 5 and touch friendly responsive design you can now control "
-"your website on any device."
+"With %1$s and touch friendly responsive design you can now control your "
+"website on any device."
 msgstr ""
-"IFeature Pro 5 और स्पर्श अनुकूल उत्तरदायी डिजाइन के साथ अब आप किसी भी डिवाइस पर "
-"अपनी वेबसाइट पर नियंत्रण कर सकते हैं."
+"%1$ S और स्पर्श दोस्ताना उत्तरदायी डिजाइन के साथ तुम अब अपनी वेबसाइट के किसी भी "
+"डिवाइस पर नियंत्रण कर सकते हैं।"
 
 #: ../../boxes.php
 msgid "Excellent Support"
-msgstr "उत्कृष्ट समर्थन"
+msgstr "बहुत बढ़िया समर्थन"
 
 #: ../../boxes.php
 msgid ""
 "Need help? Read the instructions and please visit our dedicated Pro Support "
 "Forum."
-msgstr "मदद की ज़रूरत है? निर्देश पढ़ें और कृपया हमारे समर्पित प्रो समर्थन फोरम पर जाएँ."
+msgstr "मदद की ज़रूरत है? निर्देश पढ़ें और कृपया हमारी समर्पित प्रो समर्थन मंच पर जाएँ।"
 
 #: ../../breadcrumbs.php
 msgid "Home"
-msgstr "गृह"
+msgstr "होम"
 
 #: ../../breadcrumbs.php
 msgid "Archive for category "
@@ -124,31 +164,129 @@ msgstr "डाक टैग की गईं "
 
 #: ../../breadcrumbs.php
 msgid "Articles posted by "
-msgstr "लेख द्वारा पोस्ट "
+msgstr "द्वारा पोस्ट किया गया लेख "
 
 #: ../../breadcrumbs.php
 msgid "Error 404"
-msgstr "404 त्रुटि"
+msgstr "त्रुटि 404"
 
-#: ../../init.php ../../breadcrumbs.php
+#: ../../breadcrumbs.php ../../init.php
 msgid "Page"
 msgstr "पृष्ठ"
 
-#: ../../init.php ../../carousel.php
+#: ../../callout.php
+msgid "Callout Title"
+msgstr "उत्पाद शीर्षक"
+
+#: ../../callout.php
+msgid "%1$s's Call Out Element"
+msgstr "%1$ s's कॉल तत्व बाहर"
+
+#: ../../callout.php
+msgid "Callout Text"
+msgstr "कॉलआउट अनुभाग"
+
+#: ../../callout.php
+msgid ""
+"Use %1$s's Call Out section on any page where you want to deliver an "
+"important message to your customer or client."
+msgstr ""
+"%1$ S's अनुभाग कॉल बाहर किसी भी पृष्ठ पर जहाँ आप अपने ग्राहक या ग्राहक के लिए एक "
+"महत्वपूर्ण संदेश को डिलीवर करने के लिए चाहते हैं का उपयोग करें।"
+
+#: ../../callout.php
+msgid "Callout Button"
+msgstr "कॉलआउट अनुभाग"
+
+#: ../../callout.php
+msgid "Callout Button Text"
+msgstr "कॉलआउट अनुभाग"
+
+#: ../../callout.php
+msgid "Click Here"
+msgstr "यहाँ क्लिक करें"
+
+#: ../../callout.php
+msgid "Callout Button URL"
+msgstr "कॉलआउट अनुभाग"
+
+#: ../../callout.php
+msgid "Custom Callout Options"
+msgstr "कस्टम स्लाइड विकल्प"
+
+#: ../../callout.php
+msgid "Custom Button Image"
+msgstr "कस्टम बटन छवि"
+
+#: ../../callout.php
+msgid "Custom Background Color"
+msgstr "कस्टम पृष्ठभूमि रंग"
+
+#: ../../callout.php
+msgid "Custom Title Color"
+msgstr "कस्टम शीर्षक रंग"
+
+#: ../../callout.php
+msgid "Custom Text Color"
+msgstr "कस्टम पाठ रंग"
+
+#: ../../callout.php
+msgid "Custom Button Color"
+msgstr "कस्टम बटन रंग"
+
+#: ../../callout.php
+msgid "Custom Button Text Color"
+msgstr "कस्टम बटन पाठ रंग"
+
+#: ../../callout.php
+msgid "Callout Options"
+msgstr "कॉलआउट अनुभाग"
+
+#: ../../carousel.php ../../init.php
 msgid "Carousel"
 msgstr "हिंडोला"
 
 #: ../../carousel.php
-msgid "Posts"
-msgstr "पोस्ट"
+msgid "Carousel item"
+msgstr "हिंडोला"
 
 #: ../../carousel.php
+msgid "Add new Carousel item"
+msgstr "नई हिंडोला श्रेणी जोड़ें"
+
+#: ../../carousel.php
+msgid "Edit Carousel item"
+msgstr "हिंडोला श्रेणी संपादित करें"
+
+#: ../../carousel.php
+msgid "New Carousel item"
+msgstr "नई हिंडोला श्रेणी नाम"
+
+#: ../../carousel.php
+msgid "View Carousel item"
+msgstr "नई हिंडोला श्रेणी नाम"
+
+#: ../../carousel.php
+msgid "Search Carousel items"
+msgstr "खोज हिंडोला"
+
+#: ../../carousel.php
+msgid "No Carousel items found"
+msgstr "हिंडोला श्रेणी"
+
+#: ../../carousel.php
+msgid "No Carousel items found in trash"
+msgstr "कोई हिंडोला आइटम नहीं कचरे में पाया"
+
+#: ../../carousel.php
+msgctxt "taxonomy general name"
 msgid "Carousel Categories"
 msgstr "हिंडोला श्रेणियाँ"
 
 #: ../../carousel.php
+msgctxt "taxonomy singular name"
 msgid "Carousel Catergory"
-msgstr "हिंडोला catergory"
+msgstr "हिंडोला Catergory"
 
 #: ../../carousel.php
 msgid "Search Carousel"
@@ -172,7 +310,7 @@ msgstr "हिंडोला श्रेणी संपादित करे
 
 #: ../../carousel.php
 msgid "Update Carousel Category"
-msgstr "अद्यतन हिंडोला श्रेणी"
+msgstr "हिंडोला श्रेणी अद्यतन करें"
 
 #: ../../carousel.php
 msgid "Add New Carousel Category"
@@ -183,30 +321,50 @@ msgid "New Carousel Category Name"
 msgstr "नई हिंडोला श्रेणी नाम"
 
 #: ../../carousel.php
-msgid "Featured Post Carousel Options"
-msgstr "विशेष रुप से प्रदर्शित पोस्ट विकल्प हिंडोला"
-
-#: ../../carousel.php
 msgid "Featured Post Image"
 msgstr "विशेष रुप से प्रदर्शित पोस्ट छवि"
 
 #: ../../carousel.php
 msgid "Featured Post URL"
-msgstr "विशेष रुप से प्रदर्शित पोस्ट URL"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट यूआरएल"
 
-#: ../../slider.php ../../carousel.php
+#: ../../carousel.php ../../portfolio.php
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../../carousel.php
 msgid "Reorder Name"
-msgstr "नाम पुनः क्रमित करें"
+msgstr "नाम पुनःक्रमित करें"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट हिंडोला विकल्प"
+
+#: ../../carousel.php
+msgid "Carousel Options"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट हिंडोला विकल्प"
+
+#: ../../htmlbox.php
+msgid "Custom HTML"
+msgstr "कस्टम सीएसएस"
+
+#: ../../htmlbox.php
+msgid "Enter your custom html here"
+msgstr "अपने कस्टम html यहाँ दर्ज करें"
+
+#: ../../htmlbox.php
+msgid "HTML Box Options"
+msgstr "HTML बॉक्स"
 
 #: ../../init.php
 msgid "Callout Section"
-msgstr "धारा कॉलआउट"
+msgstr "कॉलआउट अनुभाग"
 
 #: ../../init.php
 msgid "HTML Box"
 msgstr "HTML बॉक्स"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "iFeature Slider"
 msgstr "iFeature स्लाइडर"
 
@@ -214,13 +372,17 @@ msgstr "iFeature स्लाइडर"
 msgid "Magazine"
 msgstr "पत्रिका"
 
-#: ../../portfolio.php ../../init.php
+#: ../../init.php ../../portfolio.php
 msgid "Portfolio"
-msgstr "ग. पोर्टफोलियो"
+msgstr "पोर्टफोलियो"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Post Page"
 msgstr "पोस्ट पेज"
+
+#: ../../init.php ../../product.php
+msgid "Product"
+msgstr "उत्पाद"
 
 #: ../../init.php
 msgid "Recent Posts"
@@ -228,27 +390,113 @@ msgstr "हाल के पोस्ट"
 
 #: ../../init.php
 msgid "Twitter Bar"
-msgstr "चहचहाना बार"
+msgstr "चहचहाना पट्टी"
 
 #: ../../init.php
 msgid "Widgets"
 msgstr "विजेट्स"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Breadcrumbs"
 msgstr "Breadcrumbs"
 
-#: ../../portfolio.php
+#: ../../magazine.php
+msgid "Edit"
+msgstr "बॉक्स को संपादित करें"
+
+#: ../../magazine.php
+msgid "Magazine Options"
+msgstr "बैनर विकल्प"
+
+#: ../../magazine.php
+msgid "Sidebar"
+msgstr "साइडबार"
+
+#: ../../magazine.php
+msgid "Meta Data"
+msgstr "मेटा डेटा"
+
+#: ../../magazine.php
+msgid "Featured Image"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट छवि"
+
+#: ../../magazine.php
+msgid "Category"
+msgstr "बक्से श्रेणी"
+
+#: ../../magazine.php
+msgid "Featured Excerpt Length"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट यूआरएल"
+
+#: ../../magazine.php
+msgid "Number of Columns"
+msgstr "Tweets की संख्या"
+
+#: ../../magazine.php
+msgid "Number of Rows"
+msgstr "Tweets की संख्या"
+
+#: ../../magazine.php
+msgid "Wide Posts Below Magazine"
+msgstr "पत्रिका नीचे विस्तृत पदों"
+
+#: ../../magazine.php
+msgid "Wide Post Excerpt Length"
+msgstr "विस्तृत पोस्ट अंश लंबाई"
+
+#: ../../magazine.php
+msgid "Number of Wide Posts"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट यूआरएल"
+
+#: ../../magazine.php ../../recent-posts.php
+msgid "All"
+msgstr "सभी"
+
+#: ../../magazine.php
+msgid "magazine Options"
+msgstr "बैनर विकल्प"
+
+#: ../../portfolio.php ../../recent-posts.php
 msgid "Images"
 msgstr "छवियाँ"
 
 #: ../../portfolio.php
+msgid "Add new Image"
+msgstr "छवि स्लाइडर"
+
+#: ../../portfolio.php
+msgid "Edit Image"
+msgstr "छवि"
+
+#: ../../portfolio.php
+msgid "New Image"
+msgstr "छवि"
+
+#: ../../portfolio.php
+msgid "View Image"
+msgstr "छवि स्लाइडर"
+
+#: ../../portfolio.php
+msgid "Search Images"
+msgstr "खोज बक्से"
+
+#: ../../portfolio.php
+msgid "No Images found"
+msgstr "कोई छवियाँ नहीं मिली"
+
+#: ../../portfolio.php
+msgid "No Images found in trash"
+msgstr "कचरे में पाया नहीं छवियाँ"
+
+#: ../../portfolio.php
+msgctxt "taxonomy general name"
 msgid "Portfolio Categories"
 msgstr "पोर्टफोलियो श्रेणियाँ"
 
 #: ../../portfolio.php
+msgctxt "taxonomy singular name"
 msgid "Portfolio Catergory"
-msgstr "Not Ranked पोर्टफोलियो catergory"
+msgstr "पोर्टफोलियो Catergory"
 
 #: ../../portfolio.php
 msgid "Search Portfolio"
@@ -256,7 +504,7 @@ msgstr "खोज पोर्टफोलियो"
 
 #: ../../portfolio.php
 msgid "All Portfolios"
-msgstr "सभी पोर्टफोलियो"
+msgstr "सभी विभागों"
 
 #: ../../portfolio.php
 msgid "Portfolio Category"
@@ -272,7 +520,7 @@ msgstr "पोर्टफोलियो श्रेणी संपादि�
 
 #: ../../portfolio.php
 msgid "Update Portfolio Category"
-msgstr "अद्यतन पोर्टफोलियो श्रेणी"
+msgstr "पोर्टफोलियो श्रेणी अद्यतन करें"
 
 #: ../../portfolio.php
 msgid "Add New Portfolio Category"
@@ -280,51 +528,205 @@ msgstr "नया पोर्टफोलियो श्रेणी जोड
 
 #: ../../portfolio.php
 msgid "New Portfolio Category Name"
-msgstr "नया पोर्टफोलियो श्रेणी का नाम"
+msgstr "नया पोर्टफोलियो श्रेणी नाम"
+
+#: ../../portfolio.php
+msgid "Portfolio Image"
+msgstr "पोर्टफोलियो छवि"
+
+#: ../../portfolio.php ../../slider.php
+msgid "Caption"
+msgstr "कैप्शन"
+
+#: ../../portfolio.php
+msgid "Custom Portfolio URL"
+msgstr "कस्टम पोर्टफोलियो यूआरएल"
+
+#: ../../portfolio.php
+msgid "URL"
+msgstr "यूआरएल"
 
 #: ../../portfolio.php
 msgid "Portfolio Element"
 msgstr "पोर्टफोलियो तत्व"
 
 #: ../../portfolio.php
-msgid "Portfolio Image"
-msgstr "पोर्टफोलियो छवि"
+msgid "Images per row"
+msgstr "छवियाँ"
 
-#: ../../slider.php ../../portfolio.php
-msgid "Caption"
+#: ../../portfolio.php
+msgid "Two"
+msgstr "दो"
+
+#: ../../portfolio.php
+msgid "Three"
+msgstr "तीन"
+
+#: ../../portfolio.php
+msgid "Four"
+msgstr "चार"
+
+#: ../../portfolio.php
+msgid "Portfolio Title"
+msgstr "पोर्टफोलियो तत्व"
+
+#: ../../portfolio.php ../../recent-posts.php ../../slider.php
+msgid "Title"
 msgstr "शीर्षक"
 
 #: ../../portfolio.php
-msgid "Lightbox"
-msgstr "Lightbox"
+msgid "Portfolio Options"
+msgstr "पोर्टफोलियो श्रेणियाँ"
 
-#: ../../portfolio.php
-msgid "Custom Portfolio URL"
-msgstr "कस्टम विभाग URL"
+#: ../../product.php
+msgid "Product Layout"
+msgstr "उत्पाद लेआउट"
 
-#: ../../portfolio.php
-msgid "URL"
-msgstr "यूआरएल"
+#: ../../product.php
+msgid "Text Left"
+msgstr "पाठ बाएँ"
+
+#: ../../product.php
+msgid "Text Right"
+msgstr "पाठ को दाईं ओर"
+
+#: ../../product.php
+msgid "Product Title"
+msgstr "उत्पाद शीर्षक"
+
+#: ../../product.php
+msgid "Product Text"
+msgstr "उत्पाद पाठ"
+
+#: ../../product.php
+msgid "Media Type"
+msgstr "मीडिया प्रकार"
+
+#: ../../product.php
+msgid "Image"
+msgstr "छवि"
+
+#: ../../product.php
+msgid "Video"
+msgstr "वीडियो"
+
+#: ../../product.php
+msgid "Product Image URL"
+msgstr "उत्पाद छवि URL"
+
+#: ../../product.php
+msgid "Product Video Embed"
+msgstr "उत्पाद वीडियो को एम्बेड करें"
+
+#: ../../product.php
+msgid "Product Button Type"
+msgstr "उत्पाद लिंक पाठ"
+
+#: ../../product.php
+msgid "No button"
+msgstr "कोई बटन"
+
+#: ../../product.php
+msgid "Button"
+msgstr "बटन"
+
+#: ../../product.php
+msgid "Button Image"
+msgstr "बॉक्स छवि"
+
+#: ../../product.php
+msgid "Product Button URL"
+msgstr "उत्पाद यूआरएल"
+
+#: ../../product.php
+msgid "Product Button Text"
+msgstr "उत्पाद लिंक पाठ"
+
+#: ../../product.php
+msgid "Buy Now"
+msgstr "अब खरीदें"
+
+#: ../../product.php
+msgid "Product Image"
+msgstr "उत्पाद छवि URL"
+
+#: ../../product.php
+msgid "Product URL"
+msgstr "उत्पाद यूआरएल"
+
+#: ../../product.php
+msgid "Product Link Text"
+msgstr "उत्पाद लिंक पाठ"
+
+#: ../../product.php
+msgid "Product Button Image"
+msgstr "उत्पाद छवि URL"
+
+#: ../../product.php
+msgid "Product Button Image URL"
+msgstr "उत्पाद छवि URL"
+
+#: ../../product.php
+msgid "Product Options"
+msgstr "उत्पाद लिंक"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Title"
+msgstr "हाल के पोस्ट"
+
+#: ../../recent-posts.php
+msgid "Post Category"
+msgstr "बक्से श्रेणी"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Options"
+msgstr "हाल के पोस्ट"
 
 #: ../../slider.php
 msgid "Slides"
-msgstr "स्लाइड"
+msgstr "स्लाइड्स"
 
 #: ../../slider.php
-msgid "Slide Categories"
-msgstr "स्लाइड श्रेणियाँ"
+msgid "Add new Slide"
+msgstr "नई स्लाइड श्रेणी जोड़ें"
 
 #: ../../slider.php
-msgid "Slide Catergory"
-msgstr "स्लाइड catergory"
+msgid "Edit Slide"
+msgstr "स्लाइड श्रेणी संपादित करें"
+
+#: ../../slider.php
+msgid "New Slide"
+msgstr "स्लाइड्स"
+
+#: ../../slider.php
+msgid "View Slide"
+msgstr "iFeature स्लाइडर"
 
 #: ../../slider.php
 msgid "Search Slides"
 msgstr "खोज स्लाइड्स"
 
 #: ../../slider.php
+msgid "No Slides found"
+msgstr "कोई स्लाइड नहीं पाया"
+
+#: ../../slider.php
+msgid "No Slides found in trash"
+msgstr "कोई स्लाइड नहीं कचरे में पाया"
+
+#: ../../slider.php
+msgctxt "taxonomy general name"
+msgid "Slide Categories"
+msgstr "स्लाइड श्रेणियाँ"
+
+#: ../../slider.php
+msgctxt "taxonomy singular name"
+msgid "Slide Catergory"
+msgstr "स्लाइड Catergory"
+
+#: ../../slider.php
 msgid "All Slides"
-msgstr "सभी स्लाइडों"
+msgstr "सभी स्लाइड्स"
 
 #: ../../slider.php
 msgid "Slide Category"
@@ -340,7 +742,7 @@ msgstr "स्लाइड श्रेणी संपादित करें
 
 #: ../../slider.php
 msgid "Update Slide Category"
-msgstr "अद्यतन स्लाइड श्रेणी"
+msgstr "स्लाइड श्रेणी अद्यतन करें"
 
 #: ../../slider.php
 msgid "Add New Slide Category"
@@ -348,19 +750,11 @@ msgstr "नई स्लाइड श्रेणी जोड़ें"
 
 #: ../../slider.php
 msgid "New Slide Category Name"
-msgstr "नई स्लाइड श्रेणी का नाम"
-
-#: ../../slider.php
-msgid "Custom Feature Slides"
-msgstr "कस्टम फ़ीचर स्लाइड्स"
-
-#: ../../slider.php
-msgid "Custom Slide Options"
-msgstr "कस्टम स्लाइड विकल्प"
+msgstr "नई स्लाइड श्रेणी नाम"
 
 #: ../../slider.php
 msgid "Slider Image"
-msgstr "स्लाइडर छवि"
+msgstr "छवि स्लाइडर"
 
 #: ../../slider.php
 msgid "Slider Caption"
@@ -371,28 +765,179 @@ msgid "Custom Slide Link"
 msgstr "कस्टम स्लाइड लिंक"
 
 #: ../../slider.php
-msgid "Title"
-msgstr "फैल"
+msgid "Reorder"
+msgstr "नाम पुनःक्रमित करें"
 
 #: ../../slider.php
-msgid "Need Help?"
-msgstr "मदद चाहिए?"
+msgid "Custom Feature Slides"
+msgstr "कस्टम विशेषता स्लाइड्स"
+
+#: ../../slider.php
+msgid "Slider Size"
+msgstr "छवि स्लाइडर"
+
+#: ../../slider.php
+msgid "Full"
+msgstr "पूर्ण"
+
+#: ../../slider.php
+msgid "Half"
+msgstr "आधा"
+
+#: ../../slider.php
+msgid "Slider Type"
+msgstr "छवि स्लाइडर"
+
+#: ../../slider.php
+msgid "Custom"
+msgstr "कस्टम सीएसएस"
+
+#: ../../slider.php
+msgid "Posts"
+msgstr "डाक"
+
+#: ../../slider.php
+msgid "Post Categories"
+msgstr "बक्से श्रेणियाँ"
+
+#: ../../slider.php
+msgid "Custom Categories"
+msgstr "हिंडोला श्रेणियाँ"
+
+#: ../../slider.php
+msgid "Number of Featured Posts"
+msgstr "विशेष रुप से प्रदर्शित पोस्ट यूआरएल"
+
+#: ../../slider.php
+msgid "Slider Height"
+msgstr "छवि स्लाइडर"
+
+#: ../../slider.php
+msgid "Slider Speed"
+msgstr "छवि स्लाइडर"
+
+#: ../../slider.php
+msgid "Slider Arrows"
+msgstr "स्लाइड्स"
+
+#: ../../slider.php
+msgid "iFeature Slider Options"
+msgstr "iFeature स्लाइडर"
+
+#: ../../twitter-bar.php
+msgid "Error retrieving tweets"
+msgstr "त्रुटि tweets पुनःप्राप्त"
+
+#: ../../twitter-bar.php
+msgid "%1$s followers"
+msgstr "%1$ s अनुयायियों"
 
 #: ../../twitter-bar.php
 msgid "No tweets to display"
-msgstr "प्रदर्शन के लिए कोई tweets"
+msgstr "प्रदर्शित करने के लिए कोई tweets"
 
 #: ../../twitter-bar.php
-msgid "Invalid Response"
-msgstr "अमान्य प्रतिसाद"
+msgid "Twitter API Options"
+msgstr "चहचहाना एपीआई विकल्प"
+
+#: ../../twitter-bar.php
+msgid "Edit Twitter API"
+msgstr "चहचहाना एपीआई को संपादित करें"
+
+#: ../../twitter-bar.php
+msgid "Create your Twitter App here"
+msgstr "आपके चहचहाना App यहाँ बनाएँ"
+
+#: ../../twitter-bar.php
+msgid "Complete all parts of the form and create your application"
+msgstr "प्रपत्र के सभी भागों को पूरा और आपके अनुप्रयोग बनाएँ"
+
+#: ../../twitter-bar.php
+msgid "On the next page click on the button Create my access token"
+msgstr "अगले पृष्ठ पर बटन पर क्लिक करें पर मेरी पहुँच टोकन बनाएँ"
+
+#: ../../twitter-bar.php
+msgid "Now take the details and fill out the form below"
+msgstr "अब विवरण ले और नीचे दिए गए फॉर्म को भरें"
+
+#: ../../twitter-bar.php
+msgid "Save your options"
+msgstr "आपके विकल्प सहेजना"
+
+#: ../../twitter-bar.php
+msgid "Create a Twitter App"
+msgstr "एक चहचहाना अनुप्रयोग बनाएँ"
+
+#: ../../twitter-bar.php
+msgid "Consumer Key"
+msgstr "उपभोक्ता कुंजी"
+
+#: ../../twitter-bar.php
+msgid "Consumer Secret"
+msgstr "उपभोक्ता गुप्त"
+
+#: ../../twitter-bar.php
+msgid "Access Token"
+msgstr "पहुँच टोकन"
+
+#: ../../twitter-bar.php
+msgid "Access Token Secret"
+msgstr "पहुँच टोकन गुप्त"
+
+#: ../../twitter-bar.php
+msgid "Twitter Handle"
+msgstr "चहचहाना संभाल"
+
+#: ../../twitter-bar.php
+msgid "Number Of Tweets"
+msgstr "Tweets की संख्या"
+
+#: ../../twitter-bar.php
+msgid ""
+"Including replies, if replies are set to off then the number shown could be "
+"less"
+msgstr ""
+"अगर जवाब है तब दिखाई गई संख्या बंद करने के लिए सेट कर रहे हैं जवाब है, सहित कम हो सकता है"
+
+#: ../../twitter-bar.php
+msgid "Use your Twitter Image"
+msgstr "आपके चहचहाना छवि का उपयोग करें"
+
+#: ../../twitter-bar.php
+msgid "Show the number of followers"
+msgstr "अनुयायियों की संख्या दिखाएँ"
+
+#: ../../twitter-bar.php
+msgid "Include Replies"
+msgstr "प्रत्युत्तर में शामिल हैं"
+
+#: ../../twitter-bar.php
+msgid "Include Retweets"
+msgstr "Retweets शामिल हैं"
+
+#: ../../twitter-bar.php
+msgid "Show a different Twitter account"
+msgstr "एक अलग चहचहाना खाता दिखाएँ"
+
+#: ../../twitter-bar.php
+msgid "Leaving this off will show the default account in your theme options"
+msgstr "इस जा बंद डिफ़ॉल्ट खाते में अपनी थीम विकल्प दिखाएँ करेगा"
+
+#: ../../twitter-bar.php
+msgid "Twitter Options"
+msgstr "चहचहाना एपीआई विकल्प"
+
+#: ../../twitter-bar.php
+msgid "Error"
+msgstr "त्रुटि 404"
 
 #: ../../widgets.php
 msgid "Box Left"
-msgstr "बॉक्स छोड़ दिया"
+msgstr "बाएँ बॉक्स"
 
 #: ../../widgets.php
 msgid "This is the left widget of the three-box section"
-msgstr "यह खंड तीन बॉक्स के बाईं विजेट है"
+msgstr "इस तीन-बॉक्स अनुभाग के बाईं विजेट है"
 
 #: ../../widgets.php
 msgid "Box Middle"
@@ -400,31 +945,31 @@ msgstr "बॉक्स मध्य"
 
 #: ../../widgets.php
 msgid "This is the middle widget of the three-box section"
-msgstr "यह खंड तीन बॉक्स के बीच विजेट है"
+msgstr "इस तीन-बॉक्स अनुभाग के मध्य विजेट है"
 
 #: ../../widgets.php
 msgid "Box Right"
-msgstr "बॉक्स सही"
+msgstr "सही बॉक्स"
 
 #: ../../widgets.php
 msgid "This is the right widget of the three-box section"
-msgstr "यह खंड तीन बॉक्स सही विजेट है"
+msgstr "इस तीन-बॉक्स अनुभाग का सही विजेट है"
 
 #: ../../widgets.php
 msgid "This is the box left widgetized area."
-msgstr "यह बॉक्स widgetized क्षेत्र छोड़ दिया है."
+msgstr "इस बॉक्स बाईं widgetized क्षेत्र है।"
 
 #: ../../widgets.php
 msgid "This is the box middle widgetized area."
-msgstr "यह बॉक्स बीच widgetized क्षेत्र है."
+msgstr "इस बॉक्स मध्यम widgetized क्षेत्र है।"
 
 #: ../../widgets.php
 msgid "This is the box right widgetized area."
-msgstr "यह बॉक्स सही widgetized क्षेत्र है."
+msgstr "इस बॉक्स सही widgetized क्षेत्र है।"
 
 #: ../../setup/features.php
 msgid "Import/Export"
-msgstr "आयात / निर्यात"
+msgstr "आयात/निर्यात"
 
 #: ../../setup/features.php
 msgid "Custom CSS"
@@ -432,7 +977,7 @@ msgstr "कस्टम सीएसएस"
 
 #: ../../setup/features.php
 msgid "Contact Element"
-msgstr "तत्व संपर्क"
+msgstr "तत्व से संपर्क करें"
 
 #: ../../setup/features.php
 msgid "Banner Options"
@@ -452,11 +997,11 @@ msgstr "बैनर छवि"
 
 #: ../../setup/features.php
 msgid "Enter URL or upload file"
-msgstr "URL दर्ज करें या फाइल अपलोड करें"
+msgstr "URL दर्ज करें या फ़ाइल अपलोड करें"
 
 #: ../../setup/features.php
 msgid "Banner URL"
-msgstr "बैनर यूआरएल"
+msgstr "बैनर URL"
 
 #: ../../setup/features.php
 msgid "Cyberchimps Link"
@@ -467,8 +1012,8 @@ msgid "Footer Scripts"
 msgstr "पाद लेख लिपियों"
 
 #: ../../setup/features.php
-msgid "You do not need to add script tags"
-msgstr "आप स्क्रिप्ट टैग जोड़ने के लिए की ज़रूरत नहीं"
+msgid "Please add script tags"
+msgstr "कृपया स्क्रिप्ट टैग जोड़ें"
 
 #: ../../setup/features.php
 msgid "Export Settings"
@@ -476,7 +1021,11 @@ msgstr "निर्यात सेटिंग्स"
 
 #: ../../setup/features.php
 msgid "Import Settings"
-msgstr "आयात सेटिंग्स"
+msgstr "सेटिंग्स आयात करें"
+
+#: ../../setup/features.php
+msgid "Searchbar text"
+msgstr "Searchbar पाठ"
 
 #: ../../setup/features.php
 msgid "Banner"
@@ -484,23 +1033,23 @@ msgstr "बैनर"
 
 #: ../../setup/features.php
 msgid "Description + Icons"
-msgstr "विवरण + प्रतीक"
+msgstr "विवरण + माउस को आइकनों"
 
 #: ../../setup/features.php
 msgid "Logo + Contact"
-msgstr "+ लोगो संपर्क"
+msgstr "लोगो + संपर्क करें"
 
 #: ../../setup/features.php
 msgid "Logo + Description"
-msgstr "+ लोगो विवरण"
+msgstr "लोगो + वर्णन"
 
 #: ../../setup/features.php
 msgid "Logo + Icons"
-msgstr "लोगो + प्रतीक"
+msgstr "लोगो + माउस को आइकनों"
 
 #: ../../setup/features.php
 msgid "Logo + Login"
-msgstr "लोगो + लॉगइन"
+msgstr "लोगो + लॉगिन"
 
 #: ../../setup/features.php
 msgid "Logo + Search"
@@ -508,4 +1057,8 @@ msgstr "लोगो + खोज"
 
 #: ../../setup/features.php
 msgid "Logo"
-msgstr "फैल"
+msgstr "लोगो"
+
+#: ../../setup/features.php
+msgid "Footer Menu"
+msgstr "पाद लेख मेनू"

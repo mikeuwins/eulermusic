@@ -1,33 +1,59 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: CyberChimps Pro Elements\n"
+"Project-Id-Version: Elements Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
-"PO-Revision-Date: 2013-03-19 14:07-0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2014-02-11 12:25+0530\n"
+"Last-Translator: Surya <surya@cyberchimps.com>\n"
 "Language-Team: Russian, Russia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../../boxes.php ../../init.php ../../setup/features.php
+#: ../../setup/features.php ../../init.php ../../boxes.php
 msgid "Boxes"
 msgstr "Коробки"
 
 #: ../../boxes.php
-msgid "Boxes Categories"
-msgstr "Коробки категории"
+msgid "Add new Box"
+msgstr "Добавить новую категорию коробки"
 
 #: ../../boxes.php
-msgid "Boxes Catergory"
-msgstr "Коробки Catergory"
+msgid "Edit Box"
+msgstr "Поле ввода"
+
+#: ../../boxes.php
+msgid "New Box"
+msgstr "Новое поле"
+
+#: ../../boxes.php
+msgid "View Box"
+msgstr "Поле зрения"
 
 #: ../../boxes.php
 msgid "Search Boxes"
-msgstr "Поиск коробки"
+msgstr "Поля поиска"
+
+#: ../../boxes.php
+msgid "No Boxes found"
+msgstr "Диалоговые не найдено"
+
+#: ../../boxes.php
+msgid "No Boxes found in trash"
+msgstr "Не коробки, в корзину"
+
+#: ../../boxes.php
+msgctxt "taxonomy general name"
+msgid "Boxes Categories"
+msgstr "Категории коробки"
+
+#: ../../boxes.php
+msgctxt "taxonomy singular name"
+msgid "Boxes Catergory"
+msgstr "Коробки Catergory"
 
 #: ../../boxes.php
 msgid "All Boxes"
@@ -35,19 +61,19 @@ msgstr "Все коробки"
 
 #: ../../boxes.php
 msgid "Boxes Category"
-msgstr "Коробки категории"
+msgstr "Категория коробки"
 
 #: ../../boxes.php
 msgid "Boxes Category:"
-msgstr "Коробки Категория:"
+msgstr "Категория коробки:"
 
 #: ../../boxes.php
 msgid "Edit Boxes Category"
-msgstr "Редактировать Коробки категории"
+msgstr "Изменить категорию коробки"
 
 #: ../../boxes.php
 msgid "Update Boxes Category"
-msgstr "Обновление Коробки категории"
+msgstr "Обновление поля категории"
 
 #: ../../boxes.php
 msgid "Add New Boxes Category"
@@ -55,47 +81,62 @@ msgstr "Добавить новую категорию коробки"
 
 #: ../../boxes.php
 msgid "New Boxes Category Name"
-msgstr "Новая категория коробки Имя"
-
-#: ../../boxes.php
-msgid "Boxes Element"
-msgstr "Коробки элемент"
+msgstr "Новое имя категории коробки"
 
 #: ../../boxes.php
 msgid "Box Image"
-msgstr "Box Изображение"
+msgstr "Поле изображения"
 
 #: ../../boxes.php
 msgid "Box URL"
 msgstr "Поле URL-адрес"
 
 #: ../../boxes.php
-msgid "Box Text"
-msgstr "Надпись"
+msgid "Link the whole box"
+msgstr "Связать целую коробку"
 
 #: ../../boxes.php
-msgid "iFeature Pro 5 Slider"
-msgstr "параметрического элемента Slider Pro 5"
+msgid "Box Text"
+msgstr "Текст в окне"
+
+#: ../../boxes.php
+msgid "Boxes Element"
+msgstr "Элемент коробки"
+
+#: ../../boxes.php ../../carousel.php ../../portfolio.php ../../slider.php
+msgid "You need to create a Category"
+msgstr "Вам нужно создать категорию"
+
+#: ../../boxes.php
+msgid "Number of boxes per row"
+msgstr "Количество полей в строке"
+
+#: ../../boxes.php
+msgid "Boxes Options"
+msgstr "Баннер вариантов"
+
+#: ../../boxes.php
+msgid "%1$s Slider"
+msgstr "%1$ s слайдер"
 
 #: ../../boxes.php
 msgid ""
-"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
-"device."
+"The New Touch Friendly %1$s Slider now responds to any mobile touch device."
 msgstr ""
-"Новый сенсорный животными параметрического элемента Slider Pro теперь "
-"реагирует на любое мобильное устройство связи."
+"Новый Touch дружественных %1$ s ползунок теперь реагирует на любого "
+"мобильного сенсорного устройства."
 
 #: ../../boxes.php
 msgid "Responsive Design"
-msgstr "Отзывчивый Design"
+msgstr "Чутко дизайн"
 
 #: ../../boxes.php
 msgid ""
-"With iFeature Pro 5 and touch friendly responsive design you can now control "
-"your website on any device."
+"With %1$s and touch friendly responsive design you can now control your "
+"website on any device."
 msgstr ""
-"С параметрического Pro 5 и сенсорным дружественных реагировать дизайна "
-"теперь вы можете контролировать свой веб-сайт на любом устройстве."
+"С %1$ s и touch дружественных реагировать дизайн теперь вы можете управлять "
+"ваш веб-сайт на любом устройстве."
 
 #: ../../boxes.php
 msgid "Excellent Support"
@@ -106,12 +147,12 @@ msgid ""
 "Need help? Read the instructions and please visit our dedicated Pro Support "
 "Forum."
 msgstr ""
-"Нужна помощь? Прочитайте инструкцию и, пожалуйста, посетите наш специальный "
-"Pro форум поддержки."
+"Нужна помощь? Прочитайте инструкции и посетите наш выделенный Pro форум "
+"поддержки."
 
 #: ../../breadcrumbs.php
 msgid "Home"
-msgstr "ДОМОЙ"
+msgstr "Главная"
 
 #: ../../breadcrumbs.php
 msgid "Archive for category "
@@ -119,7 +160,7 @@ msgstr "Архив для категории "
 
 #: ../../breadcrumbs.php
 msgid "Search results for "
-msgstr "результаты поиска для"
+msgstr "Результаты поиска для "
 
 #: ../../breadcrumbs.php
 msgid "Posts tagged "
@@ -133,23 +174,121 @@ msgstr "Статьи Написал "
 msgid "Error 404"
 msgstr "Ошибка 404"
 
-#: ../../init.php ../../breadcrumbs.php
+#: ../../breadcrumbs.php ../../init.php
 msgid "Page"
 msgstr "Страница"
 
-#: ../../init.php ../../carousel.php
+#: ../../callout.php
+msgid "Callout Title"
+msgstr "Название продукта"
+
+#: ../../callout.php
+msgid "%1$s's Call Out Element"
+msgstr "%1$ s's Call Out элемент"
+
+#: ../../callout.php
+msgid "Callout Text"
+msgstr "Раздел выноски"
+
+#: ../../callout.php
+msgid ""
+"Use %1$s's Call Out section on any page where you want to deliver an "
+"important message to your customer or client."
+msgstr ""
+"Используйте %1$ s's вызова из секции на любой странице, где вы хотите "
+"доставить важное сообщение для вашего клиента или клиента."
+
+#: ../../callout.php
+msgid "Callout Button"
+msgstr "Раздел выноски"
+
+#: ../../callout.php
+msgid "Callout Button Text"
+msgstr "Раздел выноски"
+
+#: ../../callout.php
+msgid "Click Here"
+msgstr "Нажмите здесь"
+
+#: ../../callout.php
+msgid "Callout Button URL"
+msgstr "Раздел выноски"
+
+#: ../../callout.php
+msgid "Custom Callout Options"
+msgstr "Параметры пользовательского слайд"
+
+#: ../../callout.php
+msgid "Custom Button Image"
+msgstr "Пользовательские кнопки"
+
+#: ../../callout.php
+msgid "Custom Background Color"
+msgstr "Пользовательский цвет фона"
+
+#: ../../callout.php
+msgid "Custom Title Color"
+msgstr "Цвет пользовательского заголовка"
+
+#: ../../callout.php
+msgid "Custom Text Color"
+msgstr "Пользовательский цвет текста"
+
+#: ../../callout.php
+msgid "Custom Button Color"
+msgstr "Цвет пользовательские кнопки"
+
+#: ../../callout.php
+msgid "Custom Button Text Color"
+msgstr "Цвет текста пользовательской кнопки"
+
+#: ../../callout.php
+msgid "Callout Options"
+msgstr "Раздел выноски"
+
+#: ../../carousel.php ../../init.php
 msgid "Carousel"
 msgstr "Карусель"
 
 #: ../../carousel.php
-msgid "Posts"
-msgstr "Записи"
+msgid "Carousel item"
+msgstr "Карусель"
 
 #: ../../carousel.php
+msgid "Add new Carousel item"
+msgstr "Добавить новую категорию Карусель"
+
+#: ../../carousel.php
+msgid "Edit Carousel item"
+msgstr "Изменить категорию Карусель"
+
+#: ../../carousel.php
+msgid "New Carousel item"
+msgstr "Новое имя категории Карусель"
+
+#: ../../carousel.php
+msgid "View Carousel item"
+msgstr "Новое имя категории Карусель"
+
+#: ../../carousel.php
+msgid "Search Carousel items"
+msgstr "Поиск Карусель"
+
+#: ../../carousel.php
+msgid "No Carousel items found"
+msgstr "Категория Карусель"
+
+#: ../../carousel.php
+msgid "No Carousel items found in trash"
+msgstr "Не найдено Карусель в корзину"
+
+#: ../../carousel.php
+msgctxt "taxonomy general name"
 msgid "Carousel Categories"
 msgstr "Карусель категории"
 
 #: ../../carousel.php
+msgctxt "taxonomy singular name"
 msgid "Carousel Catergory"
 msgstr "Карусель Catergory"
 
@@ -163,7 +302,7 @@ msgstr "Все карусели"
 
 #: ../../carousel.php
 msgid "Carousel Category"
-msgstr "Карусель Категория"
+msgstr "Категория Карусель"
 
 #: ../../carousel.php
 msgid "Carousel Category:"
@@ -171,11 +310,11 @@ msgstr "Карусель Категория:"
 
 #: ../../carousel.php
 msgid "Edit Carousel Category"
-msgstr "Редактировать Карусель Категория"
+msgstr "Изменить категорию Карусель"
 
 #: ../../carousel.php
 msgid "Update Carousel Category"
-msgstr "Обновление Карусель Категория"
+msgstr "Обновление категории Карусель"
 
 #: ../../carousel.php
 msgid "Add New Carousel Category"
@@ -183,51 +322,75 @@ msgstr "Добавить новую категорию Карусель"
 
 #: ../../carousel.php
 msgid "New Carousel Category Name"
-msgstr "Новая категория Карусель Имя"
-
-#: ../../carousel.php
-msgid "Featured Post Carousel Options"
-msgstr "Популярные сообщения Карусель параметры"
+msgstr "Новое имя категории Карусель"
 
 #: ../../carousel.php
 msgid "Featured Post Image"
-msgstr "Популярные Сообщение Изображение"
+msgstr "Рекомендуемые Post изображение"
 
 #: ../../carousel.php
 msgid "Featured Post URL"
-msgstr "Популярные сообщения URL"
+msgstr "Рекомендуемые Post URL"
 
-#: ../../slider.php ../../carousel.php
+#: ../../carousel.php ../../portfolio.php
+msgid "Lightbox"
+msgstr "Лайтбокс"
+
+#: ../../carousel.php
 msgid "Reorder Name"
-msgstr "Изменение порядка Имя"
+msgstr "Изменить имя"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel"
+msgstr "Рекомендуемые Post параметры Карусель"
+
+#: ../../carousel.php
+msgid "Carousel Options"
+msgstr "Рекомендуемые Post параметры Карусель"
+
+#: ../../htmlbox.php
+msgid "Custom HTML"
+msgstr "Пользовательские CSS"
+
+#: ../../htmlbox.php
+msgid "Enter your custom html here"
+msgstr "Введите здесь ваши пользовательские html"
+
+#: ../../htmlbox.php
+msgid "HTML Box Options"
+msgstr "Поле HTML"
 
 #: ../../init.php
 msgid "Callout Section"
-msgstr "Выноска разделе"
+msgstr "Раздел выноски"
 
 #: ../../init.php
 msgid "HTML Box"
 msgstr "Поле HTML"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "iFeature Slider"
-msgstr "параметрического элемента Slider"
+msgstr "iFeature слайдер"
 
 #: ../../init.php
 msgid "Magazine"
-msgstr "Новости Каучсерфинга (+RSS)"
+msgstr "Журнал"
 
-#: ../../portfolio.php ../../init.php
+#: ../../init.php ../../portfolio.php
 msgid "Portfolio"
-msgstr "Наше видео"
+msgstr "Портфолио"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Post Page"
-msgstr "Сообщение страницу"
+msgstr "Пост страница"
+
+#: ../../init.php ../../product.php
+msgid "Product"
+msgstr "Продукт"
 
 #: ../../init.php
 msgid "Recent Posts"
-msgstr "Свежие записи"
+msgstr "Последние сообщения"
 
 #: ../../init.php
 msgid "Twitter Bar"
@@ -237,93 +400,333 @@ msgstr "Twitter Бар"
 msgid "Widgets"
 msgstr "Виджеты"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Breadcrumbs"
-msgstr "Цепочка(Breadcrumbs)"
+msgstr "Панировочные сухари"
 
-#: ../../portfolio.php
+#: ../../magazine.php
+msgid "Edit"
+msgstr "Поле ввода"
+
+#: ../../magazine.php
+msgid "Magazine Options"
+msgstr "Баннер вариантов"
+
+#: ../../magazine.php
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: ../../magazine.php
+msgid "Meta Data"
+msgstr "Мета-данные"
+
+#: ../../magazine.php
+msgid "Featured Image"
+msgstr "Рекомендуемые Post изображение"
+
+#: ../../magazine.php
+msgid "Category"
+msgstr "Категория коробки"
+
+#: ../../magazine.php
+msgid "Featured Excerpt Length"
+msgstr "Рекомендуемые Post URL"
+
+#: ../../magazine.php
+msgid "Number of Columns"
+msgstr "Количество твитов"
+
+#: ../../magazine.php
+msgid "Number of Rows"
+msgstr "Количество твитов"
+
+#: ../../magazine.php
+msgid "Wide Posts Below Magazine"
+msgstr "Широкий должности ниже журнал"
+
+#: ../../magazine.php
+msgid "Wide Post Excerpt Length"
+msgstr "Длина большой пост отрывок"
+
+#: ../../magazine.php
+msgid "Number of Wide Posts"
+msgstr "Рекомендуемые Post URL"
+
+#: ../../magazine.php ../../recent-posts.php
+msgid "All"
+msgstr "Все"
+
+#: ../../magazine.php
+msgid "magazine Options"
+msgstr "Баннер вариантов"
+
+#: ../../portfolio.php ../../recent-posts.php
 msgid "Images"
-msgstr "Картинки"
+msgstr "Изображения"
 
 #: ../../portfolio.php
+msgid "Add new Image"
+msgstr "Изображения ползунок"
+
+#: ../../portfolio.php
+msgid "Edit Image"
+msgstr "Изображение"
+
+#: ../../portfolio.php
+msgid "New Image"
+msgstr "Изображение"
+
+#: ../../portfolio.php
+msgid "View Image"
+msgstr "Изображения ползунок"
+
+#: ../../portfolio.php
+msgid "Search Images"
+msgstr "Поля поиска"
+
+#: ../../portfolio.php
+msgid "No Images found"
+msgstr "Изображения не найдены"
+
+#: ../../portfolio.php
+msgid "No Images found in trash"
+msgstr "Изображения не найдены в корзину"
+
+#: ../../portfolio.php
+msgctxt "taxonomy general name"
 msgid "Portfolio Categories"
-msgstr "Портфолио категории"
+msgstr "Портфель категории"
 
 #: ../../portfolio.php
+msgctxt "taxonomy singular name"
 msgid "Portfolio Catergory"
-msgstr "Портфолио Catergory"
+msgstr "Портфель категории"
 
 #: ../../portfolio.php
 msgid "Search Portfolio"
-msgstr "Поиск Портфель"
+msgstr "Поиск портфеля"
 
 #: ../../portfolio.php
 msgid "All Portfolios"
-msgstr "Все портфолио"
+msgstr "Все портфели"
 
 #: ../../portfolio.php
 msgid "Portfolio Category"
-msgstr "Портфолио категории"
+msgstr "Портфель категории"
 
 #: ../../portfolio.php
 msgid "Portfolio Category:"
-msgstr "Портфолио Категория:"
+msgstr "Портфель категории:"
 
 #: ../../portfolio.php
 msgid "Edit Portfolio Category"
-msgstr "Редактировать портфолио категории"
+msgstr "Изменить категорию портфолио"
 
 #: ../../portfolio.php
 msgid "Update Portfolio Category"
-msgstr "Обновление портфолио категории"
+msgstr "Обновление портфолио Категория"
 
 #: ../../portfolio.php
 msgid "Add New Portfolio Category"
-msgstr "Добавить новую категорию Портфолио"
+msgstr "Добавить новую категорию портфолио"
 
 #: ../../portfolio.php
 msgid "New Portfolio Category Name"
-msgstr "Имя категории Портфолио"
-
-#: ../../portfolio.php
-msgid "Portfolio Element"
-msgstr "Портфолио элемент"
+msgstr "Новое имя категории портфолио"
 
 #: ../../portfolio.php
 msgid "Portfolio Image"
 msgstr "Портфолио изображения"
 
-#: ../../slider.php ../../portfolio.php
+#: ../../portfolio.php ../../slider.php
 msgid "Caption"
 msgstr "Подпись"
 
 #: ../../portfolio.php
-msgid "Lightbox"
-msgstr "Лайтбокс"
-
-#: ../../portfolio.php
 msgid "Custom Portfolio URL"
-msgstr "Пользовательский URL Портфолио"
+msgstr "URL-адрес пользовательского портфель"
 
 #: ../../portfolio.php
 msgid "URL"
-msgstr "URL:"
+msgstr "URL-АДРЕС"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "Элемент портфолио"
+
+#: ../../portfolio.php
+msgid "Images per row"
+msgstr "Изображения"
+
+#: ../../portfolio.php
+msgid "Two"
+msgstr "Два"
+
+#: ../../portfolio.php
+msgid "Three"
+msgstr "Три"
+
+#: ../../portfolio.php
+msgid "Four"
+msgstr "Четыре"
+
+#: ../../portfolio.php
+msgid "Portfolio Title"
+msgstr "Элемент портфолио"
+
+#: ../../portfolio.php ../../recent-posts.php ../../slider.php
+msgid "Title"
+msgstr "Название"
+
+#: ../../portfolio.php
+msgid "Portfolio Options"
+msgstr "Портфель категории"
+
+#: ../../product.php
+msgid "Product Layout"
+msgstr "Макет продукта"
+
+#: ../../product.php
+msgid "Text Left"
+msgstr "Текст слева"
+
+#: ../../product.php
+msgid "Text Right"
+msgstr "Право текста"
+
+#: ../../product.php
+msgid "Product Title"
+msgstr "Название продукта"
+
+#: ../../product.php
+msgid "Product Text"
+msgstr "Текст продукта"
+
+#: ../../product.php
+msgid "Media Type"
+msgstr "Тип носителя"
+
+#: ../../product.php
+msgid "Image"
+msgstr "Изображение"
+
+#: ../../product.php
+msgid "Video"
+msgstr "Видео"
+
+#: ../../product.php
+msgid "Product Image URL"
+msgstr "URL-адрес изображения продукта"
+
+#: ../../product.php
+msgid "Product Video Embed"
+msgstr "Вставлять видео продукта"
+
+#: ../../product.php
+msgid "Product Button Type"
+msgstr "Текст ссылки продукта"
+
+#: ../../product.php
+msgid "No button"
+msgstr "Кнопка не"
+
+#: ../../product.php
+msgid "Button"
+msgstr "Кнопка"
+
+#: ../../product.php
+msgid "Button Image"
+msgstr "Поле изображения"
+
+#: ../../product.php
+msgid "Product Button URL"
+msgstr "URL-адрес продукта"
+
+#: ../../product.php
+msgid "Product Button Text"
+msgstr "Текст ссылки продукта"
+
+#: ../../product.php
+msgid "Buy Now"
+msgstr "Купить сейчас"
+
+#: ../../product.php
+msgid "Product Image"
+msgstr "URL-адрес изображения продукта"
+
+#: ../../product.php
+msgid "Product URL"
+msgstr "URL-адрес продукта"
+
+#: ../../product.php
+msgid "Product Link Text"
+msgstr "Текст ссылки продукта"
+
+#: ../../product.php
+msgid "Product Button Image"
+msgstr "URL-адрес изображения продукта"
+
+#: ../../product.php
+msgid "Product Button Image URL"
+msgstr "URL-адрес изображения продукта"
+
+#: ../../product.php
+msgid "Product Options"
+msgstr "Продукт ссылка"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Title"
+msgstr "Последние сообщения"
+
+#: ../../recent-posts.php
+msgid "Post Category"
+msgstr "Категория коробки"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Options"
+msgstr "Последние сообщения"
 
 #: ../../slider.php
 msgid "Slides"
-msgstr "Google Презентации"
+msgstr "Слайды"
 
 #: ../../slider.php
-msgid "Slide Categories"
-msgstr "Презентация категории"
+msgid "Add new Slide"
+msgstr "Добавить новую категорию слайд"
 
 #: ../../slider.php
-msgid "Slide Catergory"
-msgstr "Презентация Catergory"
+msgid "Edit Slide"
+msgstr "Изменить категорию слайд"
+
+#: ../../slider.php
+msgid "New Slide"
+msgstr "Слайды"
+
+#: ../../slider.php
+msgid "View Slide"
+msgstr "iFeature слайдер"
 
 #: ../../slider.php
 msgid "Search Slides"
-msgstr "Поиск Слайды"
+msgstr "Поиск слайдов"
+
+#: ../../slider.php
+msgid "No Slides found"
+msgstr "Не найдено слайды"
+
+#: ../../slider.php
+msgid "No Slides found in trash"
+msgstr "Не слайды, в корзину"
+
+#: ../../slider.php
+msgctxt "taxonomy general name"
+msgid "Slide Categories"
+msgstr "Категории слайд"
+
+#: ../../slider.php
+msgctxt "taxonomy singular name"
+msgid "Slide Catergory"
+msgstr "Слайд Catergory"
 
 #: ../../slider.php
 msgid "All Slides"
@@ -331,39 +734,31 @@ msgstr "Все слайды"
 
 #: ../../slider.php
 msgid "Slide Category"
-msgstr "Презентация категории"
+msgstr "Категория слайд"
 
 #: ../../slider.php
 msgid "Slide Category:"
-msgstr "Презентация Категория:"
+msgstr "Слайд Категория:"
 
 #: ../../slider.php
 msgid "Edit Slide Category"
-msgstr "Изменить слайд категории"
+msgstr "Изменить категорию слайд"
 
 #: ../../slider.php
 msgid "Update Slide Category"
-msgstr "Обновление Презентация категории"
+msgstr "Обновить слайд Категория"
 
 #: ../../slider.php
 msgid "Add New Slide Category"
-msgstr "Добавить новую категорию слайдов"
+msgstr "Добавить новую категорию слайд"
 
 #: ../../slider.php
 msgid "New Slide Category Name"
-msgstr "Имя категории слайдов"
-
-#: ../../slider.php
-msgid "Custom Feature Slides"
-msgstr "Пользовательские функции Слайды"
-
-#: ../../slider.php
-msgid "Custom Slide Options"
-msgstr "Пользовательские параметры слайд"
+msgstr "Новое имя категории слайд"
 
 #: ../../slider.php
 msgid "Slider Image"
-msgstr "Слайдер изображений"
+msgstr "Изображения ползунок"
 
 #: ../../slider.php
 msgid "Slider Caption"
@@ -371,63 +766,215 @@ msgstr "Ползунок заголовок"
 
 #: ../../slider.php
 msgid "Custom Slide Link"
-msgstr "Пользовательские ссылки слайдов"
+msgstr "Пользовательские слайд ссылка"
 
 #: ../../slider.php
-msgid "Title"
-msgstr "Раздел"
+msgid "Reorder"
+msgstr "Изменить имя"
 
 #: ../../slider.php
-msgid "Need Help?"
-msgstr "Нужна помощь?"
+msgid "Custom Feature Slides"
+msgstr "Пользовательская функция слайды"
+
+#: ../../slider.php
+msgid "Slider Size"
+msgstr "Изображения ползунок"
+
+#: ../../slider.php
+msgid "Full"
+msgstr "Полный"
+
+#: ../../slider.php
+msgid "Half"
+msgstr "Половина"
+
+#: ../../slider.php
+msgid "Slider Type"
+msgstr "Изображения ползунок"
+
+#: ../../slider.php
+msgid "Custom"
+msgstr "Пользовательские CSS"
+
+#: ../../slider.php
+msgid "Posts"
+msgstr "Сообщения"
+
+#: ../../slider.php
+msgid "Post Categories"
+msgstr "Категории коробки"
+
+#: ../../slider.php
+msgid "Custom Categories"
+msgstr "Карусель категории"
+
+#: ../../slider.php
+msgid "Number of Featured Posts"
+msgstr "Рекомендуемые Post URL"
+
+#: ../../slider.php
+msgid "Slider Height"
+msgstr "Изображения ползунок"
+
+#: ../../slider.php
+msgid "Slider Speed"
+msgstr "Изображения ползунок"
+
+#: ../../slider.php
+msgid "Slider Arrows"
+msgstr "Слайды"
+
+#: ../../slider.php
+msgid "iFeature Slider Options"
+msgstr "iFeature слайдер"
+
+#: ../../twitter-bar.php
+msgid "Error retrieving tweets"
+msgstr "Ошибка при получении чириканье"
+
+#: ../../twitter-bar.php
+msgid "%1$s followers"
+msgstr "%1$ s последователей"
 
 #: ../../twitter-bar.php
 msgid "No tweets to display"
-msgstr "Нет твитов, чтобы отобразить"
+msgstr "Не tweets для отображения"
 
 #: ../../twitter-bar.php
-msgid "Invalid Response"
-msgstr "Неверный ответ"
+msgid "Twitter API Options"
+msgstr "Щебетать API параметры"
+
+#: ../../twitter-bar.php
+msgid "Edit Twitter API"
+msgstr "Редактировать Twitter API"
+
+#: ../../twitter-bar.php
+msgid "Create your Twitter App here"
+msgstr "Создание приложения щебетать здесь"
+
+#: ../../twitter-bar.php
+msgid "Complete all parts of the form and create your application"
+msgstr "Заполните все части формы и создания приложения"
+
+#: ../../twitter-bar.php
+msgid "On the next page click on the button Create my access token"
+msgstr "На следующей странице нажмите на кнопку Создать мой маркер доступа"
+
+#: ../../twitter-bar.php
+msgid "Now take the details and fill out the form below"
+msgstr "Теперь возьмите детали и заполните форму ниже"
+
+#: ../../twitter-bar.php
+msgid "Save your options"
+msgstr "Сохраните ваши варианты"
+
+#: ../../twitter-bar.php
+msgid "Create a Twitter App"
+msgstr "Создание приложения Twitter"
+
+#: ../../twitter-bar.php
+msgid "Consumer Key"
+msgstr "Ключ потребителя"
+
+#: ../../twitter-bar.php
+msgid "Consumer Secret"
+msgstr "Секрет потребителя"
+
+#: ../../twitter-bar.php
+msgid "Access Token"
+msgstr "Маркер доступа"
+
+#: ../../twitter-bar.php
+msgid "Access Token Secret"
+msgstr "Секрет идентификатора доступа"
+
+#: ../../twitter-bar.php
+msgid "Twitter Handle"
+msgstr "Щебетать ручкой"
+
+#: ../../twitter-bar.php
+msgid "Number Of Tweets"
+msgstr "Количество твитов"
+
+#: ../../twitter-bar.php
+msgid ""
+"Including replies, if replies are set to off then the number shown could be "
+"less"
+msgstr ""
+"Включая ответы, если ответы будут затем выключено указанное число может быть "
+"меньше"
+
+#: ../../twitter-bar.php
+msgid "Use your Twitter Image"
+msgstr "Использовать Twitter изображение"
+
+#: ../../twitter-bar.php
+msgid "Show the number of followers"
+msgstr "Показать количество последователей"
+
+#: ../../twitter-bar.php
+msgid "Include Replies"
+msgstr "Включать ответы"
+
+#: ../../twitter-bar.php
+msgid "Include Retweets"
+msgstr "Включить ретвитов"
+
+#: ../../twitter-bar.php
+msgid "Show a different Twitter account"
+msgstr "Показать другой учетной записи Twitter"
+
+#: ../../twitter-bar.php
+msgid "Leaving this off will show the default account in your theme options"
+msgstr "Бросая это покажет учетной записи по умолчанию в настройках темы"
+
+#: ../../twitter-bar.php
+msgid "Twitter Options"
+msgstr "Щебетать API параметры"
+
+#: ../../twitter-bar.php
+msgid "Error"
+msgstr "Ошибка 404"
 
 #: ../../widgets.php
 msgid "Box Left"
-msgstr "Левый Box"
+msgstr "Поле слева"
 
 #: ../../widgets.php
 msgid "This is the left widget of the three-box section"
-msgstr "Это левый виджет из трех коробчатого сечения"
+msgstr "Это левый виджет разделе три окна"
 
 #: ../../widgets.php
 msgid "Box Middle"
-msgstr "Box Ближнем"
+msgstr "Ящик средний"
 
 #: ../../widgets.php
 msgid "This is the middle widget of the three-box section"
-msgstr "Это средний виджет из трех коробчатого сечения"
+msgstr "Это средний виджет разделе три окна"
 
 #: ../../widgets.php
 msgid "Box Right"
-msgstr "Право Box"
+msgstr "Поле справа"
 
 #: ../../widgets.php
 msgid "This is the right widget of the three-box section"
-msgstr "Это право виджет из трех коробчатого сечения"
+msgstr "Это право виджет разделе три окна"
 
 #: ../../widgets.php
 msgid "This is the box left widgetized area."
-msgstr "Это поле оставил виджетами области."
+msgstr "Это поле левой widgetized область."
 
 #: ../../widgets.php
 msgid "This is the box middle widgetized area."
-msgstr "Это поле среднего виджетами области."
+msgstr "Это поле среднего widgetized района."
 
 #: ../../widgets.php
 msgid "This is the box right widgetized area."
-msgstr "Это поле правого виджеты области."
+msgstr "Это виджеты области поле справа."
 
 #: ../../setup/features.php
 msgid "Import/Export"
-msgstr "Импорт/Экспорт"
+msgstr "Импорт/экспорт"
 
 #: ../../setup/features.php
 msgid "Custom CSS"
@@ -439,11 +986,11 @@ msgstr "Контактный элемент"
 
 #: ../../setup/features.php
 msgid "Banner Options"
-msgstr "Баннер параметры"
+msgstr "Баннер вариантов"
 
 #: ../../setup/features.php
 msgid "Import / Export"
-msgstr "Импорт/Экспорт"
+msgstr "Импорт / экспорт"
 
 #: ../../setup/features.php
 msgid "Details"
@@ -451,15 +998,15 @@ msgstr "Детали"
 
 #: ../../setup/features.php
 msgid "Banner Image"
-msgstr "Баннер Изображение"
+msgstr "Изображение баннера"
 
 #: ../../setup/features.php
 msgid "Enter URL or upload file"
-msgstr "Введите URL или загрузить файл"
+msgstr "Введите URL-адрес или загрузить файл"
 
 #: ../../setup/features.php
 msgid "Banner URL"
-msgstr "Баннер URL"
+msgstr "URL-адрес баннера"
 
 #: ../../setup/features.php
 msgid "Cyberchimps Link"
@@ -470,16 +1017,20 @@ msgid "Footer Scripts"
 msgstr "Скрипты нижнего колонтитула"
 
 #: ../../setup/features.php
-msgid "You do not need to add script tags"
-msgstr "Вам не нужно добавлять теги сценария"
+msgid "Please add script tags"
+msgstr "Пожалуйста, добавьте теги script"
 
 #: ../../setup/features.php
 msgid "Export Settings"
-msgstr "Экспорт параметров"
+msgstr "Параметры экспорта"
 
 #: ../../setup/features.php
 msgid "Import Settings"
-msgstr "Импорт настроек"
+msgstr "Параметры импорта"
+
+#: ../../setup/features.php
+msgid "Searchbar text"
+msgstr "Текст searchbar"
 
 #: ../../setup/features.php
 msgid "Banner"
@@ -487,11 +1038,11 @@ msgstr "Баннер"
 
 #: ../../setup/features.php
 msgid "Description + Icons"
-msgstr "Описание + Иконки"
+msgstr "Описание + значки"
 
 #: ../../setup/features.php
 msgid "Logo + Contact"
-msgstr "Логотип + Контакт"
+msgstr "Логотип + контакты"
 
 #: ../../setup/features.php
 msgid "Logo + Description"
@@ -499,7 +1050,7 @@ msgstr "Логотип + описание"
 
 #: ../../setup/features.php
 msgid "Logo + Icons"
-msgstr "Логотип + Иконки"
+msgstr "Логотип + значки"
 
 #: ../../setup/features.php
 msgid "Logo + Login"
@@ -507,8 +1058,12 @@ msgstr "Логотип + вход"
 
 #: ../../setup/features.php
 msgid "Logo + Search"
-msgstr "Логотип + поиск"
+msgstr "Логотип + Поиск"
 
 #: ../../setup/features.php
 msgid "Logo"
 msgstr "Логотип"
+
+#: ../../setup/features.php
+msgid "Footer Menu"
+msgstr "Нижнее меню"

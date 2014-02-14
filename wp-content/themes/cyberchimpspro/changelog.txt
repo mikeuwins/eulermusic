@@ -2,6 +2,196 @@ CyberChimps Pro Changelog
 
 ****************************
 
+Version 1.1.2.2 (02/14/14)
+- Magazine: fixed masonry issue in IE.
+- Fixed twitter undefined variable error.
+- Text domain changed.
+
+Version 1.1.2.1 (02/11/14)
+- Updated Translation.
+- Fixed email icon opening in a new tab.
+- Added danish translation to core.
+- Added hook to set blog layout option default.
+- Removed Twitter bar from default option
+
+Version 1.1.2.0 (01/14/14)
+- Fixed drag and drop font icons on page options.
+- Fixed magazine element not displaying correctly on pages and conflict with breadcrumbs.
+- Added delimiter to breadcrumb with pagination.
+- Post formats icons changed to fonts.
+- Modified Helvetica font-family.
+- Fixed upload button not working with child themes.
+
+Version 1.1.1.9 (12/17/13)
+- Added back the "Link the whole box" toggle.
+- Fixed product element video issue.
+- Fixed custom post type toggle buttons.
+- Fixed social icons issue.
+- Fixed Magazine element layout on pages.
+
+Version 1.1.1.8 (12/11/13)
+- Added new metabox class.
+- Added magazine element with masonry.
+- Added Font-Based Social Icons.
+- Integrated Font Awesome (Bootstrap font).
+- Added retina ready images and style for it.
+- Carousel element: Added added lightbox toggle option and caption to lightbox image.
+- Fixed recent post method call.
+- Added parameter href to the tooltip shortcode.
+- Javascript: Created minified and beautified versions of all scripts.
+- Fixed errors padding-box.
+- Fixed styling for ie and tidied.
+- Fixed for search bar in menu.
+- Footer seo fix.
+- Updated translation.
+- Updated license to GPL version 3.
+- Upsell page: If the theme is installed then add a tick mark to it.
+- Added class cc-responsive if responisve design is on.
+
+Version 1.1.1.7 (09/25/13)
+- Custom Post Type - added missing labels.
+- Added toggle to make the total box linked or only the title.
+- Box images are centered.
+- All boxes are setup with unique ID.
+- Moved carousel caption to under carousel link.
+- Wrapped home_url() with esc_url().
+- Removed function_exists() check before add_image_size() call.
+- Slider option in post is limited to pro themes only.
+- Fixed font issue introduced by changing the option type to typography.
+- Added functionality to download backup file of theme option.
+- Added file upload functionality for import option.
+- Updated README file.
+
+Version 1.1.1.6 (09-02-13)
+- Removed new meta-box options due to unresolved bug that affected some users.
+
+Version 1.1.1.5 (08-30-13)
+- Fixed font-styles for headings
+- Removed unused indexes for heading fonts
+- Footer Copyright text now allows html tags
+- Added Custom CSS to customizer
+- Re-ordered social icons
+- Added Neuro Pro to upsell page
+- Added new meta box options class
+- Portuguese translation fix for twitter followers
+- Removed extra p tag from widgets layout
+- Boxes removed link from whole box, only title is link now
+- Boxes allow unlimited number of boxes
+- Added filter for pro options
+- Breadcrumbs now have classes added to each element: .b1, .b2, .b3 etc
+
+Version 1.1.1.4 (8-9-13)
+- Fixed links in theme options
+- Half slider can now be displayed below the page content
+- Removed call for Customizer menu as WP3.6 calls it by default
+- Fixed standard violation notices that occur since WP3.6
+- Footer copyright text now allows the following tags <br>, <em>, <strong> and <a> with href and title
+- Twitter fix on pages
+
+Version 1.1.1.3 (7-30-13)
+
+- Fixed carousel caption class conflict
+- Added filter for font face for headings
+- Added page option to change Twitter handle
+- Fixed container width issue
+
+Version 1.1.1.2 (7-26-13)
+
+- Class names are separated by hyphens and ID's by underscores. e.g. .this-is-a-class #this_is_an_id
+- Twitter element styling
+- Added Polish to languages
+- Options pre-save hook added
+- Added filter for typography option
+- Added option to add Title to blog page
+- Blog title added filter
+- Changed custom css validation to make it less strict
+- Updated carousel plugin to latest version
+- Changed filter names for footer widgets
+- Function exists check to allow overwriting of the function that adds the custom css
+- Youtube url fix for responsive videos
+- Added Filters to widget titles
+- Woocommerce removed max width
+- Changed the location of the skin css in the head
+- Options fixed the reset being activated when enter is pressed. Now it saves the options
+- Default text for boxes
+- Added the ability to click anywhere outside of the mobile menu to close it
+- Added html structure to page password
+- Improved typography options to allow different font choices for headings and text
+- Updated customizer with new typography settings
+- Boxes made js load on window not document to allow all images to load first
+- Removed slider max height styling
+- Twitter added option to add multiple Tweets
+- Twitter added option to include replies and re-Tweets
+- Twitter re-Tweets and replies have users gravatar
+- Product added class to distinguish between left and right text
+- Recent posts changed structure to allow padding without adding to the width
+
+Version 1.1.1.1 (6-26-13)
+- Fixed menu bug where dropdowns were not showing
+
+Version 1.1.1.0 (6-25-13)
+- Improved schema for microformats
+- Small style tweaks
+- Blog name now use h2 tag and post and page titles use h1 tags for improved SEO
+- Social icon options are moved into footer section
+- ie style fixes for menu and portfolio
+- Custom CSS sanitization bug fix
+- Woocommerce id name change from #content-woocommerce to #cc_woocommerce
+- Optimized plugin/addon check code
+- Added filter for options
+- Fixed Twitter Bar element to work with the new Twitter API v1.1
+- Translation updates
+- Added styling for callout
+
+Version 1.1.0.9 (5-31-13)
+-Product Element - set up product element
+-Product Element - set up page options and js to show the options
+-Product page options syncronised defaults and text with blog options
+-Unfiltered textarea added ability to add class
+-Select toggle created function to hide/show elements with select boxes
+-Added containers to allow for better and easier styling
+-Applied esc_url() to product URL.
+-Added product default image
+-Removed location function and created a location variable to reduce load
+-Boxes - added filter for default number
+-Removed modal welcome note on theme install
+-Updated pot file meta
+-Updated Tranlations.
+-Added filter for pagination base value.
+-Boxes tweaked to show theme name in default boxes.
+-Added the searchbar text option.
+-Fixed the double sliders issue. 
+-Added filter 'cyberchimps_sidebar_before_widget' to add markup before widget.
+-Added filter 'cyberchimps_sidebar_after_widget' to define markup after widget.
+-Footer image logo updated
+-Added function cyberchimps_posted_by() to display author link.
+-Modified function cyberchimps_posted_on(), tags containing date fields are made to be printed only when date toggle is on.
+-Added function call to cyberchimps_posted_on()
+
+Version 1.1.0.8 (5-13-13)
+-Fixed typo in boxes page option.
+-Updated layout for elements along with pagination, header, menu, footer and after footer.
+-Fixed empty div issue when half size slider is selected.
+-Added "section" to each elements id.
+-Added class to menu walker for grandchild menu li to help styling.
+-Added filter to create arrow/caret to show grandchild menu.
+-Removed the hgroup tag.
+-Fixed page boxes image error.
+-Changed the priority of the readmore filter.
+-Replaced cyberchimps_option() with cyberchimps_get_option().
+-Removed cyberchimps_option() function.
+-Improved Woocommerce layout.
+-Updated slimbox to latest version.
+-Prevented default click action on mobile level slimbox.
+-Removed image loading in lightbox for mobile devices.
+-Updated Dutch and German Languages.
+-Changed the layout of the footer menu to include full width.
+-Fixed custom post archive issue.
+-Removed script tags from the footer scripts.
+-Changed font color of links in boxes.
+-Removed the link from the single posts' title.
+-Changed the separator for the content in the meta tag from semi-colon to comma.
+
 Version 1.1.0.7 (4/5/13)
 -Changed the way the theme handles translations
 -Changed the way footer hooks work

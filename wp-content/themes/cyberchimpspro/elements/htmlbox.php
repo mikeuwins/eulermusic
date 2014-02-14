@@ -9,58 +9,98 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
 // Don't load directly
-if ( !defined('ABSPATH') ) { die('-1'); }
+if( !defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
-if ( !class_exists( 'CyberChimpsHTMLbox' ) ) {
+if( !class_exists( 'CyberChimpsHTMLbox' ) ) {
 	class CyberChimpsHTMLbox {
-		
+
 		protected static $instance;
 		public $options;
-		
+
 		/* Static Singleton Factory Method */
 		public static function instance() {
-			if (!isset(self::$instance)) {
-				$className = __CLASS__;
+			if( !isset( self::$instance ) ) {
+				$className      = __CLASS__;
 				self::$instance = new $className;
 			}
+
 			return self::$instance;
-		}	
-		
+		}
+
 		/**
 		 * Initializes plugin variables and sets up WordPress hooks/actions.
 		 *
 		 * @return void
 		 */
-		protected function __construct( ) {
+		protected function __construct() {
 			add_action( 'html_box', array( $this, 'render_display' ) );
+			add_action( 'init', array( $this, 'meta_box' ) );
+
 			$this->options = get_option( 'cyberchimps_options' );
 		}
-		
+
 		public function render_display() {
 			global $post, $allowedposttags;
-			
+
 			if( is_page() ) {
-				$content = ( get_post_meta( $post->ID, 'html_box', true ) ) ? get_post_meta($post->ID, 'html_box', true) : '';
+				$content = ( get_post_meta( $post->ID, 'html_box', true ) ) ? get_post_meta( $post->ID, 'html_box', true ) : '';
 			}
 			else {
 				$content = ( $this->options['html_box'] ) ? $this->options['html_box'] : '';
 			}
-			
+
 			if( $content != '' ): ?>
-				<div id="htmlbox-container" class="row-fluid">
-          <div id="htmlbox" class="span12">
-            <div class="htmlbox-content">
-            	<?php echo $content; ?>
-            </div>
-          </div>
-        </div>
-<?php endif;
-			
+				<div id="htmlbox_container" class="row-fluid">
+					<div id="htmlbox" class="span12">
+						<div class="htmlbox-content">
+							<?php echo $content; ?>
+						</div>
+					</div>
+				</div>
+			<?php endif;
+
+		}
+
+		/**
+		 * Create meta boxes on page
+		 */
+		public function meta_box() {
+			$page_fields = array(
+				array(
+					'type'  => 'editor',
+					'id'    => 'html_box',
+					'class' => '',
+					'name'  => __( 'Custom HTML', 'cyberchimps_elements' ),
+					'desc'  => __( 'Enter your custom html here', 'cyberchimps_elements' ),
+					'settings' => array( 'media_buttons' => true )
+				)
+
+			);
+			/*
+			 * configure your meta box
+			 */
+			$page_config = array(
+				'id'             => 'html_box_options', // meta box id, unique per meta box
+				'title'          => __( 'HTML Box Options', 'cyberchimps_elements' ), // meta box title
+				'pages'          => array( 'page' ), // post types, accept custom post types as well, default is array('post'); optional
+				'context'        => 'normal', // where the meta box appear: normal (default), advanced, side; optional
+				'priority'       => 'high', // order of meta box: high (default), low; optional
+				'fields'         => $page_fields, // list of meta fields (can be added by field arrays)
+				'local_images'   => false, // Use local or hosted images (meta box images for add/remove)
+				'use_with_theme' => true //change path if used with theme set to true, false for a plugin or anything else for a custom path(default false).
+			);
+
+			/*
+			 * Initiate your meta box
+			 */
+			$page_meta = new Cyberchimps_Meta_Box( $page_config );
 		}
 	}
 }

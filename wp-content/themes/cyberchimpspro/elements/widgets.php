@@ -9,96 +9,124 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
 // Don't load directly
-if ( !defined('ABSPATH') ) { die('-1'); }
+if( !defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
-if ( !class_exists( 'CyberChimpsWidgets' ) ) {
+if( !class_exists( 'CyberChimpsWidgets' ) ) {
 	class CyberChimpsWidgets {
-		
+
 		protected static $instance;
-		
+
 		/* Static Singleton Factory Method */
 		public static function instance() {
-			if (!isset(self::$instance)) {
-				$className = __CLASS__;
+			if( !isset( self::$instance ) ) {
+				$className      = __CLASS__;
 				self::$instance = new $className;
 			}
+
 			return self::$instance;
-		}	
-		
+		}
+
 		/**
 		 * Initializes plugin variables and sets up WordPress hooks/actions.
 		 *
 		 * @return void
 		 */
-		protected function __construct( ) {
+		protected function __construct() {
 			add_action( 'widgets_section', array( $this, 'render_display' ) );
-			add_action( 'widgets_init', array( $this, 'cyberchimps_widget_register' ) );		
+			add_action( 'widgets_init', array( $this, 'cyberchimps_widget_register' ) );
 		}
-		
+
 		function cyberchimps_widget_register() {
-			register_sidebar(array(
-				'name' => __( 'Box Left', 'cyberchimps_elements' ),
-				'id' => 'box-left',
-				'description' => __( 'This is the left widget of the three-box section', 'cyberchimps_elements' ),
-				'before_widget' => '<div id="box1" class="box">',
-				'after_widget' => '</p></div>',
-				'before_title' => '<h2 class="box-widget-title">',
-				'after_title' => '</h2><p>',
-			));
-			register_sidebar(array(
-				'name' => __( 'Box Middle', 'cyberchimps_elements' ),
-				'id' => 'box-middle',
-				'description' => __( 'This is the middle widget of the three-box section', 'cyberchimps_elements' ),
-				'before_widget' => '<div id="box2" class="box">',
-				'after_widget' => '</p></div>',
-				'before_title' => '<h2 class="box-widget-title">',
-				'after_title' => '</h2><p>',
-			));
-			register_sidebar(array(
-				'name' => __( 'Box Right', 'cyberchimps_elements' ),
-				'id' => 'box-right',
-				'description' => __( 'This is the right widget of the three-box section', 'cyberchimps_elements' ),
-				'before_widget' => '<div id="box3" class="box">',
-				'after_widget' => '</p></div>',
-				'before_title' => '<h2 class="box-widget-title">',
-				'after_title' => '</h2><p>',
-			));
+			register_sidebar( array(
+				                  'name'          => __( 'Box Left', 'cyberchimps_elements' ),
+				                  'id'            => 'box-left',
+				                  'description'   => __( 'This is the left widget of the three-box section', 'cyberchimps_elements' ),
+				                  'before_widget' => '<div id="box1" class="box">',
+				                  'after_widget'  => apply_filters( 'cyberchimps_after_widget', '</p></div>' ),
+				                  'before_title'  => apply_filters( 'cyberchimps_before_widget_title', '<h2 class="box-widget-title">' ),
+				                  'after_title'   => apply_filters( 'cyberchimps_after_widget_title', '</h2><p>' )
+			                  ) );
+			register_sidebar( array(
+				                  'name'          => __( 'Box Middle', 'cyberchimps_elements' ),
+				                  'id'            => 'box-middle',
+				                  'description'   => __( 'This is the middle widget of the three-box section', 'cyberchimps_elements' ),
+				                  'before_widget' => '<div id="box2" class="box">',
+				                  'after_widget'  => apply_filters( 'cyberchimps_after_widget', '</p></div>' ),
+				                  'before_title'  => apply_filters( 'cyberchimps_before_widget_title', '<h2 class="box-widget-title">' ),
+				                  'after_title'   => apply_filters( 'cyberchimps_after_widget_title', '</h2><p>' )
+			                  ) );
+			register_sidebar( array(
+				                  'name'          => __( 'Box Right', 'cyberchimps_elements' ),
+				                  'id'            => 'box-right',
+				                  'description'   => __( 'This is the right widget of the three-box section', 'cyberchimps_elements' ),
+				                  'before_widget' => '<div id="box3" class="box">',
+				                  'after_widget'  => apply_filters( 'cyberchimps_after_widget', '</p></div>' ),
+				                  'before_title'  => apply_filters( 'cyberchimps_before_widget_title', '<h2 class="box-widget-title">' ),
+				                  'after_title'   => apply_filters( 'cyberchimps_after_widget_title', '</h2><p>' )
+			                  ) );
 		}
 
 		public function render_display() {
 			?>
-			<div id="widget-boxes-container" class="row-fluid">
+			<div id="widget_boxes_container" class="row-fluid">
 				<div class="boxes">
 					<div class="container-box1 span4">
-						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Box Left") ) : ?>
+						<?php if( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( "Box Left" ) ) : ?>
 							<div id="box1" class="box">
-								<h2 class="box-widget-title"><?php apply_filters( 'cyberchimps_widgets_box_left_title', __( 'Box Left', 'cyberchimps_elements' ) ); ?></h2>
-								<p><?php apply_filters( 'cyberchimps_widgets_box_left_content', __( 'This is the box left widgetized area.', 'cyberchimps_elements' ) ); ?></p>
+
+								<?php //Widget Title
+								echo apply_filters( 'cyberchimps_before_widget_title', '<h2 class="box-widget-title">' );
+								echo apply_filters( 'cyberchimps_widgets_box_left_title', __( 'Box Left', 'cyberchimps_elements' ) );
+								echo apply_filters( 'cyberchimps_after_widget_title', '</h2>' );
+								?>
+
+								<!-- Widget Content -->
+								<p><?php echo apply_filters( 'cyberchimps_widgets_box_left_content', __( 'This is the box left widgetized area.', 'cyberchimps_elements' ) ); ?></p>
+								<?php echo apply_filters( 'cyberchimps_after_widget', '' ); ?>
 							</div><!--end box1-->
 						<?php endif; ?>
 					</div>
 					<div class="container-box2 span4">
-						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Box Middle") ) : ?>
+						<?php if( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( "Box Middle" ) ) : ?>
 							<div id="box2" class="box">
-								<h2 class="box-widget-title"><?php apply_filters( 'cyberchimps_widgets_box_middle_title', __( 'Box Middle', 'cyberchimps_elements' ) ); ?></h2>
-								<p><?php apply_filters( 'cyberchimps_widgets_box_middle_content', __( 'This is the box middle widgetized area.', 'cyberchimps_elements' ) ); ?></p>
+
+								<?php //Widget Title
+								echo apply_filters( 'cyberchimps_before_widget_title', '<h2 class="box-widget-title">' );
+								echo apply_filters( 'cyberchimps_widgets_box_middle_title', __( 'Box Middle', 'cyberchimps_elements' ) );
+								echo apply_filters( 'cyberchimps_after_widget_title', '</h2>' );
+								?>
+
+								<!-- Widget Content -->
+								<p><?php echo apply_filters( 'cyberchimps_widgets_box_middle_content', __( 'This is the box middle widgetized area.', 'cyberchimps_elements' ) ); ?></p>
+								<?php echo apply_filters( 'cyberchimps_after_widget', '' ); ?>
 							</div><!--end box2-->
 						<?php endif; ?>
 					</div>
 					<div class="container-box3 span4">
-						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Box Right") ) : ?>
+						<?php if( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( "Box Right" ) ) : ?>
 							<div id="box3" class="box">
-								<h2 class="box-widget-title"><?php apply_filters( 'cyberchimps_widgets_box_right_title', __( 'Box Right', 'cyberchimps_elements' ) ); ?></h2>
-								<p><?php apply_filters( 'cyberchimps_widgets_box_right_content', __( 'This is the box right widgetized area.', 'cyberchimps_elements' ) ); ?></p>
+
+								<?php //Widget Title
+								echo apply_filters( 'cyberchimps_before_widget_title', '<h2 class="box-widget-title">' );
+								echo apply_filters( 'cyberchimps_widgets_box_right_title', __( 'Box Right', 'cyberchimps_elements' ) );
+								echo apply_filters( 'cyberchimps_after_widget_title', '</h2>' );
+								?>
+
+								<!-- Widget Content -->
+								<p><?php echo apply_filters( 'cyberchimps_widgets_box_right_content', __( 'This is the box right widgetized area.', 'cyberchimps_elements' ) ); ?></p>
+								<?php echo apply_filters( 'cyberchimps_after_widget', '' ); ?>
 							</div><!--end box3-->
 						<?php endif; ?>
 					</div>
-				</div><!-- boxes -->
+				</div>
+				<!-- boxes -->
 			</div><!-- row-fluid -->
 		<?php
 		}

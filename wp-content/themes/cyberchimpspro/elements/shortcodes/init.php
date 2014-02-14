@@ -9,7 +9,7 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
@@ -28,9 +28,9 @@ function cyberchimps_add_shortcode_scripts() {
 
 	// Set path of shortcodes folder.
 	$uri_shortcodes = get_template_directory_uri() . '/elements/shortcodes/';
-	
+
 	wp_register_style( 'shortcode_style', $uri_shortcodes . 'lib/css/shortcodes.css' );
-	wp_enqueue_style('shortcode_style');
+	wp_enqueue_style( 'shortcode_style' );
 }
 
 add_action( 'wp_enqueue_scripts', 'cyberchimps_add_shortcode_scripts' );

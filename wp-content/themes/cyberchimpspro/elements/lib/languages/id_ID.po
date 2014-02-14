@@ -1,36 +1,62 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: CyberChimps Pro Elements\n"
+"Project-Id-Version: Elements Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
-"PO-Revision-Date: 2013-03-19 14:07-0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2014-02-11 12:26+0530\n"
+"Last-Translator: Surya <surya@cyberchimps.com>\n"
 "Language-Team: Indonesian, Indonesia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../boxes.php ../../init.php ../../setup/features.php
+#: ../../setup/features.php ../../init.php ../../boxes.php
 msgid "Boxes"
 msgstr "Kotak"
 
 #: ../../boxes.php
+msgid "Add new Box"
+msgstr "Tambahkan kategori kotak baru"
+
+#: ../../boxes.php
+msgid "Edit Box"
+msgstr "Mengedit kotak"
+
+#: ../../boxes.php
+msgid "New Box"
+msgstr "Kotak baru"
+
+#: ../../boxes.php
+msgid "View Box"
+msgstr "Lihat kotak"
+
+#: ../../boxes.php
+msgid "Search Boxes"
+msgstr "Kotak pencarian"
+
+#: ../../boxes.php
+msgid "No Boxes found"
+msgstr "Kotak tidak ditemukan"
+
+#: ../../boxes.php
+msgid "No Boxes found in trash"
+msgstr "Kotak tidak ditemukan di tempat sampah"
+
+#: ../../boxes.php
+msgctxt "taxonomy general name"
 msgid "Boxes Categories"
 msgstr "Kotak Kategori"
 
 #: ../../boxes.php
+msgctxt "taxonomy singular name"
 msgid "Boxes Catergory"
-msgstr "Kotak catergory"
-
-#: ../../boxes.php
-msgid "Search Boxes"
-msgstr "Cari box"
+msgstr "Kotak Catergory"
 
 #: ../../boxes.php
 msgid "All Boxes"
-msgstr "Semua box"
+msgstr "Semua kotak"
 
 #: ../../boxes.php
 msgid "Boxes Category"
@@ -38,79 +64,94 @@ msgstr "Kotak Kategori"
 
 #: ../../boxes.php
 msgid "Boxes Category:"
-msgstr "Kotak Kategori:"
+msgstr "Kategori kotak:"
 
 #: ../../boxes.php
 msgid "Edit Boxes Category"
-msgstr "Sunting box Kategori"
+msgstr "Mengedit kotak Kategori"
 
 #: ../../boxes.php
 msgid "Update Boxes Category"
-msgstr "Pembaruan box Kategori"
+msgstr "Memperbarui kotak Kategori"
 
 #: ../../boxes.php
 msgid "Add New Boxes Category"
-msgstr "Tambahkan Kategori Baru box"
+msgstr "Tambahkan kategori kotak baru"
 
 #: ../../boxes.php
 msgid "New Boxes Category Name"
-msgstr "Baru box Kategori Nama"
-
-#: ../../boxes.php
-msgid "Boxes Element"
-msgstr "Kotak Elemen"
+msgstr "Baru kotak nama kategori"
 
 #: ../../boxes.php
 msgid "Box Image"
-msgstr "Kotak Gambar"
+msgstr "Gambar kotak"
 
 #: ../../boxes.php
 msgid "Box URL"
 msgstr "Kotak URL"
 
 #: ../../boxes.php
-msgid "Box Text"
-msgstr "Text Box"
+msgid "Link the whole box"
+msgstr "Link seluruh kotak"
 
 #: ../../boxes.php
-msgid "iFeature Pro 5 Slider"
-msgstr "iFeature Pro 5 Slider"
+msgid "Box Text"
+msgstr "Kotak teks"
+
+#: ../../boxes.php
+msgid "Boxes Element"
+msgstr "Elemen kotak"
+
+#: ../../boxes.php ../../carousel.php ../../portfolio.php ../../slider.php
+msgid "You need to create a Category"
+msgstr "Anda perlu membuat kategori"
+
+#: ../../boxes.php
+msgid "Number of boxes per row"
+msgstr "Jumlah kotak per baris"
+
+#: ../../boxes.php
+msgid "Boxes Options"
+msgstr "Banner pilihan"
+
+#: ../../boxes.php
+msgid "%1$s Slider"
+msgstr "%1$ s Slider"
 
 #: ../../boxes.php
 msgid ""
-"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
-"device."
+"The New Touch Friendly %1$s Slider now responds to any mobile touch device."
 msgstr ""
-"Touch Ramah New iFeature Slider Pro sekarang menanggapi setiap perangkat "
+"Baru menyentuh ramah %1$ s Slider sekarang merespon terhadap perangkat "
 "sentuh ponsel."
 
 #: ../../boxes.php
 msgid "Responsive Design"
-msgstr "Responsif Desain"
+msgstr "Responsive Design"
 
 #: ../../boxes.php
 msgid ""
-"With iFeature Pro 5 and touch friendly responsive design you can now control "
-"your website on any device."
+"With %1$s and touch friendly responsive design you can now control your "
+"website on any device."
 msgstr ""
-"Dengan desain yang ramah iFeature Pro 5 dan sentuhan responsif kini Anda "
-"dapat mengontrol website Anda pada perangkat apapun."
+"Dengan %1$ s dan sentuh responsif desain ramah Anda sekarang dapat "
+"mengontrol website Anda pada perangkat apapun."
 
 #: ../../boxes.php
 msgid "Excellent Support"
-msgstr "Luar Dukungan"
+msgstr "Dukungan yang sangat baik"
 
 #: ../../boxes.php
 msgid ""
 "Need help? Read the instructions and please visit our dedicated Pro Support "
 "Forum."
 msgstr ""
-"Butuh bantuan? Baca instruksi dan silahkan kunjungi Forum Dukungan "
-"berdedikasi Pro kami."
+"Perlu bantuan? Baca petunjuk dan silahkan kunjungi Forum dukungan kami "
+"berdedikasi Pro."
 
 #: ../../breadcrumbs.php
 msgid "Home"
-msgstr "rumah"
+msgstr "Rumah"
 
 #: ../../breadcrumbs.php
 msgid "Archive for category "
@@ -118,7 +159,7 @@ msgstr "Arsip untuk kategori "
 
 #: ../../breadcrumbs.php
 msgid "Search results for "
-msgstr "hasil pencarian untuk"
+msgstr "Hasil pencarian untuk "
 
 #: ../../breadcrumbs.php
 msgid "Posts tagged "
@@ -132,25 +173,123 @@ msgstr "Artikel yang dikirim oleh "
 msgid "Error 404"
 msgstr "Kesalahan 404"
 
-#: ../../init.php ../../breadcrumbs.php
+#: ../../breadcrumbs.php ../../init.php
 msgid "Page"
-msgstr "Dance"
+msgstr "Halaman"
 
-#: ../../init.php ../../carousel.php
+#: ../../callout.php
+msgid "Callout Title"
+msgstr "Judul produk"
+
+#: ../../callout.php
+msgid "%1$s's Call Out Element"
+msgstr "%1$ s's panggilan keluar elemen"
+
+#: ../../callout.php
+msgid "Callout Text"
+msgstr "Bagian callout"
+
+#: ../../callout.php
+msgid ""
+"Use %1$s's Call Out section on any page where you want to deliver an "
+"important message to your customer or client."
+msgstr ""
+"Menggunakan %1$ s's panggilan keluar bagian pada halaman manapun di mana "
+"Anda ingin menyampaikan pesan penting kepada pelanggan atau klien."
+
+#: ../../callout.php
+msgid "Callout Button"
+msgstr "Bagian callout"
+
+#: ../../callout.php
+msgid "Callout Button Text"
+msgstr "Bagian callout"
+
+#: ../../callout.php
+msgid "Click Here"
+msgstr "Klik di sini"
+
+#: ../../callout.php
+msgid "Callout Button URL"
+msgstr "Bagian callout"
+
+#: ../../callout.php
+msgid "Custom Callout Options"
+msgstr "Pilihan kustom Slide"
+
+#: ../../callout.php
+msgid "Custom Button Image"
+msgstr "Tombol kustom gambar"
+
+#: ../../callout.php
+msgid "Custom Background Color"
+msgstr "Warna latar belakang kustom"
+
+#: ../../callout.php
+msgid "Custom Title Color"
+msgstr "Judul kustom warna"
+
+#: ../../callout.php
+msgid "Custom Text Color"
+msgstr "Warna kustom teks"
+
+#: ../../callout.php
+msgid "Custom Button Color"
+msgstr "Tombol kustom warna"
+
+#: ../../callout.php
+msgid "Custom Button Text Color"
+msgstr "Warna teks tombol kustom"
+
+#: ../../callout.php
+msgid "Callout Options"
+msgstr "Bagian callout"
+
+#: ../../carousel.php ../../init.php
 msgid "Carousel"
 msgstr "Korsel"
 
 #: ../../carousel.php
-msgid "Posts"
-msgstr "tulisan"
+msgid "Carousel item"
+msgstr "Korsel"
 
 #: ../../carousel.php
+msgid "Add new Carousel item"
+msgstr "Tambahkan kategori Carousel baru"
+
+#: ../../carousel.php
+msgid "Edit Carousel item"
+msgstr "Mengedit kategori Carousel"
+
+#: ../../carousel.php
+msgid "New Carousel item"
+msgstr "Nama kategori Carousel baru"
+
+#: ../../carousel.php
+msgid "View Carousel item"
+msgstr "Nama kategori Carousel baru"
+
+#: ../../carousel.php
+msgid "Search Carousel items"
+msgstr "Cari Carousel"
+
+#: ../../carousel.php
+msgid "No Carousel items found"
+msgstr "Kategori korsel"
+
+#: ../../carousel.php
+msgid "No Carousel items found in trash"
+msgstr "Tidak ada item Carousel yang ditemukan di tempat sampah"
+
+#: ../../carousel.php
+msgctxt "taxonomy general name"
 msgid "Carousel Categories"
-msgstr "Carousel Kategori"
+msgstr "Kategori korsel"
 
 #: ../../carousel.php
+msgctxt "taxonomy singular name"
 msgid "Carousel Catergory"
-msgstr "Carousel Catergory"
+msgstr "Korsel Catergory"
 
 #: ../../carousel.php
 msgid "Search Carousel"
@@ -158,57 +297,77 @@ msgstr "Cari Carousel"
 
 #: ../../carousel.php
 msgid "All Carousels"
-msgstr "Semua Carousels"
+msgstr "Komidi putar semua"
 
 #: ../../carousel.php
 msgid "Carousel Category"
-msgstr "Carousel Kategori"
+msgstr "Kategori korsel"
 
 #: ../../carousel.php
 msgid "Carousel Category:"
-msgstr "Carousel Kategori:"
+msgstr "Korsel Kategori:"
 
 #: ../../carousel.php
 msgid "Edit Carousel Category"
-msgstr "Sunting Carousel Kategori"
+msgstr "Mengedit kategori Carousel"
 
 #: ../../carousel.php
 msgid "Update Carousel Category"
-msgstr "Pembaruan Carousel Kategori"
+msgstr "Update Carousel Kategori"
 
 #: ../../carousel.php
 msgid "Add New Carousel Category"
-msgstr "Tambahkan Kategori Baru Carousel"
+msgstr "Tambahkan kategori Carousel baru"
 
 #: ../../carousel.php
 msgid "New Carousel Category Name"
-msgstr "New Carousel Kategori Nama"
-
-#: ../../carousel.php
-msgid "Featured Post Carousel Options"
-msgstr "Fitur Pos Carousel Pilihan"
+msgstr "Nama kategori Carousel baru"
 
 #: ../../carousel.php
 msgid "Featured Post Image"
-msgstr "Fitur Post Image"
+msgstr "Fitur posting gambar"
 
 #: ../../carousel.php
 msgid "Featured Post URL"
-msgstr "Fitur Pos URL"
+msgstr "Fitur posting URL"
 
-#: ../../slider.php ../../carousel.php
+#: ../../carousel.php ../../portfolio.php
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../../carousel.php
 msgid "Reorder Name"
-msgstr "Reorder Nama"
+msgstr "Menyusun ulang nama"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel"
+msgstr "Korsel pos menampilkan pilihan"
+
+#: ../../carousel.php
+msgid "Carousel Options"
+msgstr "Korsel pos menampilkan pilihan"
+
+#: ../../htmlbox.php
+msgid "Custom HTML"
+msgstr "Custom CSS"
+
+#: ../../htmlbox.php
+msgid "Enter your custom html here"
+msgstr "Masukkan html kustom Anda di sini"
+
+#: ../../htmlbox.php
+msgid "HTML Box Options"
+msgstr "HTML kotak"
 
 #: ../../init.php
 msgid "Callout Section"
-msgstr "Callout Bagian"
+msgstr "Bagian callout"
 
 #: ../../init.php
 msgid "HTML Box"
 msgstr "HTML kotak"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "iFeature Slider"
 msgstr "iFeature Slider"
 
@@ -216,17 +375,21 @@ msgstr "iFeature Slider"
 msgid "Magazine"
 msgstr "Majalah"
 
-#: ../../portfolio.php ../../init.php
+#: ../../init.php ../../portfolio.php
 msgid "Portfolio"
-msgstr "port"
+msgstr "Portofolio"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Post Page"
-msgstr "Posting Halaman"
+msgstr "Posting halaman"
+
+#: ../../init.php ../../product.php
+msgid "Product"
+msgstr "Produk"
 
 #: ../../init.php
 msgid "Recent Posts"
-msgstr "Recent Post"
+msgstr "Recent Posts"
 
 #: ../../init.php
 msgid "Twitter Bar"
@@ -236,29 +399,115 @@ msgstr "Twitter Bar"
 msgid "Widgets"
 msgstr "Widget"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Breadcrumbs"
 msgstr "Remah roti"
 
-#: ../../portfolio.php
+#: ../../magazine.php
+msgid "Edit"
+msgstr "Mengedit kotak"
+
+#: ../../magazine.php
+msgid "Magazine Options"
+msgstr "Banner pilihan"
+
+#: ../../magazine.php
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: ../../magazine.php
+msgid "Meta Data"
+msgstr "Meta Data"
+
+#: ../../magazine.php
+msgid "Featured Image"
+msgstr "Fitur posting gambar"
+
+#: ../../magazine.php
+msgid "Category"
+msgstr "Kotak Kategori"
+
+#: ../../magazine.php
+msgid "Featured Excerpt Length"
+msgstr "Fitur posting URL"
+
+#: ../../magazine.php
+msgid "Number of Columns"
+msgstr "Jumlah Tweets"
+
+#: ../../magazine.php
+msgid "Number of Rows"
+msgstr "Jumlah Tweets"
+
+#: ../../magazine.php
+msgid "Wide Posts Below Magazine"
+msgstr "Berbagai posting di bawah ini majalah"
+
+#: ../../magazine.php
+msgid "Wide Post Excerpt Length"
+msgstr "Berbagai posting kutipan panjang"
+
+#: ../../magazine.php
+msgid "Number of Wide Posts"
+msgstr "Fitur posting URL"
+
+#: ../../magazine.php ../../recent-posts.php
+msgid "All"
+msgstr "Semua"
+
+#: ../../magazine.php
+msgid "magazine Options"
+msgstr "Banner pilihan"
+
+#: ../../portfolio.php ../../recent-posts.php
 msgid "Images"
 msgstr "Gambar"
 
 #: ../../portfolio.php
+msgid "Add new Image"
+msgstr "Gambar slider"
+
+#: ../../portfolio.php
+msgid "Edit Image"
+msgstr "Gambar"
+
+#: ../../portfolio.php
+msgid "New Image"
+msgstr "Gambar"
+
+#: ../../portfolio.php
+msgid "View Image"
+msgstr "Gambar slider"
+
+#: ../../portfolio.php
+msgid "Search Images"
+msgstr "Kotak pencarian"
+
+#: ../../portfolio.php
+msgid "No Images found"
+msgstr "Tidak ada gambar yang ditemukan"
+
+#: ../../portfolio.php
+msgid "No Images found in trash"
+msgstr "Tidak ada gambar yang ditemukan di tempat sampah"
+
+#: ../../portfolio.php
+msgctxt "taxonomy general name"
 msgid "Portfolio Categories"
 msgstr "Portofolio Kategori"
 
 #: ../../portfolio.php
+msgctxt "taxonomy singular name"
 msgid "Portfolio Catergory"
-msgstr "Portofolio catergory"
+msgstr "Portofolio Catergory"
 
 #: ../../portfolio.php
 msgid "Search Portfolio"
-msgstr "Cari Portofolio"
+msgstr "Cari portofolio"
 
 #: ../../portfolio.php
 msgid "All Portfolios"
-msgstr "Semua Portofolio"
+msgstr "Semua portofolio"
 
 #: ../../portfolio.php
 msgid "Portfolio Category"
@@ -270,163 +519,461 @@ msgstr "Portofolio Kategori:"
 
 #: ../../portfolio.php
 msgid "Edit Portfolio Category"
-msgstr "Mengedit Kategori Portofolio"
+msgstr "Mengedit portofolio Kategori"
 
 #: ../../portfolio.php
 msgid "Update Portfolio Category"
-msgstr "Perbarui Kategori Portofolio"
+msgstr "Memperbarui portofolio Kategori"
 
 #: ../../portfolio.php
 msgid "Add New Portfolio Category"
-msgstr "Tambahkan Kategori Baru Portofolio"
+msgstr "Tambahkan kategori portofolio baru"
 
 #: ../../portfolio.php
 msgid "New Portfolio Category Name"
-msgstr "Portofolio Baru Kategori Nama"
-
-#: ../../portfolio.php
-msgid "Portfolio Element"
-msgstr "Portofolio Elemen"
+msgstr "Portofolio kategori nama baru"
 
 #: ../../portfolio.php
 msgid "Portfolio Image"
-msgstr "Portofolio Gambar"
+msgstr "Gambar portofolio"
 
-#: ../../slider.php ../../portfolio.php
+#: ../../portfolio.php ../../slider.php
 msgid "Caption"
-msgstr "Judul"
-
-#: ../../portfolio.php
-msgid "Lightbox"
-msgstr "Lightbox"
+msgstr "Keterangan"
 
 #: ../../portfolio.php
 msgid "Custom Portfolio URL"
-msgstr "Portofolio kustom URL"
+msgstr "URL kustom portofolio"
 
 #: ../../portfolio.php
 msgid "URL"
-msgstr "URL:"
+msgstr "URL"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "Portofolio elemen"
+
+#: ../../portfolio.php
+msgid "Images per row"
+msgstr "Gambar"
+
+#: ../../portfolio.php
+msgid "Two"
+msgstr "Dua"
+
+#: ../../portfolio.php
+msgid "Three"
+msgstr "Tiga"
+
+#: ../../portfolio.php
+msgid "Four"
+msgstr "Empat"
+
+#: ../../portfolio.php
+msgid "Portfolio Title"
+msgstr "Portofolio elemen"
+
+#: ../../portfolio.php ../../recent-posts.php ../../slider.php
+msgid "Title"
+msgstr "Judul"
+
+#: ../../portfolio.php
+msgid "Portfolio Options"
+msgstr "Portofolio Kategori"
+
+#: ../../product.php
+msgid "Product Layout"
+msgstr "Produk Layout"
+
+#: ../../product.php
+msgid "Text Left"
+msgstr "Teks kiri"
+
+#: ../../product.php
+msgid "Text Right"
+msgstr "Teks kanan"
+
+#: ../../product.php
+msgid "Product Title"
+msgstr "Judul produk"
+
+#: ../../product.php
+msgid "Product Text"
+msgstr "Teks produk"
+
+#: ../../product.php
+msgid "Media Type"
+msgstr "Tipe media"
+
+#: ../../product.php
+msgid "Image"
+msgstr "Gambar"
+
+#: ../../product.php
+msgid "Video"
+msgstr "Video"
+
+#: ../../product.php
+msgid "Product Image URL"
+msgstr "URL gambar produk"
+
+#: ../../product.php
+msgid "Product Video Embed"
+msgstr "Embed Video produk"
+
+#: ../../product.php
+msgid "Product Button Type"
+msgstr "Produk Link teks"
+
+#: ../../product.php
+msgid "No button"
+msgstr "Ada tombol"
+
+#: ../../product.php
+msgid "Button"
+msgstr "Tombol"
+
+#: ../../product.php
+msgid "Button Image"
+msgstr "Gambar kotak"
+
+#: ../../product.php
+msgid "Product Button URL"
+msgstr "Produk URL"
+
+#: ../../product.php
+msgid "Product Button Text"
+msgstr "Produk Link teks"
+
+#: ../../product.php
+msgid "Buy Now"
+msgstr "Beli sekarang"
+
+#: ../../product.php
+msgid "Product Image"
+msgstr "URL gambar produk"
+
+#: ../../product.php
+msgid "Product URL"
+msgstr "Produk URL"
+
+#: ../../product.php
+msgid "Product Link Text"
+msgstr "Produk Link teks"
+
+#: ../../product.php
+msgid "Product Button Image"
+msgstr "URL gambar produk"
+
+#: ../../product.php
+msgid "Product Button Image URL"
+msgstr "URL gambar produk"
+
+#: ../../product.php
+msgid "Product Options"
+msgstr "Produk Link"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Title"
+msgstr "Recent Posts"
+
+#: ../../recent-posts.php
+msgid "Post Category"
+msgstr "Kotak Kategori"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Options"
+msgstr "Recent Posts"
 
 #: ../../slider.php
 msgid "Slides"
 msgstr "Slide"
 
 #: ../../slider.php
-msgid "Slide Categories"
-msgstr "Slide Kategori"
+msgid "Add new Slide"
+msgstr "Tambahkan kategori Slide baru"
 
 #: ../../slider.php
+msgid "Edit Slide"
+msgstr "Mengedit kategori Slide"
+
+#: ../../slider.php
+msgid "New Slide"
+msgstr "Slide"
+
+#: ../../slider.php
+msgid "View Slide"
+msgstr "iFeature Slider"
+
+#: ../../slider.php
+msgid "Search Slides"
+msgstr "Cari slide"
+
+#: ../../slider.php
+msgid "No Slides found"
+msgstr "Tidak ada slide yang ditemukan"
+
+#: ../../slider.php
+msgid "No Slides found in trash"
+msgstr "Tidak ada slide yang ditemukan di tempat sampah"
+
+#: ../../slider.php
+msgctxt "taxonomy general name"
+msgid "Slide Categories"
+msgstr "Geser Kategori"
+
+#: ../../slider.php
+msgctxt "taxonomy singular name"
 msgid "Slide Catergory"
 msgstr "Geser Catergory"
 
 #: ../../slider.php
-msgid "Search Slides"
-msgstr "Cari Slides"
-
-#: ../../slider.php
 msgid "All Slides"
-msgstr "Semua Slides"
+msgstr "Semua slide"
 
 #: ../../slider.php
 msgid "Slide Category"
-msgstr "Slide Kategori"
+msgstr "Geser Kategori"
 
 #: ../../slider.php
 msgid "Slide Category:"
-msgstr "Slide Kategori:"
+msgstr "Geser Kategori:"
 
 #: ../../slider.php
 msgid "Edit Slide Category"
-msgstr "Mengedit Kategori Slide"
+msgstr "Mengedit kategori Slide"
 
 #: ../../slider.php
 msgid "Update Slide Category"
-msgstr "Perbarui Kategori Slide"
+msgstr "Update kategori Slide"
 
 #: ../../slider.php
 msgid "Add New Slide Category"
-msgstr "Tambahkan Kategori Baru Slide"
+msgstr "Tambahkan kategori Slide baru"
 
 #: ../../slider.php
 msgid "New Slide Category Name"
-msgstr "Slide Baru Kategori Nama"
-
-#: ../../slider.php
-msgid "Custom Feature Slides"
-msgstr "Kustom Fitur Slides"
-
-#: ../../slider.php
-msgid "Custom Slide Options"
-msgstr "Kustom Slide Pilihan"
+msgstr "Nama kategori Slide baru"
 
 #: ../../slider.php
 msgid "Slider Image"
-msgstr "Slider Gambar"
+msgstr "Gambar slider"
 
 #: ../../slider.php
 msgid "Slider Caption"
-msgstr "Slider Keterangan"
+msgstr "Slider Caption"
 
 #: ../../slider.php
 msgid "Custom Slide Link"
-msgstr "Kustom Slide Tautan"
+msgstr "Kustom Slide Link"
 
 #: ../../slider.php
-msgid "Title"
-msgstr "Judul"
+msgid "Reorder"
+msgstr "Menyusun ulang nama"
 
 #: ../../slider.php
-msgid "Need Help?"
-msgstr "Butuh Bantuan?"
+msgid "Custom Feature Slides"
+msgstr "Fitur kustom slide"
+
+#: ../../slider.php
+msgid "Slider Size"
+msgstr "Gambar slider"
+
+#: ../../slider.php
+msgid "Full"
+msgstr "Penuh"
+
+#: ../../slider.php
+msgid "Half"
+msgstr "Setengah"
+
+#: ../../slider.php
+msgid "Slider Type"
+msgstr "Gambar slider"
+
+#: ../../slider.php
+msgid "Custom"
+msgstr "Custom CSS"
+
+#: ../../slider.php
+msgid "Posts"
+msgstr "Posting"
+
+#: ../../slider.php
+msgid "Post Categories"
+msgstr "Kotak Kategori"
+
+#: ../../slider.php
+msgid "Custom Categories"
+msgstr "Kategori korsel"
+
+#: ../../slider.php
+msgid "Number of Featured Posts"
+msgstr "Fitur posting URL"
+
+#: ../../slider.php
+msgid "Slider Height"
+msgstr "Gambar slider"
+
+#: ../../slider.php
+msgid "Slider Speed"
+msgstr "Gambar slider"
+
+#: ../../slider.php
+msgid "Slider Arrows"
+msgstr "Slide"
+
+#: ../../slider.php
+msgid "iFeature Slider Options"
+msgstr "iFeature Slider"
+
+#: ../../twitter-bar.php
+msgid "Error retrieving tweets"
+msgstr "Kesalahan mengambil tweets"
+
+#: ../../twitter-bar.php
+msgid "%1$s followers"
+msgstr "%1$ s pengikut"
 
 #: ../../twitter-bar.php
 msgid "No tweets to display"
-msgstr "Tidak ada tweet untuk menampilkan"
+msgstr "No tweets untuk menampilkan"
 
 #: ../../twitter-bar.php
-msgid "Invalid Response"
-msgstr "Respon tidak valid"
+msgid "Twitter API Options"
+msgstr "Twitter API pilihan"
+
+#: ../../twitter-bar.php
+msgid "Edit Twitter API"
+msgstr "Mengedit kericau API"
+
+#: ../../twitter-bar.php
+msgid "Create your Twitter App here"
+msgstr "Membuat Anda kericau App di sini"
+
+#: ../../twitter-bar.php
+msgid "Complete all parts of the form and create your application"
+msgstr "Menyelesaikan semua bagian dari bentuk dan membuat aplikasi Anda"
+
+#: ../../twitter-bar.php
+msgid "On the next page click on the button Create my access token"
+msgstr "Pada next page klik pada tombol Buat saya token akses"
+
+#: ../../twitter-bar.php
+msgid "Now take the details and fill out the form below"
+msgstr "Sekarang mengambil rincian dan mengisi formulir di bawah ini"
+
+#: ../../twitter-bar.php
+msgid "Save your options"
+msgstr "Simpan pilihan Anda"
+
+#: ../../twitter-bar.php
+msgid "Create a Twitter App"
+msgstr "Membuat sebuah aplikasi Twitter"
+
+#: ../../twitter-bar.php
+msgid "Consumer Key"
+msgstr "Konsumen kunci"
+
+#: ../../twitter-bar.php
+msgid "Consumer Secret"
+msgstr "Konsumen rahasia"
+
+#: ../../twitter-bar.php
+msgid "Access Token"
+msgstr "Token akses"
+
+#: ../../twitter-bar.php
+msgid "Access Token Secret"
+msgstr "Rahasia Token akses"
+
+#: ../../twitter-bar.php
+msgid "Twitter Handle"
+msgstr "Twitter menangani"
+
+#: ../../twitter-bar.php
+msgid "Number Of Tweets"
+msgstr "Jumlah Tweets"
+
+#: ../../twitter-bar.php
+msgid ""
+"Including replies, if replies are set to off then the number shown could be "
+"less"
+msgstr ""
+"Termasuk menjawab, jika balasan yang disetel ke Matikan kemudian jumlah "
+"ditampilkan bisa kurang"
+
+#: ../../twitter-bar.php
+msgid "Use your Twitter Image"
+msgstr "Menggunakan gambar Anda kericau"
+
+#: ../../twitter-bar.php
+msgid "Show the number of followers"
+msgstr "Tampilkan jumlah pengikut"
+
+#: ../../twitter-bar.php
+msgid "Include Replies"
+msgstr "Termasuk Balasan"
+
+#: ../../twitter-bar.php
+msgid "Include Retweets"
+msgstr "Termasuk Retweets"
+
+#: ../../twitter-bar.php
+msgid "Show a different Twitter account"
+msgstr "Tampilkan akun Twitter yang berbeda"
+
+#: ../../twitter-bar.php
+msgid "Leaving this off will show the default account in your theme options"
+msgstr "Meninggalkan ini dari akan menampilkan default account di pilihan tema"
+
+#: ../../twitter-bar.php
+msgid "Twitter Options"
+msgstr "Twitter API pilihan"
+
+#: ../../twitter-bar.php
+msgid "Error"
+msgstr "Kesalahan 404"
 
 #: ../../widgets.php
 msgid "Box Left"
-msgstr "Kotak Kiri"
+msgstr "Kotak kiri"
 
 #: ../../widgets.php
 msgid "This is the left widget of the three-box section"
-msgstr "Ini adalah widget kiri bagian tiga-box"
+msgstr "Ini adalah widget kiri dari bagian tiga-kotak"
 
 #: ../../widgets.php
 msgid "Box Middle"
-msgstr "Kotak Tengah"
+msgstr "Kotak tengah"
 
 #: ../../widgets.php
 msgid "This is the middle widget of the three-box section"
-msgstr "Ini adalah widget tengah bagian tiga-box"
+msgstr "Ini adalah widget tengah bagian tiga-kotak"
 
 #: ../../widgets.php
 msgid "Box Right"
-msgstr "Kotak Kanan"
+msgstr "Kotak tepat"
 
 #: ../../widgets.php
 msgid "This is the right widget of the three-box section"
-msgstr "Ini adalah widget yang tepat dari bagian tiga-box"
+msgstr "Ini adalah widget kanan bagian tiga-kotak"
 
 #: ../../widgets.php
 msgid "This is the box left widgetized area."
-msgstr "Ini adalah kotak meninggalkan wilayah widgetized."
+msgstr "Ini adalah daerah widgetized kiri kotak."
 
 #: ../../widgets.php
 msgid "This is the box middle widgetized area."
-msgstr "Ini adalah tengah kotak wilayah widgetized."
+msgstr "Ini adalah daerah widgetized tengah kotak."
 
 #: ../../widgets.php
 msgid "This is the box right widgetized area."
-msgstr "Ini adalah daerah kotak widgetized tepat."
+msgstr "Ini adalah daerah widgetized kanan kotak."
 
 #: ../../setup/features.php
 msgid "Import/Export"
-msgstr "Impor / Ekspor"
+msgstr "Impor/ekspor"
 
 #: ../../setup/features.php
 msgid "Custom CSS"
@@ -434,27 +981,27 @@ msgstr "Custom CSS"
 
 #: ../../setup/features.php
 msgid "Contact Element"
-msgstr "Hubungi Elemen"
+msgstr "Kontak elemen"
 
 #: ../../setup/features.php
 msgid "Banner Options"
-msgstr "Banner Pilihan"
+msgstr "Banner pilihan"
 
 #: ../../setup/features.php
 msgid "Import / Export"
-msgstr "Impor / Ekspor"
+msgstr "Impor / ekspor"
 
 #: ../../setup/features.php
 msgid "Details"
-msgstr "Detil"
+msgstr "Rincian"
 
 #: ../../setup/features.php
 msgid "Banner Image"
-msgstr "Banner Gambar"
+msgstr "Gambar banner"
 
 #: ../../setup/features.php
 msgid "Enter URL or upload file"
-msgstr "Masukkan URL atau upload file"
+msgstr "Masukkan URL atau meng-upload file"
 
 #: ../../setup/features.php
 msgid "Banner URL"
@@ -462,31 +1009,35 @@ msgstr "Banner URL"
 
 #: ../../setup/features.php
 msgid "Cyberchimps Link"
-msgstr "Cyberchimps Tautan"
+msgstr "Cyberchimps Link"
 
 #: ../../setup/features.php
 msgid "Footer Scripts"
-msgstr "Footer script"
+msgstr "Skrip footer"
 
 #: ../../setup/features.php
-msgid "You do not need to add script tags"
-msgstr "Anda tidak perlu untuk menambahkan tag script"
+msgid "Please add script tags"
+msgstr "Harap Tambahkan tag script"
 
 #: ../../setup/features.php
 msgid "Export Settings"
-msgstr "Ekspor Pengaturan"
+msgstr "Pengaturan ekspor"
 
 #: ../../setup/features.php
 msgid "Import Settings"
-msgstr "Impor Pengaturan"
+msgstr "Impor pengaturan"
+
+#: ../../setup/features.php
+msgid "Searchbar text"
+msgstr "SearchBar teks"
 
 #: ../../setup/features.php
 msgid "Banner"
-msgstr "Spanduk"
+msgstr "Banner"
 
 #: ../../setup/features.php
 msgid "Description + Icons"
-msgstr "Deskripsi + Ikon"
+msgstr "Deskripsi + ikon"
 
 #: ../../setup/features.php
 msgid "Logo + Contact"
@@ -498,16 +1049,20 @@ msgstr "Logo + Deskripsi"
 
 #: ../../setup/features.php
 msgid "Logo + Icons"
-msgstr "Logo + Ikon"
+msgstr "Logo + ikon"
 
 #: ../../setup/features.php
 msgid "Logo + Login"
-msgstr "Logo + Masuk"
+msgstr "Logo + Login"
 
 #: ../../setup/features.php
 msgid "Logo + Search"
-msgstr "Logo + Pencarian"
+msgstr "Logo + Cari"
 
 #: ../../setup/features.php
 msgid "Logo"
 msgstr "Logo"
+
+#: ../../setup/features.php
+msgid "Footer Menu"
+msgstr "Footer Menu"

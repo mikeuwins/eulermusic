@@ -1,33 +1,59 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: CyberChimps Pro Elements\n"
+"Project-Id-Version: Elements Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
-"PO-Revision-Date: 2013-03-19 14:07-0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2014-02-11 12:26+0530\n"
+"Last-Translator: Surya <surya@cyberchimps.com>\n"
 "Language-Team: Croatian, Croatia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../../boxes.php ../../init.php ../../setup/features.php
+#: ../../setup/features.php ../../init.php ../../boxes.php
 msgid "Boxes"
 msgstr "Okviri"
 
 #: ../../boxes.php
-msgid "Boxes Categories"
-msgstr "Kategorije okvira"
+msgid "Add new Box"
+msgstr "Dodaj nove kategorije okvira"
 
 #: ../../boxes.php
-msgid "Boxes Catergory"
-msgstr "Kategorije okvira"
+msgid "Edit Box"
+msgstr ""
+
+#: ../../boxes.php
+msgid "New Box"
+msgstr ""
+
+#: ../../boxes.php
+msgid "View Box"
+msgstr ""
 
 #: ../../boxes.php
 msgid "Search Boxes"
 msgstr "Pretraži okvire"
+
+#: ../../boxes.php
+msgid "No Boxes found"
+msgstr ""
+
+#: ../../boxes.php
+msgid "No Boxes found in trash"
+msgstr ""
+
+#: ../../boxes.php
+msgctxt "taxonomy general name"
+msgid "Boxes Categories"
+msgstr "Kategorije okvira"
+
+#: ../../boxes.php
+msgctxt "taxonomy singular name"
+msgid "Boxes Catergory"
+msgstr "Kategorije okvira"
 
 #: ../../boxes.php
 msgid "All Boxes"
@@ -39,7 +65,7 @@ msgstr "Kategorija okvira"
 
 #: ../../boxes.php
 msgid "Boxes Category:"
-msgstr "Kategorije okvira:"
+msgstr "Kategorija okvira"
 
 #: ../../boxes.php
 msgid "Edit Boxes Category"
@@ -58,10 +84,6 @@ msgid "New Boxes Category Name"
 msgstr "Ime nove kategorije okvira"
 
 #: ../../boxes.php
-msgid "Boxes Element"
-msgstr "Element okvira"
-
-#: ../../boxes.php
 msgid "Box Image"
 msgstr "Slika okvira"
 
@@ -70,20 +92,37 @@ msgid "Box URL"
 msgstr "URL okvira"
 
 #: ../../boxes.php
+msgid "Link the whole box"
+msgstr ""
+
+#: ../../boxes.php
 msgid "Box Text"
 msgstr "Tekst okvira"
 
 #: ../../boxes.php
-msgid "iFeature Pro 5 Slider"
+msgid "Boxes Element"
+msgstr "Element okvira"
+
+#: ../../boxes.php ../../carousel.php ../../portfolio.php ../../slider.php
+msgid "You need to create a Category"
+msgstr "Morate kreirati kategoriju"
+
+#: ../../boxes.php
+msgid "Number of boxes per row"
+msgstr ""
+
+#: ../../boxes.php
+msgid "Boxes Options"
+msgstr "Element zastave"
+
+#: ../../boxes.php
+msgid "%1$s Slider"
 msgstr ""
 
 #: ../../boxes.php
 msgid ""
-"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
-"device."
+"The New Touch Friendly %1$s Slider now responds to any mobile touch device."
 msgstr ""
-"Nova karakteristika iFeature Pro slidera je posebno složena za uređaje na "
-"dodi i radi na bilo kojem uređaju osjetljivom na dodir."
 
 #: ../../boxes.php
 msgid "Responsive Design"
@@ -91,9 +130,9 @@ msgstr ""
 
 #: ../../boxes.php
 msgid ""
-"With iFeature Pro 5 and touch friendly responsive design you can now control "
-"your website on any device."
-msgstr "S iFeature Pro 5 i dizajnom koje je "
+"With %1$s and touch friendly responsive design you can now control your "
+"website on any device."
+msgstr ""
 
 #: ../../boxes.php
 msgid "Excellent Support"
@@ -130,23 +169,119 @@ msgstr "Članci publicirani od_"
 msgid "Error 404"
 msgstr "Greška 404"
 
-#: ../../init.php ../../breadcrumbs.php
+#: ../../breadcrumbs.php ../../init.php
 msgid "Page"
 msgstr "Stranica"
 
-#: ../../init.php ../../carousel.php
+#: ../../callout.php
+msgid "Callout Title"
+msgstr ""
+
+#: ../../callout.php
+msgid "%1$s's Call Out Element"
+msgstr ""
+
+#: ../../callout.php
+msgid "Callout Text"
+msgstr "Dozivna sekcija"
+
+#: ../../callout.php
+msgid ""
+"Use %1$s's Call Out section on any page where you want to deliver an "
+"important message to your customer or client."
+msgstr ""
+
+#: ../../callout.php
+msgid "Callout Button"
+msgstr "Dozivna sekcija"
+
+#: ../../callout.php
+msgid "Callout Button Text"
+msgstr "Dozivna sekcija"
+
+#: ../../callout.php
+msgid "Click Here"
+msgstr "Klikni ovdje"
+
+#: ../../callout.php
+msgid "Callout Button URL"
+msgstr "Dozivna sekcija"
+
+#: ../../callout.php
+msgid "Custom Callout Options"
+msgstr "Opcije specifičnog slidea"
+
+#: ../../callout.php
+msgid "Custom Button Image"
+msgstr "Slika dozivne tipke"
+
+#: ../../callout.php
+msgid "Custom Background Color"
+msgstr "Prilagođena boja pozadine"
+
+#: ../../callout.php
+msgid "Custom Title Color"
+msgstr "Prilagođena boja naziva"
+
+#: ../../callout.php
+msgid "Custom Text Color"
+msgstr "Prilagođena boja teksta"
+
+#: ../../callout.php
+msgid "Custom Button Color"
+msgstr "Prilagođena boja tipke"
+
+#: ../../callout.php
+msgid "Custom Button Text Color"
+msgstr "Prilagođena boja teksta tipke"
+
+#: ../../callout.php
+msgid "Callout Options"
+msgstr "Dozivna sekcija"
+
+#: ../../carousel.php ../../init.php
 msgid "Carousel"
 msgstr "Vrtuljak slika"
 
 #: ../../carousel.php
-msgid "Posts"
-msgstr "postova"
+msgid "Carousel item"
+msgstr "Vrtuljak slika"
 
 #: ../../carousel.php
+msgid "Add new Carousel item"
+msgstr "Dodaj novu kategoriju vrtuljka"
+
+#: ../../carousel.php
+msgid "Edit Carousel item"
+msgstr "Uredi kategorije vrtuljka"
+
+#: ../../carousel.php
+msgid "New Carousel item"
+msgstr "Novo ime kategorije vrtuljka"
+
+#: ../../carousel.php
+msgid "View Carousel item"
+msgstr "Novo ime kategorije vrtuljka"
+
+#: ../../carousel.php
+msgid "Search Carousel items"
+msgstr "Pretraži vrtuljak"
+
+#: ../../carousel.php
+msgid "No Carousel items found"
+msgstr "Kategorija vrtuljka"
+
+#: ../../carousel.php
+msgid "No Carousel items found in trash"
+msgstr ""
+
+#: ../../carousel.php
+msgctxt "taxonomy general name"
 msgid "Carousel Categories"
 msgstr "Kategorije vrtuljka"
 
 #: ../../carousel.php
+msgctxt "taxonomy singular name"
 msgid "Carousel Catergory"
 msgstr "Kategorija vrtuljka"
 
@@ -164,7 +299,7 @@ msgstr "Kategorija vrtuljka"
 
 #: ../../carousel.php
 msgid "Carousel Category:"
-msgstr "Kategorija vrtuljka:"
+msgstr "Kategorija vrtuljka"
 
 #: ../../carousel.php
 msgid "Edit Carousel Category"
@@ -183,10 +318,6 @@ msgid "New Carousel Category Name"
 msgstr "Novo ime kategorije vrtuljka"
 
 #: ../../carousel.php
-msgid "Featured Post Carousel Options"
-msgstr "Omiljene opcije vrtuljka članaka"
-
-#: ../../carousel.php
 msgid "Featured Post Image"
 msgstr "Omiljena slika članka"
 
@@ -194,9 +325,33 @@ msgstr "Omiljena slika članka"
 msgid "Featured Post URL"
 msgstr "Omiljeni URL članka"
 
-#: ../../slider.php ../../carousel.php
+#: ../../carousel.php ../../portfolio.php
+msgid "Lightbox"
+msgstr "Svijetli okvir"
+
+#: ../../carousel.php
 msgid "Reorder Name"
 msgstr "Ime promjene reda"
+
+#: ../../carousel.php
+msgid "Featured Post Carousel"
+msgstr "Omiljene opcije vrtuljka članaka"
+
+#: ../../carousel.php
+msgid "Carousel Options"
+msgstr "Omiljene opcije vrtuljka članaka"
+
+#: ../../htmlbox.php
+msgid "Custom HTML"
+msgstr "Specifičan CSS"
+
+#: ../../htmlbox.php
+msgid "Enter your custom html here"
+msgstr "Unesi svoj prilagođen HTML ovdje"
+
+#: ../../htmlbox.php
+msgid "HTML Box Options"
+msgstr "HTML okvir"
 
 #: ../../init.php
 msgid "Callout Section"
@@ -206,7 +361,7 @@ msgstr "Dozivna sekcija"
 msgid "HTML Box"
 msgstr "HTML okvir"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "iFeature Slider"
 msgstr ""
 
@@ -214,13 +369,17 @@ msgstr ""
 msgid "Magazine"
 msgstr ""
 
-#: ../../portfolio.php ../../init.php
+#: ../../init.php ../../portfolio.php
 msgid "Portfolio"
 msgstr "Program"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Post Page"
 msgstr "Objavi stranicu"
+
+#: ../../init.php ../../product.php
+msgid "Product"
+msgstr ""
 
 #: ../../init.php
 msgid "Recent Posts"
@@ -234,19 +393,105 @@ msgstr ""
 msgid "Widgets"
 msgstr "Widgeti"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Breadcrumbs"
 msgstr ""
 
-#: ../../portfolio.php
+#: ../../magazine.php
+msgid "Edit"
+msgstr ""
+
+#: ../../magazine.php
+msgid "Magazine Options"
+msgstr "Element zastave"
+
+#: ../../magazine.php
+msgid "Sidebar"
+msgstr ""
+
+#: ../../magazine.php
+msgid "Meta Data"
+msgstr ""
+
+#: ../../magazine.php
+msgid "Featured Image"
+msgstr "Omiljena slika članka"
+
+#: ../../magazine.php
+msgid "Category"
+msgstr "Kategorija okvira"
+
+#: ../../magazine.php
+msgid "Featured Excerpt Length"
+msgstr "Omiljeni URL članka"
+
+#: ../../magazine.php
+msgid "Number of Columns"
+msgstr ""
+
+#: ../../magazine.php
+msgid "Number of Rows"
+msgstr ""
+
+#: ../../magazine.php
+msgid "Wide Posts Below Magazine"
+msgstr ""
+
+#: ../../magazine.php
+msgid "Wide Post Excerpt Length"
+msgstr ""
+
+#: ../../magazine.php
+msgid "Number of Wide Posts"
+msgstr "Omiljeni URL članka"
+
+#: ../../magazine.php ../../recent-posts.php
+msgid "All"
+msgstr "Sve"
+
+#: ../../magazine.php
+msgid "magazine Options"
+msgstr "Element zastave"
+
+#: ../../portfolio.php ../../recent-posts.php
 msgid "Images"
 msgstr ""
 
 #: ../../portfolio.php
+msgid "Add new Image"
+msgstr "Slika Slidera"
+
+#: ../../portfolio.php
+msgid "Edit Image"
+msgstr "Slika"
+
+#: ../../portfolio.php
+msgid "New Image"
+msgstr "Slika"
+
+#: ../../portfolio.php
+msgid "View Image"
+msgstr "Slika Slidera"
+
+#: ../../portfolio.php
+msgid "Search Images"
+msgstr "Pretraži okvire"
+
+#: ../../portfolio.php
+msgid "No Images found"
+msgstr ""
+
+#: ../../portfolio.php
+msgid "No Images found in trash"
+msgstr ""
+
+#: ../../portfolio.php
+msgctxt "taxonomy general name"
 msgid "Portfolio Categories"
 msgstr "Kategorije programa"
 
 #: ../../portfolio.php
+msgctxt "taxonomy singular name"
 msgid "Portfolio Catergory"
 msgstr "Kategorije programa"
 
@@ -264,7 +509,7 @@ msgstr "Kategorija programa"
 
 #: ../../portfolio.php
 msgid "Portfolio Category:"
-msgstr "Kategorija programa:"
+msgstr "Kategorija programa"
 
 #: ../../portfolio.php
 msgid "Edit Portfolio Category"
@@ -283,20 +528,12 @@ msgid "New Portfolio Category Name"
 msgstr "Novo ime programa kategorije"
 
 #: ../../portfolio.php
-msgid "Portfolio Element"
-msgstr "Element programa"
-
-#: ../../portfolio.php
 msgid "Portfolio Image"
 msgstr "Slika programa"
 
-#: ../../slider.php ../../portfolio.php
+#: ../../portfolio.php ../../slider.php
 msgid "Caption"
 msgstr "Naslov"
-
-#: ../../portfolio.php
-msgid "Lightbox"
-msgstr "Svijetli okvir"
 
 #: ../../portfolio.php
 msgid "Custom Portfolio URL"
@@ -306,21 +543,183 @@ msgstr "Specifičan URL programa"
 msgid "URL"
 msgstr "URL adresa"
 
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "Element programa"
+
+#: ../../portfolio.php
+msgid "Images per row"
+msgstr ""
+
+#: ../../portfolio.php
+msgid "Two"
+msgstr "dva"
+
+#: ../../portfolio.php
+msgid "Three"
+msgstr "tri"
+
+#: ../../portfolio.php
+msgid "Four"
+msgstr "četiri"
+
+#: ../../portfolio.php
+msgid "Portfolio Title"
+msgstr "Element programa"
+
+#: ../../portfolio.php ../../recent-posts.php ../../slider.php
+msgid "Title"
+msgstr "Naslov"
+
+#: ../../portfolio.php
+msgid "Portfolio Options"
+msgstr "Kategorije programa"
+
+#: ../../product.php
+msgid "Product Layout"
+msgstr ""
+
+#: ../../product.php
+msgid "Text Left"
+msgstr ""
+
+#: ../../product.php
+msgid "Text Right"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Title"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Text"
+msgstr ""
+
+#: ../../product.php
+msgid "Media Type"
+msgstr ""
+
+#: ../../product.php
+msgid "Image"
+msgstr "Slika"
+
+#: ../../product.php
+msgid "Video"
+msgstr "Slika"
+
+#: ../../product.php
+msgid "Product Image URL"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Video Embed"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Button Type"
+msgstr ""
+
+#: ../../product.php
+msgid "No button"
+msgstr ""
+
+#: ../../product.php
+msgid "Button"
+msgstr ""
+
+#: ../../product.php
+msgid "Button Image"
+msgstr "Slika okvira"
+
+#: ../../product.php
+msgid "Product Button URL"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Button Text"
+msgstr ""
+
+#: ../../product.php
+msgid "Buy Now"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Image"
+msgstr ""
+
+#: ../../product.php
+msgid "Product URL"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Link Text"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Button Image"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Button Image URL"
+msgstr ""
+
+#: ../../product.php
+msgid "Product Options"
+msgstr ""
+
+#: ../../recent-posts.php
+msgid "Recent Posts Title"
+msgstr "Zadnji članci"
+
+#: ../../recent-posts.php
+msgid "Post Category"
+msgstr "Kategorija okvira"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Options"
+msgstr "Zadnji članci"
+
 #: ../../slider.php
 msgid "Slides"
 msgstr "Slideovi"
 
 #: ../../slider.php
-msgid "Slide Categories"
-msgstr "Kategorije slidea"
+msgid "Add new Slide"
+msgstr "Dodaj novu kategoriju slidea"
 
 #: ../../slider.php
-msgid "Slide Catergory"
-msgstr "Kategorija slidea"
+msgid "Edit Slide"
+msgstr "Uredi kategoriju slidea"
+
+#: ../../slider.php
+msgid "New Slide"
+msgstr "Slideovi"
+
+#: ../../slider.php
+msgid "View Slide"
+msgstr ""
 
 #: ../../slider.php
 msgid "Search Slides"
 msgstr "Pretraži slideove"
+
+#: ../../slider.php
+msgid "No Slides found"
+msgstr ""
+
+#: ../../slider.php
+msgid "No Slides found in trash"
+msgstr ""
+
+#: ../../slider.php
+msgctxt "taxonomy general name"
+msgid "Slide Categories"
+msgstr "Kategorije slidea"
+
+#: ../../slider.php
+msgctxt "taxonomy singular name"
+msgid "Slide Catergory"
+msgstr "Kategorija slidea"
 
 #: ../../slider.php
 msgid "All Slides"
@@ -332,7 +731,7 @@ msgstr "Kategorija slidea"
 
 #: ../../slider.php
 msgid "Slide Category:"
-msgstr "Kategorija slidea:"
+msgstr "Kategorija slidea"
 
 #: ../../slider.php
 msgid "Edit Slide Category"
@@ -351,14 +750,6 @@ msgid "New Slide Category Name"
 msgstr "Ime nove kategorije slidea"
 
 #: ../../slider.php
-msgid "Custom Feature Slides"
-msgstr "Specifična karakteristika slideova"
-
-#: ../../slider.php
-msgid "Custom Slide Options"
-msgstr "Opcije specifičnog slidea"
-
-#: ../../slider.php
 msgid "Slider Image"
 msgstr "Slika Slidera"
 
@@ -371,20 +762,170 @@ msgid "Custom Slide Link"
 msgstr "Specifičan link slidea"
 
 #: ../../slider.php
-msgid "Title"
-msgstr "Naslov"
+msgid "Reorder"
+msgstr "Ime promjene reda"
 
 #: ../../slider.php
-msgid "Need Help?"
-msgstr "Trebate pomoć?"
+msgid "Custom Feature Slides"
+msgstr "Specifična karakteristika slideova"
+
+#: ../../slider.php
+msgid "Slider Size"
+msgstr "Slika Slidera"
+
+#: ../../slider.php
+msgid "Full"
+msgstr "Potpuno"
+
+#: ../../slider.php
+msgid "Half"
+msgstr "Pola"
+
+#: ../../slider.php
+msgid "Slider Type"
+msgstr "Slika Slidera"
+
+#: ../../slider.php
+msgid "Custom"
+msgstr "Specifičan CSS"
+
+#: ../../slider.php
+msgid "Posts"
+msgstr "postova"
+
+#: ../../slider.php
+msgid "Post Categories"
+msgstr "Kategorije okvira"
+
+#: ../../slider.php
+msgid "Custom Categories"
+msgstr "Kategorije vrtuljka"
+
+#: ../../slider.php
+msgid "Number of Featured Posts"
+msgstr "Omiljeni URL članka"
+
+#: ../../slider.php
+msgid "Slider Height"
+msgstr "Slika Slidera"
+
+#: ../../slider.php
+msgid "Slider Speed"
+msgstr "Slika Slidera"
+
+#: ../../slider.php
+msgid "Slider Arrows"
+msgstr "Slideovi"
+
+#: ../../slider.php
+msgid "iFeature Slider Options"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Error retrieving tweets"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "%1$s followers"
+msgstr ""
 
 #: ../../twitter-bar.php
 msgid "No tweets to display"
 msgstr "Nema tweetova za prikaz"
 
 #: ../../twitter-bar.php
-msgid "Invalid Response"
-msgstr "Neodgovarajući odgovor"
+msgid "Twitter API Options"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Edit Twitter API"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Create your Twitter App here"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Complete all parts of the form and create your application"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "On the next page click on the button Create my access token"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Now take the details and fill out the form below"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Save your options"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Create a Twitter App"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Consumer Key"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Access Token"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Access Token Secret"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Twitter Handle"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Number Of Tweets"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid ""
+"Including replies, if replies are set to off then the number shown could be "
+"less"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Use your Twitter Image"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Show the number of followers"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Include Replies"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Include Retweets"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Show a different Twitter account"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Leaving this off will show the default account in your theme options"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Twitter Options"
+msgstr ""
+
+#: ../../twitter-bar.php
+msgid "Error"
+msgstr "Greška 404"
 
 #: ../../widgets.php
 msgid "Box Left"
@@ -440,7 +981,7 @@ msgstr "Element zastave"
 
 #: ../../setup/features.php
 msgid "Import / Export"
-msgstr "UVoz / Izvoz"
+msgstr "Uvoz/Izvoz"
 
 #: ../../setup/features.php
 msgid "Details"
@@ -467,7 +1008,7 @@ msgid "Footer Scripts"
 msgstr ""
 
 #: ../../setup/features.php
-msgid "You do not need to add script tags"
+msgid "Please add script tags"
 msgstr ""
 
 #: ../../setup/features.php
@@ -477,6 +1018,10 @@ msgstr "Izvezi postavke"
 #: ../../setup/features.php
 msgid "Import Settings"
 msgstr "Uvezi postavke"
+
+#: ../../setup/features.php
+msgid "Searchbar text"
+msgstr ""
 
 #: ../../setup/features.php
 msgid "Banner"
@@ -509,3 +1054,7 @@ msgstr "Logo+Pretraga"
 #: ../../setup/features.php
 msgid "Logo"
 msgstr "Logotip"
+
+#: ../../setup/features.php
+msgid "Footer Menu"
+msgstr "Footer izbornik"

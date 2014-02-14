@@ -11,298 +11,611 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
 // Don't load directly
-if ( !defined('ABSPATH') ) { die('-1'); }
+if( !defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
-add_action( 'magazine', 'cyberchimps_magazine_element_content' );
+if( !class_exists( 'CyberChimps_Magazine' ) ) {
+	class CyberChimps_Magazine {
 
-// Defining contents of the magazine post element
-function cyberchimps_magazine_element_content() {
-
-	// Reset the query to avoid conflict
-	wp_reset_query();
-
-	// call globals
-	global $post;	
-
-	/****** Getting Magazine options starts ******/
-
-	// If element is on page
-	if( is_page() ) {
-
-		// Getting number of columns
-		$column_no = get_post_meta($post->ID, 'cyberchimps_magazine_no_of_columns', true);
-
-		// Getting number of rows
-		$row_no = get_post_meta($post->ID, 'cyberchimps_magazine_no_of_rows', true);
-
-		// Getting wide post toglle option and number of wide posts
-		$wide_post_toggle =  get_post_meta($post->ID, 'cyberchimps_magazine_wide_post_toggle', true);
-		$wide_post_no = get_post_meta($post->ID, 'cyberchimps_magazine_no_of_wide_posts', true);
-		$wide_post_no += 1;
-
-		// Getting metadata toggle
-		$meta_toggle = get_post_meta($post->ID, 'cyberchimps_magazine_meta_data_toggle', true);
+		protected static $instance;
+		public $location, $all_cats, $rows;
 		
-		// Getting featured image toggle.
-		$featured_post_toggle = get_post_meta($post->ID, 'cyberchimps_magazine_featured_image', true );
-		
-		// getting post categories
-		$category = get_post_meta($post->ID, 'cyberchimps_magazine_category', true);
-	}
+		/* Static Singleton Factory Method */
+		public static function instance() {
+			if( !isset( self::$instance ) ) {
+				$className      = __CLASS__;
+				self::$instance = new $className;
+			}
 
-	//If element is on blog
-	elseif( is_home() ) {
+			return self::$instance;
+		}
 
-		// Getting the cyberchmips options
-		$options = get_option('cyberchimps_options');
+		/**
+		 * Initializes plugin variables and sets up WordPress hooks/actions.
+		 *
+		 * @return void
+		 */
+		protected function __construct() {
 
-		// Getting number of columns
-		$column_no = $options['blog_magazine_no_of_columns'];
-		
-		// Getting number of rows
-		$row_no = $options['blog_magazine_no_of_rows'];
+			add_action( 'magazine', array( $this, 'render_display' ) );
+			add_action( 'init', array( $this, 'page_options' ) );
+			add_action( 'magazine_after_content', array( $this, 'cyberchimps_magazine_pagination' ) );
 
-		// Getting wide post toglle option and number of wide posts
-		$wide_post_toggle =  $options['blog_magazine_wide_post'];
-		$wide_post_no = $options['blog_magazine_no_of_wide_posts'];
-
-		// Getting metadata toggle
-		$meta_toggle = $options['blog_magazine_metadata'];
-		
-		// Getting featured image toggle.
-		$featured_post_toggle = $options['blog_magazine_featured_image'];
-		
-		// getting post categories
-		$category = cyberchimps_get_option( 'blog_magazine_category', "");
-	}
-	
-	// change the span depending on number of columns
-	$span = ( $column_no == 2 ) ? 'span6' : 'span4';
-		
-	/****** Getting Magazine options ends ******/
-?>
-	<div id="magazine_conatiner" class="row-fluid">
-		<?php
-		// Making the query to bring the magazine posts
-		$page_number = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-		$category = ( $category != 'all' ) ? $category : '';
-		$post_no_total = ( $row_no * $column_no ) + ( $wide_post_toggle ? $wide_post_no : 0 );
-		$magazine = new WP_Query(
-								array(
-									'paged'    			=> $page_number,
-									'posts_per_page'	=> $post_no_total,
-									'post_type'			=> 'post',
-									'cat'				=> $category,
-									'orderby'  			=> 'post_date',
-									'order'    			=> 'desc'
-									)
-								);
-		?>
-		
-		<div id="magazine" class="span9">
-			<div class="row-fluid">
-				
-				<?php
-				/* Initializing counters. */
-				$counter_post = 0; 
-				$counter_box = 0;
-				$counter_wide = 0;
-
-				if ($magazine -> have_posts()) {
-					while ($magazine -> have_posts()) {
-						$magazine -> the_post();
-						if( $counter_post < ( $row_no * $column_no ) )
-						{ ?>
-							<div class="post_container box_post <?php echo $span; ?>">
-								<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-								
-									<!-- Display Title -->
-									<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-									
-									<!-- Display Thumbnail -->
-									<?php
-									if ( has_post_thumbnail() && $featured_post_toggle ) {
-										echo '<div class="featured-image">';
-										echo '<a href="' . get_permalink($post->ID) . '" >';
-											the_post_thumbnail('thumbnail');
-										echo '</a>';
-										echo '</div>';
-									}
-									?>	
-									
-									<!-- Display Metadata -->
-									<?php
-									if( $meta_toggle == 1 )
-									{ ?>
-										<div class="magazine-metadata">
-											<?php echo "Published on "; ?>
-											<a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>
-											<?php
-											echo " by "; the_author_posts_link();
-											echo " in "; the_category(', ');
-											?>
-										</div>
-									<?php	
-									}
-									?>
+			// Add blog option section and blg options.
+			add_filter( 'cyberchimps_sections_filter', array( $this, 'blog_options_section' ), 10, 1 );
+			add_filter( 'cyberchimps_field_filter', array( $this, 'blog_options' ), 10, 1 );
+			add_filter( 'cyberchimps_sidebar_right_class', array( $this, 'sidebar_class' ), 10, 1 );
 			
-									<div class="entry">
-										<?php 
-										add_filter('excerpt_more', 'cyberchimps_featured_post_excerpt_more');
-										add_filter( 'excerpt_length', 'cyberchimps_featured_post_length', 999 );
-										the_excerpt();
-										remove_filter('excerpt_more', 'cyberchimps_featured_post_excerpt_more');
-										remove_filter( 'excerpt_length', 'cyberchimps_featured_post_length', 999);
-										?>
-									</div><!--end entry-->  
-								
-									<div id="comments">
-										<span class="comments-n-views"><?php comments_popup_link('No Comment', '1 Comment', '% Comments');?></span>
-									</div>
-								</div><!--end post_class-->
-							</div><!--end post container-->
-							<?php 
-							$counter_box++;
-							$counter_post++;
-							if($column_no == $counter_box) {
+			
+			// Get all post categories
+			$all_categories = get_terms( 'category' );
+			if( !is_wp_error( $all_categories ) ) {
+				$this->all_cats['all'] = "All";
+				foreach( $all_categories as $all_cat ) {
+					$this->all_cats[$all_cat->term_id] = $all_cat->name;
+				}
+			}
+			
+			// For number of rows select options.
+			$this->rows = array(
+				'1'  => '1', '2' => '2', '3' => '3', '4' => '4',
+				'5'  => '5', '6' => '6', '7' => '7', '8' => '8',
+				'9'  => '9', '10' => '10', '11' => '11', '12' => '12',
+				'13' => '13', '14' => '14', '15' => '15', '16' => '16',
+				'17' => '17', '18' => '18', '19' => '19', '20' => '20'
+			);
+		
+		}
+
+		/**
+		 * Render the display
+		 */
+		public function render_display() {
+
+			// Reset the query to avoid conflict
+			wp_reset_query();
+
+			// call globals
+			global $post;
+
+			// enqueue masonry and magazine js.
+			wp_enqueue_script( 'cc-jquery-masonry', get_template_directory_uri() . '/elements/lib/js/masonry.pkgd.min.js', 'jquery', '3.1.2', true);
+			wp_enqueue_script( 'magazine', get_template_directory_uri() . '/elements/lib/js/magazine.min.js', 'jquery-masonry', '20140213', true );
+
+			/****** Getting Magazine options starts ******/
+
+			// If element is on page
+			if( is_page() ) {
+
+
+				// Getting number of columns
+				$column_no = get_post_meta( $post->ID, 'cyberchimps_magazine_no_of_columns', true );
+
+				// Getting number of rows
+				$row_no = get_post_meta( $post->ID, 'cyberchimps_magazine_no_of_rows', true );
+
+				// Getting wide post toglle option and number of wide posts
+				$wide_post_toggle = get_post_meta( $post->ID, 'cyberchimps_magazine_wide_post_toggle', true );
+				$wide_post_no     = get_post_meta( $post->ID, 'cyberchimps_magazine_no_of_wide_posts', true );
+
+				// Getting Sidebar toggle
+				$sidebar_toggle = get_post_meta( $post->ID, 'cyberchimps_magazine_sidebar_toggle', true );
+				
+				// Getting metadata toggle
+				$meta_toggle = get_post_meta( $post->ID, 'cyberchimps_magazine_meta_data_toggle', true );
+
+				// Getting featured image toggle.
+				$featured_post_toggle = get_post_meta( $post->ID, 'cyberchimps_magazine_featured_image', true );
+
+				// getting post categories
+				$category = get_post_meta( $post->ID, 'cyberchimps_magazine_category', true );
+			}
+
+			//If element is on blog
+			elseif( is_home() ) {
+
+				// Getting the cyberchmips options
+				$options = get_option( 'cyberchimps_options' );
+
+				// Getting number of columns
+				$column_no = $options['blog_magazine_no_of_columns'];
+
+				// Getting number of rows
+				$row_no = $options['blog_magazine_no_of_rows'];
+
+				// Getting wide post toglle option and number of wide posts
+				$wide_post_toggle = $options['blog_magazine_wide_post'];
+				$wide_post_no     = $options['blog_magazine_no_of_wide_posts'];
+
+				// Getting Sidebar toggle
+				$sidebar_toggle = isset($options['blog_magazine_sidebar'])? $options['blog_magazine_sidebar'] : 1;
+				
+				// Getting metadata toggle
+				$meta_toggle = $options['blog_magazine_metadata'];
+
+				// Getting featured image toggle.
+				$featured_post_toggle = $options['blog_magazine_featured_image'];
+
+				// getting post categories
+				$category = cyberchimps_get_option( 'blog_magazine_category', "" );
+			}
+
+			// change the span depending on number of columns
+			$span = ( $column_no == 2 ) ? '6' : '4';
+
+			/****** Getting Magazine options ends ******/
+			?>
+			<div id="magazine_container" class="row-fluid">
+			<?php
+			// Making the query to bring the magazine posts
+			$page_number = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+			$category = ( $category != 'all' ) ? $category : '';
+			$post_no_total = ( $row_no * $column_no ) + ( $wide_post_toggle ? $wide_post_no : 0 );
+			$magazine = new WP_Query(
+				array(
+					'paged'          => $page_number,
+					'posts_per_page' => $post_no_total,
+					'post_type'      => 'post',
+					'cat'            => $category,
+					'orderby'        => 'post_date',
+					'order'          => 'desc'
+				)
+			);
+			
+			// Set span length depending upon whether it sidebar is activated or not.
+			$span_class = $sidebar_toggle ? 'span9' : 'span12';
+			?>
+
+			<div id="magazine" class="<?php echo $span_class; ?>">
+				<div class="row-fluid" id="row_box">
+
+					<div id="column_width" class="column-width-<?php echo $span; ?>"></div>
+					<!-- Used by masonry to get column width -->
+					<div id="gutter_width"></div>
+					<!-- Used by masonry to get gutter width -->
+
+					<?php
+					/* Initializing counters. */
+					$counter_post = 0;
+					$counter_box = 0;
+					$counter_wide = 0;
+
+					if ($magazine->have_posts()) {
+					while ($magazine->have_posts()) {
+					$magazine->the_post();
+					if ($counter_post < ( $row_no * $column_no ))
+					{
+					?>
+					<div class="post-container box-post span<?php echo $span; ?>">
+						<div <?php post_class() ?> id="post_<?php the_ID(); ?>">
+
+							<!-- Display Title -->
+							<h2 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+							<!-- Display Thumbnail -->
+							<?php
+							if( has_post_thumbnail() && $featured_post_toggle ) {
+								echo '<div class="featured-image">';
+								echo '<a href="' . get_permalink( $post->ID ) . '" >';
+								the_post_thumbnail( apply_filters( 'cyberchimps_post_thumbnail_size', 'thumbnail' ) );
+								echo '</a>';
 								echo '</div>';
-
-								// Add another "row-fluid" if more box posts exists.
-								if( $counter_post < ( $row_no * $column_no ) )
-									echo '<div class="row-fluid">';
-								$counter_box = 0;
 							}
-
-							if( $counter_post == ( $row_no * $column_no ) ) {
 							?>
-								<!-- Start of wide posts -->
-								<div class="row-fluid">	
+
+							<!-- Display Metadata -->
+							<?php
+							if( $meta_toggle == 1 ) {
+								?>
+								<div class="magazine-metadata">
+									<?php echo "Published on "; ?>
+									<a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>
+									<?php
+									echo " by ";
+									the_author_posts_link();
+									echo " in ";
+									the_category( ', ' );
+									?>
+								</div>
 							<?php
 							}
+							?>
+
+							<div class="entry">
+								<?php
+								add_filter( 'excerpt_more', 'cyberchimps_featured_post_excerpt_more' );
+								add_filter( 'excerpt_length', 'cyberchimps_magazine_featured_post_length', 999 );
+								the_excerpt();
+								remove_filter( 'excerpt_more', 'cyberchimps_featured_post_excerpt_more' );
+								remove_filter( 'excerpt_length', 'cyberchimps_magazine_featured_post_length', 999 );
+								?>
+							</div>
+							<!--end entry-->
+
+							<div id="comments">
+								<span class="comments-n-views"><?php comments_popup_link( 'No Comment', '1 Comment', '% Comments' ); ?></span>
+							</div>
+							<?php edit_post_link( __( 'Edit', 'cyberchimps_elements' ), '<span class="edit-link">', '</span>' ); ?>
+						</div>
+						<!--end post_class-->
+					</div>
+					<!--end post container-->
+					<?php
+					$counter_box++;
+					$counter_post++;
+
+					if ($counter_post == ( $row_no * $column_no )) {
+					?>
+					</div> <!-- End od narrow posts. -->
+					<!-- Start of wide posts -->
+					<div class="row-fluid" id="row_wide">
+						<?php
 						}
-						else
-						{ 
-							if( ( $wide_post_toggle == 1 ) && ( $counter_wide < $wide_post_no ) )
-							{
-						?>
-							<div class="post_container wide_post span12">
-								<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-								
-									<!-- Display Title -->
-									<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-									
-									<!-- Display Thumbnail -->
-									<?php
-									if ( has_post_thumbnail() && $featured_post_toggle ) {
-										echo '<div class="featured-image">';
-										echo '<a href="' . get_permalink($post->ID) . '" >';
-											the_post_thumbnail('thumbnail');
-										echo '</a>';
-										echo '</div>';
-									}
-									?>
-									
-									<!-- Display Metadata -->
-									<?php
-									if( $meta_toggle == 1 )
-									{ ?>
-										<div class="magazine-metadata">
-											<?php echo "Published on "; ?>
-											<a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>
+						}
+						else {
+							if( ( $wide_post_toggle == 1 ) && ( $counter_wide < $wide_post_no ) ) {
+								?>
+								<div class="post-container wide-post span12">
+									<div <?php post_class() ?> id="post_<?php the_ID(); ?>">
+
+										<!-- Display Title -->
+										<h2 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+										<!-- Display Thumbnail -->
+										<?php
+										if( has_post_thumbnail() && $featured_post_toggle ) {
+											echo '<div class="featured-image">';
+											echo '<a href="' . get_permalink( $post->ID ) . '" >';
+											the_post_thumbnail( apply_filters( 'cyberchimps_post_thumbnail_size', 'thumbnail' ) );
+											echo '</a>';
+											echo '</div>';
+										}
+										?>
+
+										<!-- Display Metadata -->
+										<?php
+										if( $meta_toggle == 1 ) {
+											?>
+											<div class="magazine-metadata">
+												<?php echo "Published on "; ?>
+												<a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>
+												<?php
+												echo " by ";
+												the_author_posts_link();
+												echo " in ";
+												the_category( ', ' );
+												?>
+											</div>
+										<?php
+										}
+										?>
+
+										<div class="entry">
 											<?php
-											echo " by "; the_author_posts_link();
-											echo " in "; the_category(', ');
+											add_filter( 'excerpt_more', 'cyberchimps_featured_post_excerpt_more' );
+											add_filter( 'excerpt_length', 'cyberchimps_magazine_post_wide', 999 );
+											the_excerpt();
+											remove_filter( 'excerpt_more', 'cyberchimps_featured_post_excerpt_more' );
+											remove_filter( 'excerpt_length', 'cyberchimps_magazine_post_wide', 999 );
 											?>
 										</div>
-									<?php	
-									}
-									?>
-									
-									<div class="entry">
-										<?php 
-										add_filter('excerpt_more', 'cyberchimps_featured_post_excerpt_more');
-										add_filter( 'excerpt_length', 'cyberchimps_magazine_post_wide', 999 );
-										the_excerpt();
-										remove_filter('excerpt_more', 'cyberchimps_featured_post_excerpt_more');
-										remove_filter( 'excerpt_length', 'cyberchimps_magazine_post_wide', 999 );
-										?>
-									</div><!--end entry-->  
-									
-									<div id="comments">
-										<span class="comments-n-views"><?php comments_popup_link('No Comment', '1 Comment', '% Comments');?></span>
-									</div>	
-								</div><!--end post_class-->
-							</div><!--end post container-->
-						<?php 
-							$counter_wide++;
+										<!--end entry-->
+
+										<div id="comments">
+											<span class="comments-n-views"><?php comments_popup_link( 'No Comment', '1 Comment', '% Comments' ); ?></span>
+										</div>
+										<?php edit_post_link( __( 'Edit', 'cyberchimps_elements' ), '<span class="edit-link">', '</span>' ); ?>
+									</div>
+									<!--end post_class-->
+								</div><!--end post container-->
+								<?php
+								$counter_wide++;
 							}
 						}
-					}
-				}	
-				else {
-					echo "<h2>Not Found</h2>";
-				}?>	
-			</div><!--end of wide posts -->
+						}
+						}
+						else {
+							echo "<h2>Not Found</h2>";
+						}?>
+					</div>
+					<!--end of wide posts -->
 
-			<!-- Display pagination. -->
-			<div class="row-fluid span6">
-				<?php do_action( 'magazine_after_content', $magazine->max_num_pages ); ?>
+					<!-- Display pagination. -->
+					<div class="row-fluid">
+						<div id="magazine_pagination" class="span12">
+							<?php do_action( 'magazine_after_content', $magazine->max_num_pages ); ?>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add sidebar if the toggle is on. -->
+				<?php
+				if( $sidebar_toggle ) {
+					get_sidebar( 'right' );
+				} ?>
 			</div>
-		</div>
+		<?php
+		}
+
+		/**
+		 *
+		 * Creates new section for the magazine options
+		 *
+		 * @param $orig the original array of sections in the blog options
+		 *
+		 * @return array with the new section added
+		 */
+		public function blog_options_section( $orig ) {
+			
+			$new_section[][4] = array(
+				'id'      => 'cyberchimps_blog_magazine_section',
+				'label'   => __( 'Magazine Options', 'cyberchimps_core' ),
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$new_sections = cyberchimps_array_section_organizer( $orig, $new_section );
+
+			return $new_sections;
+		}
+
+		/**
+		 * Creates the options to display in the magazine section
+		 *
+		 * @param array $orig the original array of options
+		 *
+		 * @return array with new fields added
+		 */
+		public function blog_options( $orig ) {
 		
-		<!-- Add sidebar -->
-		<?php get_sidebar( 'right' ); ?>
-	</div>
-<?php	
-}
+			$fields_list[][1] = array(
+				'name'    => __( 'Sidebar', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_sidebar',
+				'type'    => 'toggle',
+				'std'     => 'checked',
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+			
+			$fields_list[][2] = array(
+				'name'    => __( 'Meta Data', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_metadata',
+				'type'    => 'toggle',
+				'std'     => 'checked',
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
 
-// Pagination
-function cyberchimps_magazine_pagination( $num_pages ) {
-	global $wp_query, $wp_rewrite;
+			$fields_list[][3] = array(
+				'name'    => __( 'Featured Image', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_featured_image',
+				'type'    => 'toggle',
+				'std'     => 'checked',
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$fields_list[][4] = array(
+				'name'    => __( 'Category', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_category',
+				'type'    => 'select',
+				'options' => $this->all_cats,
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$fields_list[][5] = array(
+				'name'    => __( 'Featured Excerpt Length', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_excerpt_length',
+				'type'    => 'text',
+				'std'     => '70',
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$fields_list[][6] = array(
+				'name'    => __( 'Number of Columns', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_no_of_columns',
+				'type'    => 'select',
+				'std'     => 2,
+				'options' => array(
+					2 => '2',
+					3 => '3'
+				),
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$fields_list[][7] = array(
+				'name'    => __( 'Number of Rows', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_no_of_rows',
+				'type'    => 'select',
+				'std'     => '2',
+				'options' => $this->rows,
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$fields_list[][8] = array(
+				'name'    => __( 'Wide Posts Below Magazine', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_wide_post',
+				'type'    => 'toggle',
+				'std'     => 'checked',
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$fields_list[][9] = array(
+				'name'    => __( 'Wide Post Excerpt Length', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_wide_excerpt_length',
+				'type'    => 'text',
+				'std'     => '130',
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+
+			$fields_list[][10] = array(
+				'name'    => __( 'Number of Wide Posts', 'cyberchimps_core' ),
+				'id'      => 'blog_magazine_no_of_wide_posts',
+				'type'    => 'select',
+				'std'     => '6',
+				'options' => $this->rows,
+				'section' => 'cyberchimps_blog_magazine_section',
+				'heading' => 'cyberchimps_blog_heading'
+			);
+			
+			$new_fields = cyberchimps_array_field_organizer( $orig, $fields_list );
+
+			return $new_fields;
+		}
+		
+		
+		/**
+		 * Create Meta boxes on page
+		 */
+		public function page_options() {
 	
-	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
-	$pagination = array(
-		'base' => @add_query_arg('paged','%#%'),
-		'format' => '',
-		'total' => $num_pages,
-		'current' => $current,
-		'show_all' => false,
-		'end_size' => 1,
-		'mid_size' => 2,
-		'prev_text' => 'Prev',
-		'next_text' => 'Next',
-		'type' => 'array'
-	);
+			$page_fields = array(
+				array(
+					'type'  => 'checkbox',
+					'id'    => 'cyberchimps_magazine_sidebar_toggle',
+					'class' => 'checkbox-toggle',
+					'name'  => __( 'Sidebar', 'cyberchimps_elements' )
+				),
+				array(
+					'type'  => 'checkbox',
+					'id'    => 'cyberchimps_magazine_meta_data_toggle',
+					'class' => 'checkbox-toggle',
+					'name'  => __( 'Meta Data', 'cyberchimps_elements' )
+				),
+				array(
+					'type'  => 'checkbox',
+					'id'    => 'cyberchimps_magazine_featured_image',
+					'class' => 'checkbox-toggle',
+					'name'  => __( 'Featured Image', 'cyberchimps_elements' )
+				),
+				array(
+					'type'    => 'select',
+					'id'      => 'cyberchimps_magazine_category',
+					'class'   => '',
+					'name'    => __( 'Category', 'cyberchimps_elements' ),
+					'options' => $this->all_cats, __( 'All', 'cyberchimps_core' )
+				),
+				array(
+					'type'    => 'select',
+					'id'      => 'cyberchimps_magazine_no_of_columns',
+					'class'   => '',
+					'name'    => __( 'Number of Columns', 'cyberchimps_elements' ),
+					'options' => array( 2 => '2', 3 => '3' ), __( 'All', 'cyberchimps_core' )
+				),
+				array(
+					'type'    => 'select',
+					'id'      => 'cyberchimps_magazine_no_of_rows',
+					'class'   => '',
+					'name'    => __( 'Number of Rows', 'cyberchimps_elements' ),
+					'options' => $this->rows, __( 'All', 'cyberchimps_core' )
+				),
+				array(
+					'type'  => 'checkbox',
+					'id'    => 'cyberchimps_magazine_wide_post_toggle',
+					'class' => 'checkbox-toggle',
+					'name'  => __( 'Wide Posts Below Magazine', 'cyberchimps_elements' )
+				),
+				array(
+					'type'    => 'select',
+					'id'      => 'cyberchimps_magazine_no_of_wide_posts',
+					'class'   => '',
+					'name'    => __( 'Number of Wide Posts', 'cyberchimps_elements' ),
+					'options' => $this->rows, __( 'All', 'cyberchimps_core' )
+				)
+			);
+			/*
+			 * configure your meta box
+			 */
+			$page_config = array(
+				'id'             => 'magazine_options', // meta box id, unique per meta box
+				'title'          => __( 'magazine Options', 'cyberchimps_elements' ), // meta box title
+				'pages'          => array( 'page' ), // post types, accept custom post types as well, default is array('post'); optional
+				'context'        => 'normal', // where the meta box appear: normal (default), advanced, side; optional
+				'priority'       => 'high', // order of meta box: high (default), low; optional
+				'fields'         => $page_fields, // list of meta fields (can be added by field arrays)
+				'local_images'   => false, // Use local or hosted images (meta box images for add/remove)
+				'use_with_theme' => true //change path if used with theme set to true, false for a plugin or anything else for a custom path(default false).
+			);
 
-	if ( $wp_rewrite->using_permalinks() )
-		$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+			/*
+			 * Initiate your meta box
+			 */
+			$page_meta = new Cyberchimps_Meta_Box( $page_config );
+		
+		}
+			 
+		// Pagination
+		public function cyberchimps_magazine_pagination( $num_pages ) {
+			global $wp_query, $wp_rewrite;
 
-	if ( !empty($wp_query->query_vars['s']) )
-		$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
+			$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+			$pagination = array(
+				'base'      => @add_query_arg( 'paged', '%#%' ),
+				'format'    => '',
+				'total'     => $num_pages,
+				'current'   => $current,
+				'show_all'  => false,
+				'end_size'  => 1,
+				'mid_size'  => 2,
+				'prev_text' => 'Prev',
+				'next_text' => 'Next',
+				'type'      => 'array'
+			);
 
-	$pagination = paginate_links( $pagination );
-	
-	if ( is_array( $pagination ) ) {
-		echo '<div class="pagination">';
-		echo '<ul>';
-		foreach( $pagination as $pag ) {
-			/*if ( strpos( $pag, 'dots' ) != false ) {
-				continue;
-			} else*/ if ( strpos( $pag, 'current' ) != false ) {
-				$num = preg_replace("/[^0-9]/", '', $pag);
-				echo '<li class="active"><a>'.$num.'</a></li>';
-			} else {
-				echo '<li>'.$pag.'</li>';
+			if( $wp_rewrite->using_permalinks() ) {
+				$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+			}
+
+			if( !empty( $wp_query->query_vars['s'] ) ) {
+				$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
+			}
+
+			$pagination = paginate_links( $pagination );
+
+			if( is_array( $pagination ) ) {
+				echo '<div class="pagination">';
+				echo '<ul>';
+				foreach( $pagination as $pag ) {
+					/*if ( strpos( $pag, 'dots' ) != false ) {
+						continue;
+					} else*/
+					if( strpos( $pag, 'current' ) != false ) {
+						$num = preg_replace( "/[^0-9]/", '', $pag );
+						echo '<li class="active"><a>' . $num . '</a></li>';
+					}
+					else {
+						echo '<li>' . $pag . '</li>';
+					}
+				}
+				echo '</ul>';
+				echo '</div>';
 			}
 		}
-		echo '</ul>';
-		echo '</div>';
+
+		/**
+		 * Sets size of sidebar
+		 * 
+		 * @param $class array
+		 *
+		 * @return array
+		 */
+		public function sidebar_class( $class ) {
+			$class[] = 'span3';
+
+			return $class;
+		}
 	}
 }
-add_action( 'magazine_after_content', 'cyberchimps_magazine_pagination' );
+CyberChimps_Magazine::instance();
 ?>

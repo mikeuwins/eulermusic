@@ -11,7 +11,7 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
@@ -19,59 +19,60 @@
 global $tag;
 
 function cyberchimps_shortcodes_tabs( $atts, $content = null ) {
-	
+
 	global $tag;
-	
+
 	// Extract parameters passed in the shortcode
 	extract( shortcode_atts( array(
-		'name' => 'mytabs',
-	), $atts ) );
+		                         'name' => 'mytabs',
+	                         ), $atts ) );
 
 	// Define markup for <ul> and all of it's <li>
 	$tag = 'li';
-	$ul = '<ul class="nav nav-tabs" id="' . $name. '">' . do_shortcode( $content ) . '</ul>';
-	
+	$ul  = '<ul class="nav nav-tabs" id="' . $name . '">' . do_shortcode( $content ) . '</ul>';
+
 	// Define markup for tab conatiner and all of it's tab divs
 	$tag = 'div';
-	$div = '<div class="tab-content">'. do_shortcode( $content ) . '</div>';
-	
+	$div = '<div class="tab-content">' . do_shortcode( $content ) . '</div>';
+
 	// Define script for click even on any of the tabs
 	$script = '<script>';
-	$script .= 'jQuery("#' . $name. ' a").click(function (e) { e.preventDefault(); jQuery(this).tab("show");})';
+	$script .= 'jQuery("#' . $name . ' a").click(function (e) { e.preventDefault(); jQuery(this).tab("show");})';
 	$script .= '</script>';
 	?>
-	
+
 	<!-- Define script to active the first element by default -->
 	<script>
 		jQuery(function () {
 			jQuery('#<?php echo $name; ?> a:first').tab('show');
 		});
 	</script>
-	
+
 	<?php
 	return $ul . $div . $script;
 }
+
 add_shortcode( 'cc_tabs', 'cyberchimps_shortcodes_tabs' );
 
-
 function cyberchimps_shortcodes_tab( $atts, $content = null ) {
-	
+
 	global $tag;
 
 	// Extract parameters passed in the shortcode
 	extract( shortcode_atts( array(
-		'name' => 'mytab',
-	), $atts ) );
+		                         'name' => 'mytab',
+	                         ), $atts ) );
 
 	// Check whether the call is made for <li> or <div> and define markup accordingly
 	if( $tag == "li" ) {
-		$html = '<li><a href="#' . $name. '">' .$name . '</a></li>';
+		$html = '<li><a href="#' . $name . '">' . $name . '</a></li>';
 	}
 	else {
-		$html = '<div class="tab-pane" id="' . $name. '">' .$content . '</div>';
+		$html = '<div class="tab-pane" id="' . $name . '">' . $content . '</div>';
 	}
 
 	return $html;
 }
+
 add_shortcode( 'cc_tab', 'cyberchimps_shortcodes_tab' );
 ?>

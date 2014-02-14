@@ -9,124 +9,238 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
 // Don't load directly
-if ( !defined('ABSPATH') ) { die('-1'); }
+if( !defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
-if ( !class_exists( 'CyberChimpsPortfolio' ) ) {
+if( !class_exists( 'CyberChimpsPortfolio' ) ) {
 	class CyberChimpsPortfolio {
-		
+
 		protected static $instance;
 		public $options;
-		
+
 		/* Static Singleton Factory Method */
 		public static function instance() {
-			if (!isset(self::$instance)) {
-				$className = __CLASS__;
+			if( !isset( self::$instance ) ) {
+				$className      = __CLASS__;
 				self::$instance = new $className;
 			}
+
 			return self::$instance;
-		}	
-		
+		}
+
 		/**
 		 * Initializes plugin variables and sets up WordPress hooks/actions.
 		 *
 		 * @return void
 		 */
-		protected function __construct( ) {
+		protected function __construct() {
 			$this->options = get_option( 'cyberchimps_options' );
 			add_action( 'init', array( $this, 'cyberchimps_init_portfolio_post_type' ) );
 			add_action( 'portfolio_pro', array( $this, 'render_display' ) );
 		}
-		
+
 		//Define Custom post type
 		function cyberchimps_init_portfolio_post_type() {
 			register_post_type( 'portfolio_images',
+			                    array(
+				                    'labels'      => array(
+					                    'name'               => __( 'Portfolio', 'cyberchimps_elements' ),
+					                    'singular_name'      => __( 'Images', 'cyberchimps_elements' ),
+					                    'add_new_item'       => __( 'Add new Image', 'cyberchimps_elements' ),
+					                    'edit_item'          => __( 'Edit Image', 'cyberchimps_elements' ),
+					                    'new_item'           => __( 'New Image', 'cyberchimps_elements' ),
+					                    'view_item'          => __( 'View Image', 'cyberchimps_elements' ),
+					                    'search_items'       => __( 'Search Images', 'cyberchimps_elements' ),
+					                    'not_found'          => __( 'No Images found', 'cyberchimps_elements' ),
+					                    'not_found_in_trash' => __( 'No Images found in trash', 'cyberchimps_elements' )
+				                    ),
+				                    'public'      => true,
+				                    'show_ui'     => true,
+				                    'supports'    => array( 'custom-fields', 'title' ),
+				                    'taxonomies'  => array( 'portfolio_cats' ),
+				                    'has_archive' => false,
+				                    'menu_icon'   => get_template_directory_uri() . '/cyberchimps/lib/images/custom-types/portfolio.png',
+				                    'rewrite'     => false
+			                    )
+			);
+
+			$labels = array(
+				'name'              => _x( 'Portfolio Categories', 'taxonomy general name', 'cyberchimps_elements' ),
+				'singular_name'     => _x( 'Portfolio Catergory', 'taxonomy singular name', 'cyberchimps_elements' ),
+				'search_items'      => __( 'Search Portfolio', 'cyberchimps_elements' ),
+				'all_items'         => __( 'All Portfolios', 'cyberchimps_elements' ),
+				'parent_item'       => __( 'Portfolio Category', 'cyberchimps_elements' ),
+				'parent_item_colon' => __( 'Portfolio Category:', 'cyberchimps_elements' ),
+				'edit_item'         => __( 'Edit Portfolio Category', 'cyberchimps_elements' ),
+				'update_item'       => __( 'Update Portfolio Category', 'cyberchimps_elements' ),
+				'add_new_item'      => __( 'Add New Portfolio Category', 'cyberchimps_elements' ),
+				'new_item_name'     => __( 'New Portfolio Category Name', 'cyberchimps_elements' ),
+				'menu_name'         => __( 'Portfolio Category', 'cyberchimps_elements' )
+			);
+			register_taxonomy( 'portfolio_cats', array( 'portfolio_images' ), array(
+				'public'            => true,
+				'show_in_nav_menus' => false,
+				'hierarchical'      => true,
+				'labels'            => $labels,
+				'show_ui'           => true
+			) );
+
+			/**
+			 * Set up Meta Boxes on Portfolio custom post type
+			 */
+
+			$portfolio_fields = array( array(
+				'type'  => 'single_image',
+				'id'    => 'portfolio_image',
+				'class' => '',
+				'name'  => __( 'Portfolio Image', 'cyberchimps_elements' ),
+				'std'   => ''
+			),
 				array(
-					'labels' => array(
-						'name' => __('Portfolio', 'cyberchimps_elements' ),
-						'singular_name' => __('Images', 'cyberchimps_elements' )
-					),
-					'public' => true,
-					'show_ui' => true, 
-					'supports' => array('custom-fields', 'title'),
-					'taxonomies' => array( 'portfolio_cats'),
-					'has_archive' => true,
-					'menu_icon' => get_template_directory_uri() . '/cyberchimps/lib/images/custom-types/portfolio.png',
-					'rewrite' => array('slug' => 'portfolio')
+					'type'  => 'text',
+					'id'    => 'caption_text',
+					'class' => '',
+					'name'  => __( 'Caption', 'cyberchimps_elements' )
+				),
+				array(
+					'type'  => 'checkbox',
+					'id'    => 'portfolio_lightbox_toggle',
+					'class' => 'checkbox',
+					'name'  => __( 'Lightbox', 'cyberchimps_elements' ),
+					'std'   => 1
+				),
+				array(
+					'type'  => 'checkbox',
+					'id'    => 'custom_portfolio_url_toggle',
+					'class' => 'checkbox-toggle',
+					'name'  => __( 'Custom Portfolio URL', 'cyberchimps_elements' ),
+					'std'   => 0
+				),
+				array(
+					'type'  => 'text',
+					'id'    => 'custom_portfolio_url',
+					'class' => 'custom_portfolio_url_toggle-toggle',
+					'name'  => __( 'URL', 'cyberchimps_elements' )
 				)
 			);
-			
-			$labels = array(
-				'name' => _x( 'Portfolio Categories', 'taxonomy general name', 'cyberchimps_elements' ),
-				'singular_name' => _x( 'Portfolio Catergory', 'taxonomy singular name', 'cyberchimps_elements' ),
-				'search_items' =>  __( 'Search Portfolio', 'cyberchimps_elements' ),
-				'all_items' => __( 'All Portfolios', 'cyberchimps_elements' ),
-				'parent_item' => __( 'Portfolio Category', 'cyberchimps_elements' ),
-				'parent_item_colon' => __( 'Portfolio Category:', 'cyberchimps_elements' ),
-				'edit_item' => __( 'Edit Portfolio Category', 'cyberchimps_elements' ), 
-				'update_item' => __( 'Update Portfolio Category', 'cyberchimps_elements' ),
-				'add_new_item' => __( 'Add New Portfolio Category', 'cyberchimps_elements' ),
-				'new_item_name' => __( 'New Portfolio Category Name', 'cyberchimps_elements' ),
-				'menu_name' => __( 'Portfolio Category', 'cyberchimps_elements' )
-			); 	
-			register_taxonomy( 'portfolio_cats', array('portfolio_images'), array(
-				'public' => true,
-				'show_in_nav_menus' => false,
-				'hierarchical' => true,
-				'labels' => $labels,
-				'show_ui' => true
-			));
-			
-			$meta_boxes = array();
-			
-			$mb = new Chimps_Metabox('Portfolio', 'Portfolio Element', array('pages' => array('portfolio_images')));
-			$mb
-				->tab( __( 'Portfolio Element', 'cyberchimps_elements' ) )
-					->single_image('portfolio_image', __( 'Portfolio Image', 'cyberchimps_elements' ), '')
-					->text('caption_text', __( 'Caption', 'cyberchimps_elements' ), '')
-					->checkbox('portfolio_lightbox_toggle', __( 'Lightbox', 'cyberchimps_elements' ), '', array('std' => 'on'))
-					->checkbox('custom_portfolio_url_toggle', __( 'Custom Portfolio URL', 'cyberchimps_elements' ), '', array('std' => 'off'))
-					->text('custom_portfolio_url', __( 'URL', 'cyberchimps_elements' ), '')
-				->end();
-				
-			foreach ($meta_boxes as $meta_box) {
-				$my_box = new RW_Meta_Box_Taxonomy($meta_box);
+			/*
+			 * configure your meta box
+			 */
+			$portfolio_config = array(
+				'id'             => 'portfolio_options', // meta box id, unique per meta box
+				'title'          => __( 'Portfolio Element', 'cyberchimps_elements' ), // meta box title
+				'pages'          => array( 'portfolio_images' ), // post types, accept custom post types as well, default is array('post'); optional
+				'context'        => 'normal', // where the meta box appear: normal (default), advanced, side; optional
+				'priority'       => 'high', // order of meta box: high (default), low; optional
+				'fields'         => $portfolio_fields, // list of meta fields (can be added by field arrays)
+				'local_images'   => false, // Use local or hosted images (meta box images for add/remove)
+				'use_with_theme' => true //change path if used with theme set to true, false for a plugin or anything else for a custom path(default false).
+			);
+
+			/*
+			 * Initiate your meta box
+			 */
+			$portfolio_meta = new Cyberchimps_Meta_Box( $portfolio_config );
+
+			/**
+			 * Create Meta boxes on page
+			 */
+			$portfolio_terms = get_terms( 'portfolio_cats', 'hide_empty=0' );
+			if( !is_wp_error( $portfolio_terms ) ) {
+				foreach( $portfolio_terms as $term ) {
+					$portfolio_options[$term->slug] = $term->name;
+				}
 			}
+			else {
+				$portfolio_options = null;
+			}
+
+			$page_fields = array(
+				array(
+					'type'    => 'select',
+					'id'      => 'portfolio_row_number',
+					'class'   => '',
+					'name'    => __( 'Images per row', 'cyberchimps_elements' ),
+					'options' => array( 2 => __( 'Two', 'cyberchimps_core' ), 3 => __( 'Three', 'cyberchimps_core' ), 4 => __( 'Four', 'cyberchimps_core' ) ),
+					'std'     => 3
+				),
+				array(
+					'type'    => 'select',
+					'id'      => 'portfolio_category',
+					'class'   => '',
+					'name'    => __( 'Portfolio Category', 'cyberchimps_elements' ),
+					'options' => ( isset( $portfolio_options ) ) ? $portfolio_options : array( 'cc_no_options' => __( 'You need to create a Category', 'cyberchimps_core' ) )
+				),
+				array(
+					'type'  => 'checkbox',
+					'id'    => 'portfolio_title_toggle',
+					'class' => 'checkbox-toggle',
+					'name'  => __( 'Portfolio Title', 'cyberchimps_elements' )
+				),
+				array(
+					'type'  => 'text',
+					'id'    => 'portfolio_title',
+					'class' => 'portfolio_title_toggle-toggle',
+					'name'  => __( 'Title', 'cyberchimps_elements' ),
+					'std'   => __( 'Portfolio', 'cyberchimps_elements' )
+				)
+
+			);
+			/*
+			 * configure your meta box
+			 */
+			$page_config = array(
+				'id'             => 'portfolio_pro_options', // meta box id, unique per meta box
+				'title'          => __( 'Portfolio Options', 'cyberchimps_elements' ), // meta box title
+				'pages'          => array( 'page' ), // post types, accept custom post types as well, default is array('post'); optional
+				'context'        => 'normal', // where the meta box appear: normal (default), advanced, side; optional
+				'priority'       => 'high', // order of meta box: high (default), low; optional
+				'fields'         => $page_fields, // list of meta fields (can be added by field arrays)
+				'local_images'   => false, // Use local or hosted images (meta box images for add/remove)
+				'use_with_theme' => true //change path if used with theme set to true, false for a plugin or anything else for a custom path(default false).
+			);
+
+			/*
+			 * Initiate your meta box
+			 */
+			$page_meta = new Cyberchimps_Meta_Box( $page_config );
 		}
 
 		public function render_display() {
 			global $post;
 			if( is_page() ) {
-				$images_per_row = get_post_meta( $post->ID, 'portfolio_row_number', true );
-				$portfolio_category = get_post_meta( $post->ID, 'portfolio_category', true );
+				$images_per_row         = get_post_meta( $post->ID, 'portfolio_row_number', true );
+				$portfolio_category     = get_post_meta( $post->ID, 'portfolio_category', true );
 				$portfolio_title_toggle = get_post_meta( $post->ID, 'portfolio_title_toggle', true );
-				$portfolio_title = get_post_meta( $post->ID, 'portfolio_title', true );
+				$portfolio_title        = get_post_meta( $post->ID, 'portfolio_title', true );
 			}
 			else {
-				$images_per_row = $this->options['cyberchimps_blog_portfolio_pro_per_row'];
-				$customcategory_obj = ( isset( $this->options['cyberchimps_blog_portfolio_pro_category'] ) ) ? get_term( $this->options['cyberchimps_blog_portfolio_pro_category'], 'portfolio_cats' ) : '';
-				$portfolio_category = ( isset( $this->options['cyberchimps_blog_portfolio_pro_category'] ) ) ? $customcategory_obj->slug : '';
+				$images_per_row         = $this->options['cyberchimps_blog_portfolio_pro_per_row'];
+				$customcategory_obj     = ( isset( $this->options['cyberchimps_blog_portfolio_pro_category'] ) ) ? get_term( $this->options['cyberchimps_blog_portfolio_pro_category'], 'portfolio_cats' ) : '';
+				$portfolio_category     = ( isset( $this->options['cyberchimps_blog_portfolio_pro_category'] ) ) ? $customcategory_obj->slug : '';
 				$portfolio_title_toggle = $this->options['cyberchimps_blog_portfolio_pro_title'];
-				$portfolio_title = $this->options['cyberchimps_blog_portfolio_pro_title_text'];
+				$portfolio_title        = $this->options['cyberchimps_blog_portfolio_pro_title_text'];
 			}
-			$args = array(
-							'numberposts'     	=> 500,
-							'offset'          	=> 0,
-							'portfolio_cats'	=> $portfolio_category,
-							'orderby'         	=> 'post_date',
-							'order'           	=> 'ASC',
-							'post_type'       	=> 'portfolio_images',
-							'post_status'     	=> 'publish',
-							'suppress_filters' 	=> false
-							);
+			$args            = array(
+				'numberposts'      => 500,
+				'offset'           => 0,
+				'portfolio_cats'   => $portfolio_category,
+				'orderby'          => 'post_date',
+				'order'            => 'ASC',
+				'post_type'        => 'portfolio_images',
+				'post_status'      => 'publish',
+				'suppress_filters' => false
+			);
 			$portfolio_posts = get_posts( $args );
-			
+
 			$port_array = array();
-			$i = 1;
+			$i          = 1;
 			switch( $images_per_row ) {
 				case 2:
 					$span = 'span6';
@@ -138,99 +252,110 @@ if ( !class_exists( 'CyberChimpsPortfolio' ) ) {
 					$span = 'span3';
 					break;
 			}?>
-      <div id="portfolio" class="row-fluid">
-     	 <div id="gallery" class="span12">
-       <?php
-			 	// check if there are any posts retrieved and if not display default images
-				if( !empty( $portfolio_posts ) ): ?>
-          <?php if( $portfolio_title_toggle && $portfolio_title != '' ): ?>
-          	<h2><?php echo $portfolio_title; ?></h2>
-          <?php endif; ?>
-					<?php foreach( $portfolio_posts as $port ):
-          
-			// Getting portfolio options
-            $image			 = get_post_meta( $port->ID, 'portfolio_image', true );
-            $caption		 = ( get_post_meta( $port->ID, 'caption_text', true ) != '' ) ? get_post_meta( $port->ID, 'caption_text', true ) : get_the_title( $port->ID );
-            $link			 = get_post_meta( $port->ID, 'custom_portfolio_url', true );
-            $link_use		 = get_post_meta( $port->ID, 'custom_portfolio_url_toggle', true );
-			$lightbox_toggle = get_post_meta( $port->ID, 'portfolio_lightbox_toggle', true );
-			
-			// Setting link for custom URL and rel for lightbox
-            $url = ( ( $lightbox_toggle == 0 ) && ( $link_use == 1 ) && ( $link != '' ) ) ? $link : $image;
-            $rel = ( $lightbox_toggle == 1 ) ? 'rel="cyberchimps-lightbox"' : '';
-            
-            if( $i == 1 ): ?>
-              <ul class="row-fluid">
-            <?php endif;
-            if( $i <= $images_per_row ): ?>
-              <li id="portfolio_wrap" class="<?php echo $span; ?>">
-                <div class="portfolio_item">
-                <a href="<?php echo $url; ?>" <?php echo $rel; ?> title="<?php echo $caption; ?>">
-                  <img src="<?php echo $image ;?>" alt="<?php echo $caption; ?>"/>
-                  <div class="portfolio_caption"><?php echo $caption; ?></div>
-                </a>
-                </div>
-              </li><!-- #portfolio_wrap -->
-            <?php endif;
-            if( $i == $images_per_row ) {
-              $i = 1;
-              echo '</ul>';
-            }
-            else {
-              $i++;
-            }
-          
-          endforeach; 
-					
-					// if there are no posts then display defaults
-					else:
-						$image = get_template_directory_uri(). "/cyberchimps/lib/images/portfolio.jpg";
-					?>
-          <h2>Portfolio</h2>
-          
-          <ul class="row-fluid">
-          	<li id="portfolio_wrap" class="span3">
-              <div class="portfolio_item">
-                <a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
-                <img src="<?php echo $image; ?>" alt="CyberChimps"/>
-                <div class="portfolio_caption">CyberChimps Portfolio</div>
-              </a>
-              </div>
-            </li><!-- #portfolio_wrap -->
-            
-            <li id="portfolio_wrap" class="span3">
-              <div class="portfolio_item">
-                <a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
-                <img src="<?php echo $image; ?>" alt="CyberChimps"/>
-                <div class="portfolio_caption">CyberChimps Portfolio</div>
-              </a>
-              </div>
-            </li><!-- #portfolio_wrap -->
-            
-            <li id="portfolio_wrap" class="span3">
-              <div class="portfolio_item">
-                <a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
-                <img src="<?php echo $image; ?>" alt="CyberChimps"/>
-                <div class="portfolio_caption">CyberChimps Portfolio</div>
-              </a>
-              </div>
-            </li><!-- #portfolio_wrap -->
-            
-            <li id="portfolio_wrap" class="span3">
-              <div class="portfolio_item">
-                <a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
-                <img src="<?php echo $image; ?>" alt="CyberChimps"/>
-                <div class="portfolio_caption">CyberChimps Portfolio</div>
-              </a>
-              </div>
-            </li><!-- #portfolio_wrap -->
-          </ul>
-          <?php endif; ?>
-      
-      		</div><!-- #gallery .span12-->
+			<div id="portfolio" class="row-fluid">
+				<div id="gallery" class="span12">
+					<?php
+					// check if there are any posts retrieved and if not display default images
+					if (!empty( $portfolio_posts )): ?>
+					<?php if( $portfolio_title_toggle && $portfolio_title != '' ): ?>
+						<h2><?php echo $portfolio_title; ?></h2>
+					<?php endif; ?>
+					<?php foreach ($portfolio_posts as $port):
+
+					// Getting portfolio options
+					$image = get_post_meta( $port->ID, 'portfolio_image', true );
+					$caption = ( get_post_meta( $port->ID, 'caption_text', true ) != '' ) ? get_post_meta( $port->ID, 'caption_text', true ) : get_the_title( $port->ID );
+					$link = get_post_meta( $port->ID, 'custom_portfolio_url', true );
+					$link_use = get_post_meta( $port->ID, 'custom_portfolio_url_toggle', true );
+					$lightbox_toggle = get_post_meta( $port->ID, 'portfolio_lightbox_toggle', true );
+
+					// Setting link for custom URL and rel for lightbox
+					$url = ( ( $lightbox_toggle == 0 ) && ( $link_use == 1 ) && ( $link != '' ) ) ? $link : $image;
+					$rel = ( $lightbox_toggle == 1 ) ? 'rel="cyberchimps-lightbox"' : '';
+
+					if ($i == 1): ?>
+					<ul class="row-fluid">
+						<?php endif;
+						if( $i <= $images_per_row ): ?>
+							<li id="portfolio_wrap" class="<?php echo $span; ?>">
+								<div class="portfolio-item">
+									<a href="<?php echo $url; ?>" <?php echo $rel; ?> title="<?php echo $caption; ?>">
+										<img src="<?php echo $image; ?>" alt="<?php echo $caption; ?>"/>
+
+										<div class="portfolio-caption"><?php echo $caption; ?></div>
+									</a>
+								</div>
+							</li><!-- #portfolio_wrap -->
+						<?php endif;
+						if( $i == $images_per_row ) {
+							$i = 1;
+							echo '</ul>';
+						}
+						else {
+							$i++;
+						}
+
+						endforeach;
+
+						// if there are no posts then display defaults
+						else:
+							$image = get_template_directory_uri() . "/cyberchimps/lib/images/portfolio.jpg";
+							?>
+							<h2>Portfolio</h2>
+
+							<ul class="row-fluid">
+								<li id="portfolio_wrap" class="span3">
+									<div class="portfolio-item">
+										<a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
+											<img src="<?php echo $image; ?>" alt="CyberChimps"/>
+
+											<div class="portfolio-caption">CyberChimps Portfolio</div>
+										</a>
+									</div>
+								</li>
+								<!-- #portfolio_wrap -->
+
+								<li id="portfolio_wrap" class="span3">
+									<div class="portfolio-item">
+										<a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
+											<img src="<?php echo $image; ?>" alt="CyberChimps"/>
+
+											<div class="portfolio-caption">CyberChimps Portfolio</div>
+										</a>
+									</div>
+								</li>
+								<!-- #portfolio_wrap -->
+
+								<li id="portfolio_wrap" class="span3">
+									<div class="portfolio-item">
+										<a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
+											<img src="<?php echo $image; ?>" alt="CyberChimps"/>
+
+											<div class="portfolio-caption">CyberChimps Portfolio</div>
+										</a>
+									</div>
+								</li>
+								<!-- #portfolio_wrap -->
+
+								<li id="portfolio_wrap" class="span3">
+									<div class="portfolio-item">
+										<a href="<?php echo $image; ?>" rel="cyberchimps-lightbox" title="Caption">
+											<img src="<?php echo $image; ?>" alt="CyberChimps"/>
+
+											<div class="portfolio-caption">CyberChimps Portfolio</div>
+										</a>
+									</div>
+								</li>
+								<!-- #portfolio_wrap -->
+							</ul>
+						<?php
+						endif; ?>
+
+				</div>
+				<!-- #gallery .span12-->
 			</div><!-- row-fluid -->
-							
-			<?php
+
+		<?php
 		}
 	}
 }

@@ -9,16 +9,22 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
+
+ // Load text domain.
+function cyberchimps_text_domain() {
+	load_theme_textdomain( 'cyberchimpspro', get_template_directory() . '/inc/languages' );
+}
+add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 
 // Notify user of theme update on "Updates" page in Dashboard.
-require_once( get_template_directory() . '/inc/update.php' );
-new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 96, basename( get_template_directory() ) );
+require_once( get_template_directory() . '/inc/wp-updates-theme.php' );
+new WPUpdatesThemeUpdater_96( 'http://wp-updates.com/api/2/theme', basename(get_template_directory()) );
 
 // Set the content width based on the theme's design and stylesheet.
 if ( ! isset( $content_width ) )
@@ -39,30 +45,30 @@ function cyberchimps_comment( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'cyberchimps' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'cyberchimps' ), ' ' ); ?></p>
+		<p><?php _e( 'Pingback:', 'cyberchimpspro' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'cyberchimpspro' ), ' ' ); ?></p>
 	<?php
 			break;
 		default :
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<article id="comment-<?php comment_ID(); ?>" class="comment">
+		<article id="comment-<?php comment_ID(); ?>" class="comment hreview">
 			<footer>
-				<div class="comment-author vcard">
+				<div class="comment-author reviewer vcard">
 					<?php echo get_avatar( $comment, 40 ); ?>
-					<?php printf( '%s <span class="says">' . __( 'says:', 'cyberchimps' ) . '</span>', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+					<?php printf( '%s <span class="says">' . __( 'says:', 'cyberchimpspro' ) . '</span>', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 				</div><!-- .comment-author .vcard -->
 				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em><?php _e( 'Your comment is awaiting moderation.', 'cyberchimps' ); ?></em>
+					<em><?php _e( 'Your comment is awaiting moderation.', 'cyberchimpspro' ); ?></em>
 					<br />
 				<?php endif; ?>
 
 				<div class="comment-meta commentmetadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>" class="dtreviewed"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
 					<?php
 						/* translators: 1: date, 2: time */
-						printf( __( '%1$s at %2$s', 'cyberchimps' ), get_comment_date(), get_comment_time() ); ?>
+						printf( __( '%1$s at %2$s', 'cyberchimpspro' ), get_comment_date(), get_comment_time() ); ?>
 					</time></a>
-					<?php edit_comment_link( __( '(Edit)', 'cyberchimps' ), ' ' );
+					<?php edit_comment_link( __( '(Edit)', 'cyberchimpspro' ), ' ' );
 					?>
 				</div><!-- .comment-meta .commentmetadata -->
 			</footer>
@@ -94,28 +100,22 @@ function cyberchimps_options_theme_name(){
 }
 //Doc's URL
 function cyberchimps_options_documentation_url() {
-	$url = 'http://cyberchimps.com/help/';
+	$url = 'http://cyberchimps.com/guides/c-pro/';
 	return $url;
 }
 // Support Forum URL
 function cyberchimps_options_support_forum() {
-	$url = 'http://cyberchimps.com/forum/pro/';
-	return $url;
-}
-//Page Options Help URL
-function cyberchimps_options_page_options_help() {
-	$url = 'http://cyberchimps.com/element-how-tos/';
+	$url = 'http://cyberchimps.com/forum/pro/cyberchimps/';
 	return $url;
 }
 // Slider Options Help URL
 function cyberchimps_options_slider_options_help() {
-	$url = 'http://cyberchimps.com/faq/how-to-use-the-ifeature-pro-slider/';
+	$url = 'http://cyberchimps.com/guide/how-to-use-the-pro-slider/';
 	return $url;
 }
 add_filter( 'cyberchimps_current_theme_name', 'cyberchimps_options_theme_name', 1 );
 add_filter( 'cyberchimps_documentation', 'cyberchimps_options_documentation_url' );
 add_filter( 'cyberchimps_support_forum', 'cyberchimps_options_support_forum' );
-add_filter( 'cyberchimps_page_options_help', 'cyberchimps_options_page_options_help' );
 add_filter( 'cyberchimps_slider_options_help', 'cyberchimps_options_slider_options_help' );
 
 // Help Section
@@ -124,7 +124,7 @@ function cyberchimps_options_help_header() {
 	return $text;
 }
 function cyberchimps_options_help_sub_header(){
-	$text = __( 'CyberChimps Pro Responsive WordPress Starter Theme', 'cyberchimps' );
+	$text = __( 'CyberChimps Pro Responsive WordPress Starter Theme', 'cyberchimpspro' );
 	return $text;
 }
 
@@ -153,20 +153,6 @@ function cyberchimps_skin_color_options( $options ) {
 }
 add_filter( 'cyberchimps_skin_color', 'cyberchimps_skin_color_options', 1 );
 
-// theme specific background images
-function cyberchimps_background_image( $options ) {
-	$imagepath =  get_template_directory_uri() . '/cyberchimps/lib/images/';
-	$options = array(
-			'none' => $imagepath . 'backgrounds/thumbs/none.png',
-			'noise' => $imagepath . 'backgrounds/thumbs/noise.png',
-			'blue' => $imagepath . 'backgrounds/thumbs/blue.png',
-			'dark' => $imagepath . 'backgrounds/thumbs/dark.png',
-			'space' => $imagepath . 'backgrounds/thumbs/space.png'
-			);
-	return $options;
-}
-add_filter( 'cyberchimps_background_image', 'cyberchimps_background_image' );
-
 // theme specific typography options
 function cyberchimps_typography_sizes( $sizes ) {
 	$sizes = array( '8','9','10','12','14','16','20' );
@@ -184,7 +170,7 @@ add_filter( 'cyberchimps_typography_styles', 'cyberchimps_typography_styles' );
 
 function cyberchimps_footer_link() {
 	$array = array(
-								'name' => __('Cyberchimps Link', 'cyberchimps'),
+								'name' => __('Cyberchimps Link', 'cyberchimpspro'),
 								'id' => 'footer_cyberchimps_link',
 								'std' => 1,
 								'type' => 'toggle',

@@ -1,32 +1,58 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: CyberChimps Pro Elements\n"
+"Project-Id-Version: Elements Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 11:39:17 UTC\n"
-"PO-Revision-Date: 2013-03-19 14:07-0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2014-02-11 12:26+0530\n"
+"Last-Translator: Surya <surya@cyberchimps.com>\n"
 "Language-Team: Japanese, Japan\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../boxes.php ../../init.php ../../setup/features.php
+#: ../../setup/features.php ../../init.php ../../boxes.php
 msgid "Boxes"
-msgstr "箱"
+msgstr "ボックス"
 
 #: ../../boxes.php
-msgid "Boxes Categories"
-msgstr "ボックスカテゴリ"
+msgid "Add new Box"
+msgstr "新しいボックスのカテゴリを追加します。"
 
 #: ../../boxes.php
-msgid "Boxes Catergory"
-msgstr "ボックスCatergory"
+msgid "Edit Box"
+msgstr "編集ボックス"
+
+#: ../../boxes.php
+msgid "New Box"
+msgstr "新しいボックス"
+
+#: ../../boxes.php
+msgid "View Box"
+msgstr "ビュー ボックス"
 
 #: ../../boxes.php
 msgid "Search Boxes"
 msgstr "検索ボックス"
+
+#: ../../boxes.php
+msgid "No Boxes found"
+msgstr "ボックスは表示されませんが見つかりました"
+
+#: ../../boxes.php
+msgid "No Boxes found in trash"
+msgstr "ゴミ箱にボックスが見つからない"
+
+#: ../../boxes.php
+msgctxt "taxonomy general name"
+msgid "Boxes Categories"
+msgstr "ボックスのカテゴリ"
+
+#: ../../boxes.php
+msgctxt "taxonomy singular name"
+msgid "Boxes Catergory"
+msgstr "ボックスの Catergory"
 
 #: ../../boxes.php
 msgid "All Boxes"
@@ -34,83 +60,97 @@ msgstr "すべてのボックス"
 
 #: ../../boxes.php
 msgid "Boxes Category"
-msgstr "ボックスカテゴリ"
+msgstr "ボックスのカテゴリ"
 
 #: ../../boxes.php
 msgid "Boxes Category:"
-msgstr "ボックスカテゴリ："
+msgstr "ボックスのカテゴリー："
 
 #: ../../boxes.php
 msgid "Edit Boxes Category"
-msgstr "編集ボックスカテゴリ"
+msgstr "ボックスのカテゴリを編集します。"
 
 #: ../../boxes.php
 msgid "Update Boxes Category"
-msgstr "アップデートボックスカテゴリ"
+msgstr "ボックスのカテゴリを更新します。"
 
 #: ../../boxes.php
 msgid "Add New Boxes Category"
-msgstr "新しいボックスカテゴリの追加"
+msgstr "新しいボックスのカテゴリを追加します。"
 
 #: ../../boxes.php
 msgid "New Boxes Category Name"
 msgstr "新しいボックスのカテゴリ名"
 
 #: ../../boxes.php
-msgid "Boxes Element"
-msgstr "ボックス要素"
-
-#: ../../boxes.php
 msgid "Box Image"
-msgstr "ボックスイメージ"
+msgstr "ボックスの画像"
 
 #: ../../boxes.php
 msgid "Box URL"
-msgstr "ボックスのURL"
+msgstr "ボックス URL"
+
+#: ../../boxes.php
+msgid "Link the whole box"
+msgstr "全体のボックスをリンクします。"
 
 #: ../../boxes.php
 msgid "Box Text"
-msgstr "Box text: "
+msgstr "ボックスのテキスト"
 
 #: ../../boxes.php
-msgid "iFeature Pro 5 Slider"
-msgstr "iFeature Pro 5のスライダー"
+msgid "Boxes Element"
+msgstr "ボックス要素"
+
+#: ../../boxes.php ../../carousel.php ../../portfolio.php ../../slider.php
+msgid "You need to create a Category"
+msgstr "カテゴリを作成する必要があります。"
+
+#: ../../boxes.php
+msgid "Number of boxes per row"
+msgstr "行ごとのボックスの数"
+
+#: ../../boxes.php
+msgid "Boxes Options"
+msgstr "バナー オプション"
+
+#: ../../boxes.php
+msgid "%1$s Slider"
+msgstr "%1$ のスライダー"
 
 #: ../../boxes.php
 msgid ""
-"The New Touch Friendly iFeature Pro Slider now responds to any mobile touch "
-"device."
+"The New Touch Friendly %1$s Slider now responds to any mobile touch device."
 msgstr ""
-"新しいタッチフレンドリーiFeature Proのスライダーは今どんなモバイルタッチデバ"
-"イスに対応しています。"
+"新しいタッチ フレンドリ %1$ のスライダーは、今どんなモバイル タッチ デバイス"
+"に応答します。"
 
 #: ../../boxes.php
 msgid "Responsive Design"
-msgstr "レスポンシブ·デザイン"
+msgstr "レスポンシブ デザイン"
 
 #: ../../boxes.php
 msgid ""
-"With iFeature Pro 5 and touch friendly responsive design you can now control "
-"your website on any device."
+"With %1$s and touch friendly responsive design you can now control your "
+"website on any device."
 msgstr ""
-"iFeature Pro 5とタッチに優しい敏感なデザインであなたは今どのデバイスでも、あ"
-"なたのウェブサイトを制御することができます。"
+"%1$ S とタッチ応答設計任意のデバイス上のあなたのウェブサイトを管理できます。"
 
 #: ../../boxes.php
 msgid "Excellent Support"
-msgstr "優れたサポート体制"
+msgstr "優れたサポート"
 
 #: ../../boxes.php
 msgid ""
 "Need help? Read the instructions and please visit our dedicated Pro Support "
 "Forum."
 msgstr ""
-"ヘルプが必要ですか？指示を読み、私達の専用Proのサポートフォーラムをご覧くださ"
-"い。"
+"助けが必要ですか？指示を読んで、当社専用のプロのサポート フォーラムを参照して"
+"ください。"
 
 #: ../../breadcrumbs.php
 msgid "Home"
-msgstr "自宅"
+msgstr "ホーム"
 
 #: ../../breadcrumbs.php
 msgid "Archive for category "
@@ -118,7 +158,7 @@ msgstr "カテゴリーのアーカイブ"
 
 #: ../../breadcrumbs.php
 msgid "Search results for "
-msgstr "検索結果："
+msgstr "検索結果"
 
 #: ../../breadcrumbs.php
 msgid "Posts tagged "
@@ -130,31 +170,129 @@ msgstr "掲示される記事"
 
 #: ../../breadcrumbs.php
 msgid "Error 404"
-msgstr "エラー404"
+msgstr "エラー 404"
 
-#: ../../init.php ../../breadcrumbs.php
+#: ../../breadcrumbs.php ../../init.php
 msgid "Page"
 msgstr "ページ"
 
-#: ../../init.php ../../carousel.php
+#: ../../callout.php
+msgid "Callout Title"
+msgstr "製品タイトル"
+
+#: ../../callout.php
+msgid "%1$s's Call Out Element"
+msgstr "要素 %1$ s の呼び出し"
+
+#: ../../callout.php
+msgid "Callout Text"
+msgstr "コールアウト セクション"
+
+#: ../../callout.php
+msgid ""
+"Use %1$s's Call Out section on any page where you want to deliver an "
+"important message to your customer or client."
+msgstr ""
+"%1$ S を呼び出すアウト] セクションを使用して、顧客やクライアントに重要なメッ"
+"セージを配信する任意のページ。"
+
+#: ../../callout.php
+msgid "Callout Button"
+msgstr "コールアウト セクション"
+
+#: ../../callout.php
+msgid "Callout Button Text"
+msgstr "コールアウト セクション"
+
+#: ../../callout.php
+msgid "Click Here"
+msgstr "ここをクリックします。"
+
+#: ../../callout.php
+msgid "Callout Button URL"
+msgstr "コールアウト セクション"
+
+#: ../../callout.php
+msgid "Custom Callout Options"
+msgstr "カスタム スライドのオプション"
+
+#: ../../callout.php
+msgid "Custom Button Image"
+msgstr "カスタム ボタンの画像"
+
+#: ../../callout.php
+msgid "Custom Background Color"
+msgstr "カスタムの背景色"
+
+#: ../../callout.php
+msgid "Custom Title Color"
+msgstr "カスタム タイトルの色"
+
+#: ../../callout.php
+msgid "Custom Text Color"
+msgstr "カスタム テキストの色"
+
+#: ../../callout.php
+msgid "Custom Button Color"
+msgstr "カスタム ボタンの色"
+
+#: ../../callout.php
+msgid "Custom Button Text Color"
+msgstr "カスタム ボタン テキストの色"
+
+#: ../../callout.php
+msgid "Callout Options"
+msgstr "コールアウト セクション"
+
+#: ../../carousel.php ../../init.php
 msgid "Carousel"
-msgstr "回転木馬"
+msgstr "カルーセル"
 
 #: ../../carousel.php
-msgid "Posts"
-msgstr "件"
+msgid "Carousel item"
+msgstr "カルーセル"
 
 #: ../../carousel.php
+msgid "Add new Carousel item"
+msgstr "カルーセルの新しいカテゴリを追加します。"
+
+#: ../../carousel.php
+msgid "Edit Carousel item"
+msgstr "カルーセル カテゴリを編集します。"
+
+#: ../../carousel.php
+msgid "New Carousel item"
+msgstr "新しいカルーセル カテゴリ名"
+
+#: ../../carousel.php
+msgid "View Carousel item"
+msgstr "新しいカルーセル カテゴリ名"
+
+#: ../../carousel.php
+msgid "Search Carousel items"
+msgstr "検索のカルーセル"
+
+#: ../../carousel.php
+msgid "No Carousel items found"
+msgstr "カルーセル カテゴリ"
+
+#: ../../carousel.php
+msgid "No Carousel items found in trash"
+msgstr "ゴミ箱で発見カルーセル項目はありません。"
+
+#: ../../carousel.php
+msgctxt "taxonomy general name"
 msgid "Carousel Categories"
-msgstr "カルーセルカテゴリー"
+msgstr "カルーセル カテゴリ"
 
 #: ../../carousel.php
+msgctxt "taxonomy singular name"
 msgid "Carousel Catergory"
-msgstr "カルーセルCatergory"
+msgstr "カルーセル Catergory"
 
 #: ../../carousel.php
 msgid "Search Carousel"
-msgstr "検索カルーセル"
+msgstr "検索のカルーセル"
 
 #: ../../carousel.php
 msgid "All Carousels"
@@ -162,67 +300,91 @@ msgstr "すべてのカルーセル"
 
 #: ../../carousel.php
 msgid "Carousel Category"
-msgstr "カルーセルカテゴリ"
+msgstr "カルーセル カテゴリ"
 
 #: ../../carousel.php
 msgid "Carousel Category:"
-msgstr "カルーセルカテゴリ："
+msgstr "カルーセル カテゴリー："
 
 #: ../../carousel.php
 msgid "Edit Carousel Category"
-msgstr "カルーセルカテゴリを編集"
+msgstr "カルーセル カテゴリを編集します。"
 
 #: ../../carousel.php
 msgid "Update Carousel Category"
-msgstr "カルーセルカテゴリを更新"
+msgstr "カルーセルのカテゴリを更新します。"
 
 #: ../../carousel.php
 msgid "Add New Carousel Category"
-msgstr "新カルーセルカテゴリを追加"
+msgstr "カルーセルの新しいカテゴリを追加します。"
 
 #: ../../carousel.php
 msgid "New Carousel Category Name"
-msgstr "新しいカルーセルカテゴリ名"
-
-#: ../../carousel.php
-msgid "Featured Post Carousel Options"
-msgstr "注目のポストカルーセルオプション"
+msgstr "新しいカルーセル カテゴリ名"
 
 #: ../../carousel.php
 msgid "Featured Post Image"
-msgstr "注目の投稿画像"
+msgstr "おすすめの投稿画像"
 
 #: ../../carousel.php
 msgid "Featured Post URL"
-msgstr "注目の投稿のURL"
+msgstr "注目記事の URL"
 
-#: ../../slider.php ../../carousel.php
+#: ../../carousel.php ../../portfolio.php
+msgid "Lightbox"
+msgstr "ライト ボックス"
+
+#: ../../carousel.php
 msgid "Reorder Name"
 msgstr "名前を並べ替える"
 
+#: ../../carousel.php
+msgid "Featured Post Carousel"
+msgstr "注目のポスト カルーセル オプション"
+
+#: ../../carousel.php
+msgid "Carousel Options"
+msgstr "注目のポスト カルーセル オプション"
+
+#: ../../htmlbox.php
+msgid "Custom HTML"
+msgstr "カスタム CSS"
+
+#: ../../htmlbox.php
+msgid "Enter your custom html here"
+msgstr "ここにあなたのカスタム html を入力します"
+
+#: ../../htmlbox.php
+msgid "HTML Box Options"
+msgstr "[HTML] ボックス"
+
 #: ../../init.php
 msgid "Callout Section"
-msgstr "セクションを吹き出し"
+msgstr "コールアウト セクション"
 
 #: ../../init.php
 msgid "HTML Box"
-msgstr "HTMLのボックス"
+msgstr "[HTML] ボックス"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "iFeature Slider"
-msgstr "iFeatureスライダー"
+msgstr "iFeature スライダー"
 
 #: ../../init.php
 msgid "Magazine"
-msgstr "マガジン"
+msgstr "雑誌"
 
-#: ../../portfolio.php ../../init.php
+#: ../../init.php ../../portfolio.php
 msgid "Portfolio"
 msgstr "ポートフォリオ"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Post Page"
-msgstr "投稿ページ"
+msgstr "記事ページ"
+
+#: ../../init.php ../../product.php
+msgid "Product"
+msgstr "製品"
 
 #: ../../init.php
 msgid "Recent Posts"
@@ -230,27 +392,113 @@ msgstr "最近の投稿"
 
 #: ../../init.php
 msgid "Twitter Bar"
-msgstr "Twitterのバー"
+msgstr "Twitter のバー"
 
 #: ../../init.php
 msgid "Widgets"
 msgstr "ウィジェット"
 
-#: ../../setup/features.php ../../init.php
+#: ../../init.php ../../setup/features.php
 msgid "Breadcrumbs"
-msgstr "パン粉"
+msgstr "パンくずリスト"
 
-#: ../../portfolio.php
+#: ../../magazine.php
+msgid "Edit"
+msgstr "編集ボックス"
+
+#: ../../magazine.php
+msgid "Magazine Options"
+msgstr "バナー オプション"
+
+#: ../../magazine.php
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: ../../magazine.php
+msgid "Meta Data"
+msgstr "メタ データ"
+
+#: ../../magazine.php
+msgid "Featured Image"
+msgstr "おすすめの投稿画像"
+
+#: ../../magazine.php
+msgid "Category"
+msgstr "ボックスのカテゴリ"
+
+#: ../../magazine.php
+msgid "Featured Excerpt Length"
+msgstr "注目記事の URL"
+
+#: ../../magazine.php
+msgid "Number of Columns"
+msgstr "つぶやきの数"
+
+#: ../../magazine.php
+msgid "Number of Rows"
+msgstr "つぶやきの数"
+
+#: ../../magazine.php
+msgid "Wide Posts Below Magazine"
+msgstr "マガジンの下の全体の投稿"
+
+#: ../../magazine.php
+msgid "Wide Post Excerpt Length"
+msgstr "広いポストの抜粋の長さ"
+
+#: ../../magazine.php
+msgid "Number of Wide Posts"
+msgstr "注目記事の URL"
+
+#: ../../magazine.php ../../recent-posts.php
+msgid "All"
+msgstr "すべて"
+
+#: ../../magazine.php
+msgid "magazine Options"
+msgstr "バナー オプション"
+
+#: ../../portfolio.php ../../recent-posts.php
 msgid "Images"
 msgstr "画像"
 
 #: ../../portfolio.php
-msgid "Portfolio Categories"
-msgstr "ポートフォリオのカテゴリ"
+msgid "Add new Image"
+msgstr "スライダーの画像"
 
 #: ../../portfolio.php
+msgid "Edit Image"
+msgstr "イメージ"
+
+#: ../../portfolio.php
+msgid "New Image"
+msgstr "イメージ"
+
+#: ../../portfolio.php
+msgid "View Image"
+msgstr "スライダーの画像"
+
+#: ../../portfolio.php
+msgid "Search Images"
+msgstr "検索ボックス"
+
+#: ../../portfolio.php
+msgid "No Images found"
+msgstr "イメージが見つかりません"
+
+#: ../../portfolio.php
+msgid "No Images found in trash"
+msgstr "ゴミ箱にイメージが見つかりません"
+
+#: ../../portfolio.php
+msgctxt "taxonomy general name"
+msgid "Portfolio Categories"
+msgstr "ポートフォリオ カテゴリー"
+
+#: ../../portfolio.php
+msgctxt "taxonomy singular name"
 msgid "Portfolio Catergory"
-msgstr "ポートフォリオCatergory"
+msgstr "ポートフォリオの Catergory"
 
 #: ../../portfolio.php
 msgid "Search Portfolio"
@@ -262,67 +510,221 @@ msgstr "すべてのポートフォリオ"
 
 #: ../../portfolio.php
 msgid "Portfolio Category"
-msgstr "ポートフォリオのカテゴリ"
+msgstr "ポートフォリオ カテゴリー"
 
 #: ../../portfolio.php
 msgid "Portfolio Category:"
-msgstr "ポートフォリオのカテゴリ："
+msgstr "ポートフォリオ カテゴリー："
 
 #: ../../portfolio.php
 msgid "Edit Portfolio Category"
-msgstr "ポートフォリオのカテゴリを編集する"
+msgstr "ポートフォリオ カテゴリーを編集します。"
 
 #: ../../portfolio.php
 msgid "Update Portfolio Category"
-msgstr "ポートフォリオのカテゴリを更新"
+msgstr "ポートフォリオのカテゴリを更新します。"
 
 #: ../../portfolio.php
 msgid "Add New Portfolio Category"
-msgstr "新しいポートフォリオカテゴリを追加"
+msgstr "ポートフォリオの新しいカテゴリを追加します。"
 
 #: ../../portfolio.php
 msgid "New Portfolio Category Name"
-msgstr "新しいポートフォリオカテゴリ名"
-
-#: ../../portfolio.php
-msgid "Portfolio Element"
-msgstr "ポートフォリオ要素"
+msgstr "新しいポートフォリオ カテゴリ名"
 
 #: ../../portfolio.php
 msgid "Portfolio Image"
-msgstr "ポートフォリオを見るImage"
+msgstr "ポートフォリオの画像"
 
-#: ../../slider.php ../../portfolio.php
+#: ../../portfolio.php ../../slider.php
 msgid "Caption"
-msgstr "見出し"
-
-#: ../../portfolio.php
-msgid "Lightbox"
-msgstr "ライトボックス"
+msgstr "キャプション"
 
 #: ../../portfolio.php
 msgid "Custom Portfolio URL"
-msgstr "カスタムポートフォリオのURL"
+msgstr "カスタム ポートフォリオ URL"
 
 #: ../../portfolio.php
 msgid "URL"
-msgstr "URL:"
+msgstr "URL"
+
+#: ../../portfolio.php
+msgid "Portfolio Element"
+msgstr "ポートフォリオの要素"
+
+#: ../../portfolio.php
+msgid "Images per row"
+msgstr "画像"
+
+#: ../../portfolio.php
+msgid "Two"
+msgstr "2"
+
+#: ../../portfolio.php
+msgid "Three"
+msgstr "3"
+
+#: ../../portfolio.php
+msgid "Four"
+msgstr "4"
+
+#: ../../portfolio.php
+msgid "Portfolio Title"
+msgstr "ポートフォリオの要素"
+
+#: ../../portfolio.php ../../recent-posts.php ../../slider.php
+msgid "Title"
+msgstr "タイトル"
+
+#: ../../portfolio.php
+msgid "Portfolio Options"
+msgstr "ポートフォリオ カテゴリー"
+
+#: ../../product.php
+msgid "Product Layout"
+msgstr "製品レイアウト"
+
+#: ../../product.php
+msgid "Text Left"
+msgstr "テキストを左"
+
+#: ../../product.php
+msgid "Text Right"
+msgstr "テキストを右に"
+
+#: ../../product.php
+msgid "Product Title"
+msgstr "製品タイトル"
+
+#: ../../product.php
+msgid "Product Text"
+msgstr "製品テキスト"
+
+#: ../../product.php
+msgid "Media Type"
+msgstr "メディアの種類"
+
+#: ../../product.php
+msgid "Image"
+msgstr "イメージ"
+
+#: ../../product.php
+msgid "Video"
+msgstr "ビデオ"
+
+#: ../../product.php
+msgid "Product Image URL"
+msgstr "製品画像 URL"
+
+#: ../../product.php
+msgid "Product Video Embed"
+msgstr "製品のビデオを埋め込む"
+
+#: ../../product.php
+msgid "Product Button Type"
+msgstr "製品リンク テキスト"
+
+#: ../../product.php
+msgid "No button"
+msgstr "ボタンなし"
+
+#: ../../product.php
+msgid "Button"
+msgstr "ボタン"
+
+#: ../../product.php
+msgid "Button Image"
+msgstr "ボックスの画像"
+
+#: ../../product.php
+msgid "Product Button URL"
+msgstr "商品の URL"
+
+#: ../../product.php
+msgid "Product Button Text"
+msgstr "製品リンク テキスト"
+
+#: ../../product.php
+msgid "Buy Now"
+msgstr "今すぐ購入します。"
+
+#: ../../product.php
+msgid "Product Image"
+msgstr "製品画像 URL"
+
+#: ../../product.php
+msgid "Product URL"
+msgstr "商品の URL"
+
+#: ../../product.php
+msgid "Product Link Text"
+msgstr "製品リンク テキスト"
+
+#: ../../product.php
+msgid "Product Button Image"
+msgstr "製品画像 URL"
+
+#: ../../product.php
+msgid "Product Button Image URL"
+msgstr "製品画像 URL"
+
+#: ../../product.php
+msgid "Product Options"
+msgstr "製品リンク"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Title"
+msgstr "最近の投稿"
+
+#: ../../recent-posts.php
+msgid "Post Category"
+msgstr "ボックスのカテゴリ"
+
+#: ../../recent-posts.php
+msgid "Recent Posts Options"
+msgstr "最近の投稿"
 
 #: ../../slider.php
 msgid "Slides"
 msgstr "スライド"
 
 #: ../../slider.php
-msgid "Slide Categories"
-msgstr "スライドのカテゴリー"
+msgid "Add new Slide"
+msgstr "新しいスライドのカテゴリを追加します。"
 
 #: ../../slider.php
-msgid "Slide Catergory"
-msgstr "スライドCatergory"
+msgid "Edit Slide"
+msgstr "スライド カテゴリを編集します。"
+
+#: ../../slider.php
+msgid "New Slide"
+msgstr "スライド"
+
+#: ../../slider.php
+msgid "View Slide"
+msgstr "iFeature スライダー"
 
 #: ../../slider.php
 msgid "Search Slides"
-msgstr "検索スライド"
+msgstr "スライドの検索"
+
+#: ../../slider.php
+msgid "No Slides found"
+msgstr "スライドが見つかりません"
+
+#: ../../slider.php
+msgid "No Slides found in trash"
+msgstr "ゴミ箱の中にスライドが見つかりません"
+
+#: ../../slider.php
+msgctxt "taxonomy general name"
+msgid "Slide Categories"
+msgstr "スライドのカテゴリ"
+
+#: ../../slider.php
+msgctxt "taxonomy singular name"
+msgid "Slide Catergory"
+msgstr "スライドの Catergory"
 
 #: ../../slider.php
 msgid "All Slides"
@@ -334,31 +736,23 @@ msgstr "スライドのカテゴリ"
 
 #: ../../slider.php
 msgid "Slide Category:"
-msgstr "スライドカテゴリ："
+msgstr "スライドのカテゴリー："
 
 #: ../../slider.php
 msgid "Edit Slide Category"
-msgstr "スライドのカテゴリを編集する"
+msgstr "スライド カテゴリを編集します。"
 
 #: ../../slider.php
 msgid "Update Slide Category"
-msgstr "スライドカテゴリを更新"
+msgstr "スライドのカテゴリを更新します。"
 
 #: ../../slider.php
 msgid "Add New Slide Category"
-msgstr "新しいスライドのカテゴリを追加"
+msgstr "新しいスライドのカテゴリを追加します。"
 
 #: ../../slider.php
 msgid "New Slide Category Name"
-msgstr "新しいスライドカテゴリ名"
-
-#: ../../slider.php
-msgid "Custom Feature Slides"
-msgstr "カスタム機能スライド"
-
-#: ../../slider.php
-msgid "Custom Slide Options"
-msgstr "カスタムスライドのオプション"
+msgstr "新しいスライドのカテゴリ名"
 
 #: ../../slider.php
 msgid "Slider Image"
@@ -366,43 +760,195 @@ msgstr "スライダーの画像"
 
 #: ../../slider.php
 msgid "Slider Caption"
-msgstr "スライダーキャプション"
+msgstr "スライダーのキャプション"
 
 #: ../../slider.php
 msgid "Custom Slide Link"
-msgstr "カスタムスライドリンク"
+msgstr "カスタム スライドのリンク"
 
 #: ../../slider.php
-msgid "Title"
-msgstr "役職"
+msgid "Reorder"
+msgstr "名前を並べ替える"
 
 #: ../../slider.php
-msgid "Need Help?"
-msgstr "お問い合わせ先"
+msgid "Custom Feature Slides"
+msgstr "カスタム機能のスライド"
+
+#: ../../slider.php
+msgid "Slider Size"
+msgstr "スライダーの画像"
+
+#: ../../slider.php
+msgid "Full"
+msgstr "完全な"
+
+#: ../../slider.php
+msgid "Half"
+msgstr "半分"
+
+#: ../../slider.php
+msgid "Slider Type"
+msgstr "スライダーの画像"
+
+#: ../../slider.php
+msgid "Custom"
+msgstr "カスタム CSS"
+
+#: ../../slider.php
+msgid "Posts"
+msgstr "投稿"
+
+#: ../../slider.php
+msgid "Post Categories"
+msgstr "ボックスのカテゴリ"
+
+#: ../../slider.php
+msgid "Custom Categories"
+msgstr "カルーセル カテゴリ"
+
+#: ../../slider.php
+msgid "Number of Featured Posts"
+msgstr "注目記事の URL"
+
+#: ../../slider.php
+msgid "Slider Height"
+msgstr "スライダーの画像"
+
+#: ../../slider.php
+msgid "Slider Speed"
+msgstr "スライダーの画像"
+
+#: ../../slider.php
+msgid "Slider Arrows"
+msgstr "スライド"
+
+#: ../../slider.php
+msgid "iFeature Slider Options"
+msgstr "iFeature スライダー"
+
+#: ../../twitter-bar.php
+msgid "Error retrieving tweets"
+msgstr "ツイートの取得エラー"
+
+#: ../../twitter-bar.php
+msgid "%1$s followers"
+msgstr "%1$ の信者"
 
 #: ../../twitter-bar.php
 msgid "No tweets to display"
-msgstr "表示するつぶやきがありません"
+msgstr "いいえつぶやきを表示するには"
 
 #: ../../twitter-bar.php
-msgid "Invalid Response"
-msgstr "無効な応答"
+msgid "Twitter API Options"
+msgstr "Twitter API オプション"
+
+#: ../../twitter-bar.php
+msgid "Edit Twitter API"
+msgstr "Twitter の API を編集します。"
+
+#: ../../twitter-bar.php
+msgid "Create your Twitter App here"
+msgstr "Twitter のアプリを作成するここで"
+
+#: ../../twitter-bar.php
+msgid "Complete all parts of the form and create your application"
+msgstr "フォームのすべての部分を完了し、アプリケーションの作成"
+
+#: ../../twitter-bar.php
+msgid "On the next page click on the button Create my access token"
+msgstr "ボタンの次のページの [私のアクセス トークンを作成します。"
+
+#: ../../twitter-bar.php
+msgid "Now take the details and fill out the form below"
+msgstr "今、詳細を取るし、下記のフォームに記入"
+
+#: ../../twitter-bar.php
+msgid "Save your options"
+msgstr "あなたのオプションを保存します。"
+
+#: ../../twitter-bar.php
+msgid "Create a Twitter App"
+msgstr "Twitter のアプリを作成します。"
+
+#: ../../twitter-bar.php
+msgid "Consumer Key"
+msgstr "コンシューマー キー"
+
+#: ../../twitter-bar.php
+msgid "Consumer Secret"
+msgstr "コンシューマー シークレット"
+
+#: ../../twitter-bar.php
+msgid "Access Token"
+msgstr "アクセス トークン"
+
+#: ../../twitter-bar.php
+msgid "Access Token Secret"
+msgstr "アクセス トークン シークレット"
+
+#: ../../twitter-bar.php
+msgid "Twitter Handle"
+msgstr "Twitter のハンドル"
+
+#: ../../twitter-bar.php
+msgid "Number Of Tweets"
+msgstr "つぶやきの数"
+
+#: ../../twitter-bar.php
+msgid ""
+"Including replies, if replies are set to off then the number shown could be "
+"less"
+msgstr ""
+"返信するを含む場合は返信がオフ] に設定し、表示された番号の少ない可能性があり"
+"ます。"
+
+#: ../../twitter-bar.php
+msgid "Use your Twitter Image"
+msgstr "Twitter のイメージを使用します。"
+
+#: ../../twitter-bar.php
+msgid "Show the number of followers"
+msgstr "信者の数を表示します。"
+
+#: ../../twitter-bar.php
+msgid "Include Replies"
+msgstr "返信があります。"
+
+#: ../../twitter-bar.php
+msgid "Include Retweets"
+msgstr "つぶやきを含める"
+
+#: ../../twitter-bar.php
+msgid "Show a different Twitter account"
+msgstr "別の Twitter アカウントを表示します。"
+
+#: ../../twitter-bar.php
+msgid "Leaving this off will show the default account in your theme options"
+msgstr "テーマのオプションで、既定のアカウントが表示されますこれをオフのまま"
+
+#: ../../twitter-bar.php
+msgid "Twitter Options"
+msgstr "Twitter API オプション"
+
+#: ../../twitter-bar.php
+msgid "Error"
+msgstr "エラー 404"
 
 #: ../../widgets.php
 msgid "Box Left"
-msgstr "ボックスは左"
+msgstr "ボックスを左"
 
 #: ../../widgets.php
 msgid "This is the left widget of the three-box section"
-msgstr "これは3のボックスセクションの左側のウィジェットです"
+msgstr "これは、3 箱形断面の左のウィジェット"
 
 #: ../../widgets.php
 msgid "Box Middle"
-msgstr "ボックスミドル"
+msgstr "ミドル ボックスします。"
 
 #: ../../widgets.php
 msgid "This is the middle widget of the three-box section"
-msgstr "これは3のボックスセクションの真ん中のウィジェットです"
+msgstr "これは、3 箱形断面の中間のウィジェット"
 
 #: ../../widgets.php
 msgid "Box Right"
@@ -410,39 +956,39 @@ msgstr "右のボックス"
 
 #: ../../widgets.php
 msgid "This is the right widget of the three-box section"
-msgstr "これは3のボックスセクションの右側のウィジェットです"
+msgstr "これは、3 箱形断面の右ウィジェットです。"
 
 #: ../../widgets.php
 msgid "This is the box left widgetized area."
-msgstr "これは、ウィジェット形式の領域を残したボックスです。"
+msgstr "これは、ボックスの左のウィジェット領域です。"
 
 #: ../../widgets.php
 msgid "This is the box middle widgetized area."
-msgstr "これは、箱の真ん中のウィジェット形式の領域です。"
+msgstr "これはボックスの中央ウィジェットの領域です。"
 
 #: ../../widgets.php
 msgid "This is the box right widgetized area."
-msgstr "これは、ボックスの右ウィジェット形式の領域です。"
+msgstr "これはボックスの右側のウィジェットの領域です。"
 
 #: ../../setup/features.php
 msgid "Import/Export"
-msgstr "取り込み/書き出し"
+msgstr "インポート/エクスポート"
 
 #: ../../setup/features.php
 msgid "Custom CSS"
-msgstr "カスタムCSS"
+msgstr "カスタム CSS"
 
 #: ../../setup/features.php
 msgid "Contact Element"
-msgstr "エレメントお問い合わせ"
+msgstr "接触要素"
 
 #: ../../setup/features.php
 msgid "Banner Options"
-msgstr "バナーオプション"
+msgstr "バナー オプション"
 
 #: ../../setup/features.php
 msgid "Import / Export"
-msgstr "取り込み/書き出し"
+msgstr "インポート/エクスポート"
 
 #: ../../setup/features.php
 msgid "Details"
@@ -454,31 +1000,35 @@ msgstr "バナー画像"
 
 #: ../../setup/features.php
 msgid "Enter URL or upload file"
-msgstr "URLを入力するか、ファイルをアップロード"
+msgstr "URL を入力またはファイルをアップロード"
 
 #: ../../setup/features.php
 msgid "Banner URL"
-msgstr "バナーのURL"
+msgstr "バナー URL"
 
 #: ../../setup/features.php
 msgid "Cyberchimps Link"
-msgstr "Cyber​​chimpsリンク"
+msgstr "Cyberchimps リンク"
 
 #: ../../setup/features.php
 msgid "Footer Scripts"
 msgstr "フッター スクリプト"
 
 #: ../../setup/features.php
-msgid "You do not need to add script tags"
-msgstr "スクリプト タグを追加する必要はありません。"
+msgid "Please add script tags"
+msgstr "スクリプト タグを追加してください。"
 
 #: ../../setup/features.php
 msgid "Export Settings"
-msgstr "設定をエクスポート"
+msgstr "設定のエクスポート"
 
 #: ../../setup/features.php
 msgid "Import Settings"
-msgstr "インポート設定"
+msgstr "設定のインポート"
+
+#: ../../setup/features.php
+msgid "Searchbar text"
+msgstr "検索バーのテキスト"
 
 #: ../../setup/features.php
 msgid "Banner"
@@ -486,28 +1036,32 @@ msgstr "バナー"
 
 #: ../../setup/features.php
 msgid "Description + Icons"
-msgstr "説明+アイコン"
+msgstr "説明 + アイコン"
 
 #: ../../setup/features.php
 msgid "Logo + Contact"
-msgstr "ロゴ+お問い合わせ"
+msgstr "ロゴ + お問い合わせ"
 
 #: ../../setup/features.php
 msgid "Logo + Description"
-msgstr "ロゴ+説明"
+msgstr "ロゴは + の説明"
 
 #: ../../setup/features.php
 msgid "Logo + Icons"
-msgstr "ロゴ+アイコン"
+msgstr "ロゴ + アイコン"
 
 #: ../../setup/features.php
 msgid "Logo + Login"
-msgstr "ロゴ+ログイン"
+msgstr "ロゴ + ログイン"
 
 #: ../../setup/features.php
 msgid "Logo + Search"
-msgstr "ロゴ+検索"
+msgstr "ロゴ + 検索"
 
 #: ../../setup/features.php
 msgid "Logo"
 msgstr "ロゴ"
+
+#: ../../setup/features.php
+msgid "Footer Menu"
+msgstr "フッター メニュー"

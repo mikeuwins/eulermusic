@@ -11,26 +11,26 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
 function cyberchimps_shortcodes_modal( $atts ) {
- 
+
 	// Extract parameters passed in the shortcode
 	extract( shortcode_atts( array(
-		'name'					=> 'cyberchimps_modal',
-		'launch_button_text'	=> 'Cyberchimps modal',
-		'header_text'			=> 'Cyberchimps modal header',
-		'modal_body'			=> 'Body of a Cyberchimps modal. You can pass this value from the shortcode',
-		'footer_button_text'	=> 'Close'
-	), $atts ) );
+		                         'name'               => 'cyberchimps_modal',
+		                         'launch_button_text' => 'Cyberchimps modal',
+		                         'header_text'        => 'Cyberchimps modal header',
+		                         'modal_body'         => 'Body of a Cyberchimps modal. You can pass this value from the shortcode',
+		                         'footer_button_text' => 'Close'
+	                         ), $atts ) );
 
 	// Button to trigger modal
-    $html = '<a href="#' . $name . '" role="button" class="btn cc-shortcode-button" data-toggle="modal">' . $launch_button_text . '</a>';
-     
-    // Markup for Modal
-    $html .=
+	$html = '<a href="#' . $name . '" role="button" class="btn cc-shortcode-button" data-toggle="modal">' . $launch_button_text . '</a>';
+
+	// Markup for Modal
+	$html .=
 		'<div id="' . $name . '" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="' . $name . 'Label" aria-hidden="true">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -43,8 +43,9 @@ function cyberchimps_shortcodes_modal( $atts ) {
 				<button class="btn" data-dismiss="modal" aria-hidden="true">' . $footer_button_text . '</button>
 			</div>
 		</div>';
-	
+
 	return $html;
 }
+
 add_shortcode( 'cc_modal', 'cyberchimps_shortcodes_modal' );
 ?>

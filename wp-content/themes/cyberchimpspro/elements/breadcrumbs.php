@@ -9,67 +9,71 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
 // Don't load directly
-if ( !defined('ABSPATH') ) { die('-1'); }
+if( !defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
-if ( !class_exists( 'CyberChimpsBreadcrumbs' ) ) {
+if( !class_exists( 'CyberChimpsBreadcrumbs' ) ) {
 	class CyberChimpsBreadcrumbs {
-		
+
 		protected static $instance;
 		public $options;
 		public $show;
-		
+
 		/* Static Singleton Factory Method */
 		public static function instance() {
-			if (!isset(self::$instance)) {
-				$className = __CLASS__;
+			if( !isset( self::$instance ) ) {
+				$className      = __CLASS__;
 				self::$instance = new $className;
 			}
+
 			return self::$instance;
-		}	
-		
+		}
+
 		/**
 		 * Initializes plugin variables and sets up WordPress hooks/actions.
 		 *
 		 * @return void
 		 */
-		protected function __construct( ) {
-			add_action( 'init', array( $this, 'init'), 10 );
+		protected function __construct() {
+			add_action( 'init', array( $this, 'init' ), 10 );
 			$this->options = get_option( 'cyberchimps_options' );
 		}
-		
+
 		/**
 		 * Run on applied action init
 		 */
 		public function init() {
-			if (self::check_yoast_breadcrumbs()) {
+			if( self::check_yoast_breadcrumbs() ) {
 				// load yoast breadcrumbs
-				add_action('breadcrumbs', 'yoast_breadcrumb');
-			} else if (self::check_navxt_breadcrumbs()) {
-				// load navxt breadcrumbs
-				add_action('breadcrumbs', 'bcn_display');
-			} else {
-				// load default breadcrumbs
-				add_action( 'breadcrumbs', array( $this, 'default_display' ) );
-				if( !is_page() ) {
-					add_action( 'cyberchimps_before_container', array( $this, 'single_archive_setup' ) );
+				add_action( 'breadcrumbs', 'yoast_breadcrumb' );
+			}
+			else {
+				if( self::check_navxt_breadcrumbs() ) {
+					// load navxt breadcrumbs
+					add_action( 'breadcrumbs', 'bcn_display' );
+				}
+				else {
+					// load default breadcrumbs
+					add_action( 'breadcrumbs', array( $this, 'default_display' ) );
+					if( !is_page() ) {
+						add_action( 'cyberchimps_before_container', array( $this, 'single_archive_setup' ) );
+					}
 				}
 			}
 		}
-		
+
 		public function single_archive_setup() {
 			if( is_single() ) {
-				$this->show = ( cyberchimps_option( 'single_post_breadcrumbs' ) == 1 ) ? 1 : false; 
+				$this->show = ( cyberchimps_get_option( 'single_post_breadcrumbs' ) == 1 ) ? 1 : false;
 			}
 			elseif( is_archive() ) {
-				$this->show = ( cyberchimps_option( 'archive_breadcrumbs' ) == 1 ) ? 1 : false;  
-			}
-			elseif( is_paged() ) {
-				$this->show = ( cyberchimps_option( 'single_post_breadcrumbs' ) == 1 ) ? 1 : false;
+				$this->show = ( cyberchimps_get_option( 'archive_breadcrumbs' ) == 1 ) ? 1 : false;
 			}
 			if( $this->show == 1 ):
 				do_action( 'breadcrumbs' );
@@ -78,124 +82,148 @@ if ( !class_exists( 'CyberChimpsBreadcrumbs' ) ) {
 
 		public function default_display() {
 			$delimiter = ' &raquo; ';
-			$before = '<span class="current">'; // tag before the current crumb
-			$after = '</span>'; // tag after the current crumb
-			
-			if ( !is_home() && !is_front_page() ) {
-				
+			$current   = ' current'; // current class
+
+			if( !is_home() && !is_front_page() ) {
+
 				global $post;
 				echo '<div class="row-fluid">';
 				echo '<div class="breadcrumbs">';
-				echo '<a href="' . get_site_url() . '">' . __('Home', 'cyberchimps_elements' ) . '</a> ' . $delimiter . ' ';
-		
-				if ( is_category() ) {
+				echo '<span class="b1"><a href="' . get_site_url() . '">' . __( 'Home', 'cyberchimps_elements' ) . '</a></span> ' . $delimiter . ' ';
+
+				if( is_category() ) {
 					global $wp_query;
-					$cat_obj = $wp_query->get_queried_object();
-					$thisCat = $cat_obj->term_id;
-					$thisCat = get_category($thisCat);
-					$parentCat = get_category($thisCat->parent);
-					if ($thisCat->parent != 0) echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
-					echo $before .  __('Archive for category ', 'cyberchimps_elements' ) . '"' . single_cat_title('', false) . '"' . $after;
-		
-				} elseif ( is_day() ) {
-					echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
-					echo '<a href="' . get_month_link(get_the_time('Y'),get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
-					echo $before . get_the_time('d') . $after;
-		
-				} elseif ( is_month() ) {
-					echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
-					echo $before . get_the_time('F') . $after;
-		
-				} elseif ( is_year() ) {
-					echo $before . get_the_time('Y') . $after;
-		
-				} elseif ( is_single() && !is_attachment() ) {
-					if ( get_post_type() != 'post' ) {
-						$post_type = get_post_type_object(get_post_type());
-						$slug = $post_type->rewrite;
-						echo '<a href="' . get_site_url() . '/' . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a> ' . $delimiter . ' ';
-						echo $before . get_the_title() . $after;
-					} else {
-						$cat = get_the_category(); $cat = $cat[0];
-						echo is_wp_error( $cat_parents = get_category_parents($cat, TRUE, ' ' . $delimiter . ' ') ) ? '' : $cat_parents;
-						echo $before . get_the_title() . $after;
+					$cat_obj   = $wp_query->get_queried_object();
+					$thisCat   = $cat_obj->term_id;
+					$thisCat   = get_category( $thisCat );
+					$parentCat = get_category( $thisCat->parent );
+					if( $thisCat->parent != 0 ) {
+						echo( get_category_parents( $parentCat, true, ' ' . $delimiter . ' ' ) );
 					}
-					
-				} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
-					$post_type = get_post_type_object(get_post_type());
-					echo $before . $post_type->labels->singular_name . $after;
-		
-				} elseif ( is_attachment() ) {
-					$parent = get_post($post->post_parent);
-					$cat = get_the_category($parent->ID); $cat = $cat[0];
-					echo is_wp_error( $cat_parents = get_category_parents($cat, TRUE, ' ' . $delimiter . ' ') ) ? '' : $cat_parents;
-					echo '<a href="' . get_permalink($parent) . '">' . $parent->post_title . '</a> ' . $delimiter . ' ';
-					echo $before . get_the_title() . $after;
-		
-				} elseif ( is_page() && !$post->post_parent ) {
-					echo $before . get_the_title() . $after;
-		
-				} elseif ( is_page() && $post->post_parent ) {
-					$parent_id  = $post->post_parent;
-					$breadcrumbs = array();
-					while ($parent_id) {
-						$page = get_page($parent_id);
-						$breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
-						$parent_id  = $page->post_parent;
-					}
-					$breadcrumbs = array_reverse($breadcrumbs);
-					foreach ($breadcrumbs as $crumb) echo $crumb . ' ' . $delimiter . ' ';
-					echo $before . get_the_title() . $after;
-		
-				} elseif ( is_search() ) {
-					echo $before . __('Search results for ', 'cyberchimps_elements' ) . '"' . get_search_query() . '"' . $after;
-		
-				} elseif ( is_tag() ) {
-					echo $before . __('Posts tagged ', 'cyberchimps_elements' ) . '"' . single_tag_title('', false) . '"' . $after;
-		
-				} elseif ( is_author() ) {
-					global $author;
-					$userdata = get_userdata($author);
-					echo $before . __('Articles posted by ', 'cyberchimps_elements' ) . $userdata->display_name . $after;
-		
-				} elseif ( is_404() ) {
-					echo $before . __('Error 404', 'cyberchimps_elements' ) . $after;
+					echo '<span class="b2' . $current . '">' . __( 'Archive for category ', 'cyberchimps_elements' ) . '"' . single_cat_title( '', false ) . '"</span>';
+
 				}
-		
-				if ( get_query_var('paged') ) {
-					if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-					echo __('Page', 'cyberchimps_elements' ) . ' ' . get_query_var('paged');
-					if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
+				elseif( is_day() ) {
+					echo '<span class="b2"><a href="' . get_year_link( get_the_time( 'Y' ) ) . '">' . get_the_time( 'Y' ) . '</a></span> ' . $delimiter . ' ';
+					echo '<span class="b3"><a href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '">' . get_the_time( 'F' ) . '</a></span> ' . $delimiter . ' ';
+					echo '<span class="b4' . $current . '">' . get_the_time( 'd' ) . '</span>';
+
+				}
+				elseif( is_month() ) {
+					echo '<span class="b2"><a href="' . get_year_link( get_the_time( 'Y' ) ) . '">' . get_the_time( 'Y' ) . '</a></span> ' . $delimiter . ' ';
+					echo '<span class="b3' . $current . '">' . get_the_time( 'F' ) . '</span>';
+
+				}
+				elseif( is_year() ) {
+					echo '<span class="b2' . $current . '">' . get_the_time( 'Y' ) . '</span>';
+
+				}
+				elseif( is_single() && !is_attachment() ) {
+					if( get_post_type() != 'post' ) {
+						$post_type = get_post_type_object( get_post_type() );
+						$slug      = $post_type->rewrite;
+						echo '<span class="b2"><a href="' . get_site_url() . '/' . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a></span> ' . $delimiter . ' ';
+						echo '<span class="b3' . $current . '">' . get_the_title() . '</span>';
+					}
+					else {
+						$cat = get_the_category();
+						$cat = $cat[0];
+						echo is_wp_error( $cat_parents = get_category_parents( $cat, true, ' ' . $delimiter . ' ' ) ) ? '<span class="b2"></span>' : '<span class="b2">' . $cat_parents . '</span>';
+						echo '<span class="b3' . $current . '">' . get_the_title() . '</span>';
+					}
+
+				}
+				elseif( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
+					$post_type = get_post_type_object( get_post_type() );
+					echo '<span class="b2' . $current . '>' . $post_type->labels->singular_name . '</span>';
+
+				}
+				elseif( is_attachment() ) {
+					$parent = get_post( $post->post_parent );
+					$cat    = get_the_category( $parent->ID );
+					$cat    = $cat[0];
+					echo is_wp_error( $cat_parents = get_category_parents( $cat, true, ' ' . $delimiter . ' ' ) ) ? '<span class="b2"></span>' : '<span class="b2">' . $cat_parents . '</span>';
+					echo '<span class="b3"><a href="' . get_permalink( $parent ) . '">' . $parent->post_title . '</a></span> ' . $delimiter . ' ';
+					echo '<span class="b4' . $current . '">' . get_the_title() . '</span>';
+
+				}
+				elseif( is_page() && !$post->post_parent ) {
+					echo '<span class="b2' . $current . '">' . get_the_title() . '</span>';
+
+				}
+				elseif( is_page() && $post->post_parent ) {
+					$parent_id   = $post->post_parent;
+					$breadcrumbs = array();
+					while( $parent_id ) {
+						$page          = get_page( $parent_id );
+						$breadcrumbs[] = '<a href="' . get_permalink( $page->ID ) . '">' . get_the_title( $page->ID ) . '</a>';
+						$parent_id     = $page->post_parent;
+					}
+					$i           = 2;
+					$breadcrumbs = array_reverse( $breadcrumbs );
+					foreach( $breadcrumbs as $crumb ) {
+						echo '<span class="b' . $i . '">' . $crumb . '</span> ' . $delimiter . ' ';
+						$i++;
+					}
+					echo '<span class="b' . $i . $current . '">' . get_the_title() . '</span>';
+
+				}
+				elseif( is_search() ) {
+					echo '<span class="b2' . $current . '">' . __( 'Search results for ', 'cyberchimps_elements' ) . '"' . get_search_query() . '"' . '</span>';
+
+				}
+				elseif( is_tag() ) {
+					echo '<span class="b2' . $current . '">' . __( 'Posts tagged ', 'cyberchimps_elements' ) . '"' . single_tag_title( '', false ) . '"' . '</span>';
+
+				}
+				elseif( is_author() ) {
+					global $author;
+					$userdata = get_userdata( $author );
+					echo '<span class="b2' . $current . '">' . __( 'Articles posted by ', 'cyberchimps_elements' ) . $userdata->display_name . '</span>';
+
+				}
+				elseif( is_404() ) {
+					echo '<span class="b2' . $current . '">' . __( 'Error 404', 'cyberchimps_elements' ) . '</span>';
+				}
+
+				if( get_query_var( 'paged' ) ) {
+					if( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) {
+						echo ' (';
+					}
+					echo $delimiter . __( 'Page', 'cyberchimps_elements' ) . ' ' . get_query_var( 'paged' );
+					if( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) {
+						echo ')';
+					}
 				}
 				echo '</div>';
 				echo '</div>';
 			}
 		}
-		
+
 		private function check_yoast_breadcrumbs() {
 			// check if yoast plugin is installed and activated
-			if ( cyberchimps_detect_plugin( array('constants' => array( 'WPSEO_VERSION' ) ) ) ) {
+			if( cyberchimps_detect_plugin( array( 'constants' => array( 'WPSEO_VERSION' ) ) ) ) {
 				$options = get_wpseo_options(); // get yoast options
-				
+
 				// check if breadcrumbs are enabled and yoast_breadcrumb function exists
-				if ( ( isset($options['breadcrumbs-enable']) && $options['breadcrumbs-enable'] ) && ( function_exists( 'yoast_breadcrumb' ) ) ) {
+				if( ( isset( $options['breadcrumbs-enable'] ) && $options['breadcrumbs-enable'] ) && ( function_exists( 'yoast_breadcrumb' ) ) ) {
 					return true;
 				}
 			}
-		
+
 			return false;
 		}
 
 		private function check_navxt_breadcrumbs() {
 			// check if navxt breadcrumbs plugin is installed and activated
-			if ( cyberchimps_detect_plugin( array('classes' => array( 'bcn_breadcrumb' ) ) ) ) {
-				
+			if( cyberchimps_detect_plugin( array( 'classes' => array( 'bcn_breadcrumb' ) ) ) ) {
+
 				// check if bcn_display function exists
-				if ( function_exists( 'bcn_display' ) ) {
+				if( function_exists( 'bcn_display' ) ) {
 					return true;
 				}
 			}
-		
+
 			return false;
 		}
 	}

@@ -10,45 +10,16 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
 /************************* Style for Slider pro starts **********************/
 #slider img {
 	width: 100% !important;
- /* height: auto; */
+	/* height: auto; */
 }
 
-@media (min-width: 1024px) and (max-width: 1150px) {
-	#slider img {
-		max-height: 290px !important;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-	#slider img {
-		max-height: 270px !important;
-	}
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-	#slider img {
-		max-height: 260px !important;
-	}
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-	#slider img {
-		max-height: 250px !important;
-	}
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-	#slider img {
-		max-height: 240px !important;
-	}
-}
 /************************* Style for Slider pro ends **********************/
 
 /************************* Style for Featured post scroller starts **********************/
@@ -59,14 +30,14 @@
 
 .featured-posts-container {
 	padding: 15px;
-	border: 1px solid #DDD;	
+	border: 1px solid #dddddd;
 }
 
 /********* Left side starts *********/
 
-.featured-posts #featured-post {
-	height: 330px;
+.featured-posts #featured_post {
 	overflow: hidden;
+	height: 330px;
 }
 
 .featured-posts ul {
@@ -75,20 +46,20 @@
 	list-style: none;
 }
 
-#featured-post li {
+#featured_post li {
 	display: none;
 }
 
-#featured-post li img {
+#featured_post li img {
 	float: left;
 }
 
-#featured-post li h2.title {
-	width: 100%;
-	padding-bottom: 10px;
+#featured_post li h2.title {
 	float: left;
 	clear: left;
-	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
 }
 
 .featured-post-meta {
@@ -97,32 +68,32 @@
 
 /********* Right side starts *********/
 
-#featured-list {
-	height: 330px;
-	background: #000;
+#featured_list {
 	padding: 10px;
+	height: 330px;
+	background: #000000;
 }
 
-#featured-list ul li {
+#featured_list ul li {
 	display: block;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #333333;
 }
 
-#featured-list ul li:hover {
+#featured_list ul li:hover {
 	cursor: pointer;
 }
 
 .featured-list-info h5 {
-	font-size: 1em;
-	color: #08c;
 	margin-top: 0;
 	margin-right: 10px;
 	margin-bottom: 3px;
+	color: #0088cc;
 	font-weight: bold;
+	font-size: 1em;
 }
 
 .featured-list-meta {
-	color: #ccc;
+	color: #cccccc;
 	font-size: 0.8em;
 }
 
@@ -133,12 +104,12 @@
 /************************** Style for lightbox starts ******************************/
 #lbOverlay {
 	position: fixed;
-	z-index: 9999;
-	left: 0;
 	top: 0;
+	left: 0;
+	z-index: 9999;
 	width: 100%;
 	height: 100%;
-	background-color: #000;
+	background-color: #000000;
 	cursor: pointer;
 }
 
@@ -146,25 +117,25 @@
 	position: absolute;
 	z-index: 9999;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 .lbLoading {
-	background: #fff url(../images/slimbox/loading.gif) no-repeat center;
+	background: #ffffff url(../images/slimbox/loading.gif) no-repeat center;
 }
 
 #lbImage {
 	position: absolute;
-	left: 0;
 	top: 0;
-	border: 10px solid #fff;
+	left: 0;
+	border: 10px solid #ffffff;
 	background-repeat: no-repeat;
 }
 
 #lbPrevLink, #lbNextLink {
-	display: block;
 	position: absolute;
 	top: 0;
+	display: block;
 	width: 50%;
 	outline: none;
 }
@@ -186,23 +157,23 @@
 }
 
 #lbBottom {
-	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
-	font-size: 10px;
-	color: #666;
-	line-height: 1.4em;
-	text-align: left;
-	border: 10px solid #fff;
+	border: 10px solid #ffffff;
 	border-top-style: none;
+	color: #666666;
+	text-align: left;
+	font-size: 10px;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	line-height: 1.4em;
 }
 
 #lbCloseLink {
 	display: block;
 	float: right;
+	margin: 5px 0;
 	width: 66px;
 	height: 22px;
-	background: transparent url(../images/slimbox/closelabel.gif) no-repeat center;
-	margin: 5px 0;
 	outline: none;
+	background: transparent url(../images/slimbox/closelabel.gif) no-repeat center;
 }
 
 #lbCaption, #lbNumber {
@@ -212,73 +183,185 @@
 #lbCaption {
 	font-weight: bold;
 }
+
 /************************** Style for lightbox ends ******************************/
 
 /************************** Style for widgets starts ******************************/
 
-#widget-boxes-container .box ul {
+#widget_boxes_container .box ul {
 	margin-left: 0;
 }
 
-#widget-boxes-container .box ul li a {
+#widget_boxes_container .box ul li a {
 	text-align: left;
 }
 
 /************************** Style for widgets ends ******************************/
 
-/******************** Style for Elastislide carousel starts **********************/
-.es-carousel-wrapper{
-	box-shadow:none;
-	padding:20px 22px;
-	position:relative;
-	margin-bottom: 20px;
+/************************** Style for boxes starts ******************************/
+
+#boxes_container a,
+#boxes_container a:hover {
+	display: block;
+	text-decoration: none;
 }
-.es-carousel{
-	overflow:hidden;
-	background:#transparent;
-}
-.es-carousel ul{
-	display:none;
-}
-.es-carousel ul li{
-	height:100%;
-	float:left;
-	display:block;
-	min-width:100px;
-}
-.es-carousel ul li a{
-	display:block;
-}
-.es-carousel ul li a img{
-	display:block;
-	border:none;
-	height: auto;
-	max-width:100%;
-	min-width:100px;
-}
-.es-nav span{
-	position:absolute;
-	top:50%;
-	left:3px;
-	background:transparent url(../images/nav.png) no-repeat top left;
-	width:14px;
-	height:26px;
-	margin-top:-13px;
-	text-indent:-9000px;
-	cursor:pointer;
-	opacity:0.8;
-}
-.es-nav span.es-nav-next{
-	right:3px;
-	left:auto;
-	background-position:top right;
-}
-.es-nav span:hover{
-	opacity:1.0;
-}
-.carousel_caption {
+
+.box-image-container {
 	text-align: center;
-	width: 100%;
-	position: relative;
 }
+
+/************************** Style for boxes ends ********************************/
+
+/******************** Style for Elastislide carousel starts **********************/
+.es-carousel-wrapper {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 20px 22px;
+	box-shadow: none;
+}
+
+.es-carousel {
+	overflow: hidden;
+	background: transparent;
+}
+
+.es-carousel ul {
+	display: none;
+}
+
+.es-carousel ul li {
+	display: block;
+	float: left;
+	min-width: 100px;
+	height: 100%;
+}
+
+.es-carousel ul li a {
+	display: block;
+}
+
+.es-carousel ul li a img {
+	display: block;
+	min-width: 100px;
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+
+.es-nav span {
+	position: absolute;
+	top: 50%;
+	left: 3px;
+	margin-top: -13px;
+	width: 14px;
+	height: 26px;
+	background: transparent url(../images/nav.png) no-repeat top left;
+	text-indent: -9000px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.es-nav span:before {
+  content: "\2b";
+}
+
+.es-nav span.es-nav-next {
+	right: 3px;
+	left: auto;
+	background-position: top right;
+}
+
+.es-nav span:hover {
+	opacity: 1.0;
+}
+
+.carousel-captions {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
 /******************** Style for Elastislide carousel ends **********************/
+
+/*********************** Style for Callout starts ******************************/
+
+#callout_container .btn p {
+	margin: 0;
+}
+
+/* ==================================== Twitter ================================================== */
+
+#twitter_text ul {
+	margin: 0;
+}
+
+#twitter_text img {
+	margin-left: 10px;
+	max-width: 48px;
+	height: auto;
+}
+
+#twitter_text .twitter-followers {
+	float: left;
+	clear: left;
+	margin: 5px 0 0 10px;
+	padding: 0;
+	font-size: 8px;
+	line-height: 1em
+}
+
+#twitter_text  ul {
+	list-style: none;
+}
+
+#twitter_text  li {
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+
+/* ==================================== MAGAZINE ================================================== */
+
+#magazine [class*="span"] {
+	margin-left: 0;
+}
+
+#magazine #column_width {
+	height: 0;
+}
+
+#magazine #gutter_width {
+	width: 2.127659574468085%;
+	height: 0;
+}
+
+#magazine .column-width-4 {
+	width: 31.914893617%;
+}
+
+#magazine .column-width-6 {
+	width: 48.517948717948715%;
+}
+
+#magazine .post-container {
+	margin-bottom: 20px;
+	background: #ffffff;
+}
+
+#magazine .post-container .post {
+	margin: 10px 10px 20px;
+	overflow-wrap: break-word;
+}
+
+#magazine .post-title {
+	margin-top: 0;
+	font-size: 2em;
+	line-height: 1.5;
+}
+
+#magazine .featured-image {
+	width: 100%;
+}
+
+#magazine .featured-image img {
+	max-width: 100%;
+}

@@ -11,7 +11,7 @@
  * @package  Framework
  * @since    1.0
  * @author   CyberChimps
- * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ * @license  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
  * @link     http://www.cyberchimps.com/
  */
 
@@ -19,17 +19,17 @@ function cyberchimps_shortcodes_popover( $atts, $content = null ) {
 
 	// Extract parameters passed in the shortcode
 	extract( shortcode_atts( array(
-		'name'		=> 'cyberchimps_popover',
-		'position'	=> 'top',
-		'header'	=> 'Popover Header',
-		'text'		=> 'Cyberchimps popover text'
-	), $atts ) );
+		                         'name'     => 'cyberchimps_popover',
+		                         'position' => 'top',
+		                         'header'   => 'Popover Header',
+		                         'text'     => 'Cyberchimps popover text'
+	                         ), $atts ) );
 
-    // Markup for popover
-    $html = '<a id="' . $name . '" class="btn" data-content="' . $text . '" data-placement="' . $position . '"' .
-			'data-toggle="popover" data-original-title="' . $header . '">' . $content . '</a>';
+	// Markup for popover
+	$html = '<a id="' . $name . '" class="btn" data-content="' . $text . '" data-placement="' . $position . '"' .
+		'data-toggle="popover" data-original-title="' . $header . '">' . $content . '</a>';
 	?>
-	
+
 	<!-- Trigger the popover -->
 	<script>
 		jQuery(function () {
@@ -40,5 +40,6 @@ function cyberchimps_shortcodes_popover( $atts, $content = null ) {
 	<?php
 	return $html;
 }
+
 add_shortcode( 'cc_popover', 'cyberchimps_shortcodes_popover' );
 ?>
